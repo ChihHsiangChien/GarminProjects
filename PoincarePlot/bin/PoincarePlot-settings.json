@@ -1,0 +1,37 @@
+{
+  "settings" : [ {
+    "key" : "VisualMode",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "ModeTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ModeWide",
+      "value" : 0
+    }, {
+      "display" : "ModeZoom",
+      "value" : 1
+    }, {
+      "display" : "ModeAuto",
+      "value" : 2
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "ModeZoom" : "Zoom",
+      "ModeAuto" : "Auto",
+      "ModeTitle" : "Visual Mode",
+      "ModeWide" : "Wide",
+      "AppName" : "Poincare Plot"
+    }
+  }
+}

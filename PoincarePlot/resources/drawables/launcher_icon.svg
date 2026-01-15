@@ -1,0 +1,14 @@
+<svg width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+  <rect width="54" height="54" fill="black"/>
+  <!-- Main diagonal trend -->
+  <circle cx="10" cy="44" r="2" fill="white"/>
+  <circle cx="18" cy="36" r="2" fill="white"/>
+  <circle cx="27" cy="27" r="2" fill="white"/>
+  <circle cx="36" cy="18" r="2" fill="white"/>
+  <circle cx="44" cy="10" r="2" fill="white"/>
+  <!-- Scatter points -->
+  <circle cx="14" cy="40" r="1.5" fill="#AAAAAA"/>
+  <circle cx="40" cy="14" r="1.5" fill="#AAAAAA"/>
+  <circle cx="25" cy="29" r="1.5" fill="#AAAAAA"/>
+  <circle cx="29" cy="25" r="1.5" fill="#AAAAAA"/>
+</svg>

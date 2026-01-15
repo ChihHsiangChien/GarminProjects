@@ -1,0 +1,680 @@
+[ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Activity,3,14,22]; ]
+import Toybox.Activity;
+[ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 6; @symbol_classdef = [RRintervalGraphView,6,6,25]; @symbol_extends<0> = [WatchUi,6,34,41]; @symbol_extends<1> = [DataField,6,42,51]; ]
+class RRintervalGraphView extends WatchUi.DataField {
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 6; ]
+    <init> {
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 8 16 ]
+        %tmp.1 = newa 0;
+        putv self :hrHistory %tmp.1;
+    }
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 8; @position = 16; @symbol_vardef = [hrHistory,8,16,25]; @symbol_type<0> = [Array,8,29,34]; @symbol_type<1> = [Number,8,35,41]; ]
+    private
+    var hrHistory as Array<Number>;
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 9; @position = 16; @symbol_vardef = [maxPoints,9,16,25]; ]
+    private
+    var maxPoints = 20;
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 10; @position = 16; @symbol_vardef = [lastHR,10,16,22]; ]
+    private
+    var lastHR = 0;
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 12; @symbol_functiondef = [initialize,12,13,23]; ]
+    function initialize() as Void {
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_12_26_14_4_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 13 8 ]
+        symbol [ DataField %tmp.2 13 8 17 ];
+        %tmp.2 = getv ? :DataField;
+        symbol [ initialize %tmp.3 13 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_12_26_14_4_stop:
+    }
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 17; @symbol_functiondef = [compute,17,13,20]; @symbol_param<0> = [info,17,21,25]; @symbol_param<0>_type<0> = [Activity,17,29,37]; @symbol_param<0>_type<1> = [Info,17,38,42]; ]
+    function compute(info as Activity.Info) as Void {
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_17_52_30_4_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 18 8 ]
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_8_29_8_if_stmt:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_12_18_53_begin:
+        %tmp.1 = lgetv %info;
+        symbol [ info %tmp.1 18 12 16 ];
+        %tmp.2 = null;
+        %tmp.3 = ne %tmp.1 %tmp.2;
+        bf %tmp.3 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_8_29_8_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_28_18_53_true:
+        %tmp.4 = lgetv %info;
+        symbol [ info %tmp.4 18 28 32 ];
+        %tmp.5 = as %tmp.4 { (!Null) };
+        symbol [ currentHeartRate %tmp.6 18 33 49 ];
+        %tmp.6 = getv %tmp.5 :currentHeartRate;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        push %tmp.8;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_28_18_53_end:
+        %tmp.9 = phi [%tmp.3 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_12_18_53_begin] [%tmp.8 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_28_18_53_true] [%tmp.9 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_28_18_53_end];
+        bf %tmp.9 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_8_29_8_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_8_29_8_if_true:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_59_29_8_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 19 12 ]
+        %tmp.10 = lgetv %info;
+        symbol [ info %tmp.10 19 21 25 ];
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ currentHeartRate %tmp.12 19 26 42 ];
+        %tmp.12 = getv %tmp.11 :currentHeartRate;
+        symbol [ lastHR ? 19 12 18 ];
+        putv self :lastHR %tmp.12;
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 20 12 ]
+        symbol [ hrHistory %tmp.14 20 12 21 ];
+        %tmp.14 = getv ? :hrHistory;
+        symbol [ add %tmp.15 20 22 25 ];
+        %tmp.15 = getv function %tmp.14 :add;
+        symbol [ lastHR %tmp.17 20 26 32 ];
+        %tmp.17 = getv ? :lastHR;
+        invoke %tmp.14 %tmp.15(%tmp.17);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 24 12 ]
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_24_12_26_12_if_stmt:
+        symbol [ hrHistory %tmp.19 24 16 25 ];
+        %tmp.19 = getv ? :hrHistory;
+        symbol [ size %tmp.20 24 26 30 ];
+        %tmp.20 = getv function %tmp.19 :size;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        symbol [ maxPoints %tmp.23 24 35 44 ];
+        %tmp.23 = getv ? :maxPoints;
+        %tmp.24 = gt %tmp.21 %tmp.23;
+        bf %tmp.24 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_24_12_26_12_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_24_12_26_12_if_true:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_24_46_26_12_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 25 16 ]
+        symbol [ hrHistory %tmp.26 25 16 25 ];
+        %tmp.26 = getv ? :hrHistory;
+        symbol [ remove %tmp.27 25 26 32 ];
+        %tmp.27 = getv function %tmp.26 :remove;
+        %tmp.28 = 0;
+        invoke %tmp.26 %tmp.27(%tmp.28);
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_24_46_26_12_stop:
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_24_12_26_12_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_24_12_26_12_if_end:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_59_29_8_stop:
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_8_29_8_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_18_8_29_8_if_end:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_17_52_30_4_stop:
+    }
+    [ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 31; @symbol_functiondef = [onUpdate,31,13,21]; @symbol_param<0> = [dc,31,22,24]; @symbol_param<0>_type<0> = [Dc,31,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 32 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 32 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 32 20 22 ];
+        symbol [ getWidth %tmp.2 32 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 32 12 17 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 33 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 33 12 18 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 33 21 23 ];
+        symbol [ getHeight %tmp.5 33 24 33 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %height.2 %tmp.6;
+        symbol [ height %height.2 33 12 18 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 35 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 35 8 10 ];
+        symbol [ setColor %tmp.8 35 11 19 ];
+        %tmp.8 = getv function %tmp.7 :setColor;
+        symbol [ Graphics %tmp.9 35 20 28 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.10 35 29 40 ];
+        %tmp.10 = getv %tmp.9 :COLOR_BLACK;
+        symbol [ Graphics %tmp.11 35 42 50 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.12 35 51 62 ];
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 36 8 ]
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 36 8 10 ];
+        symbol [ clear %tmp.14 36 11 16 ];
+        %tmp.14 = getv function %tmp.13 :clear;
+        invoke %tmp.13 %tmp.14();
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 38 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %size.3 = local;
+        symbol [ size %size.3 38 12 16 ];
+        symbol [ hrHistory %tmp.16 38 19 28 ];
+        %tmp.16 = getv ? :hrHistory;
+        symbol [ size %tmp.17 38 29 33 ];
+        %tmp.17 = getv function %tmp.16 :size;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        lputv %size.3 %tmp.18;
+        symbol [ size %size.3 38 12 16 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 39 8 ]
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_39_8_43_8_if_stmt:
+        %tmp.19 = lgetv %size.3;
+        symbol [ size %tmp.19 39 12 16 ];
+        %tmp.20 = 2;
+        %tmp.21 = lt %tmp.19 %tmp.20;
+        bf %tmp.21 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_39_8_43_8_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_39_8_43_8_if_true:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_39_22_43_8_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 40 12 ]
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 40 12 14 ];
+        symbol [ setColor %tmp.23 40 15 23 ];
+        %tmp.23 = getv function %tmp.22 :setColor;
+        symbol [ Graphics %tmp.24 40 24 32 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.25 40 33 44 ];
+        %tmp.25 = getv %tmp.24 :COLOR_WHITE;
+        symbol [ Graphics %tmp.26 40 46 54 ];
+        %tmp.26 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.27 40 55 72 ];
+        %tmp.27 = getv %tmp.26 :COLOR_TRANSPARENT;
+        invoke %tmp.22 %tmp.23(%tmp.25, %tmp.27);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 41 12 ]
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 41 12 14 ];
+        symbol [ drawText %tmp.29 41 15 23 ];
+        %tmp.29 = getv function %tmp.28 :drawText;
+        %tmp.30 = lgetv %width.1;
+        symbol [ width %tmp.30 41 24 29 ];
+        %tmp.31 = 2;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        %tmp.33 = lgetv %height.2;
+        symbol [ height %tmp.33 41 33 39 ];
+        %tmp.34 = 2;
+        %tmp.35 = div %tmp.33 %tmp.34;
+        symbol [ Graphics %tmp.36 41 43 51 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.37 41 52 62 ];
+        %tmp.37 = getv %tmp.36 :FONT_SMALL;
+        %tmp.38 = "Collecting data...";
+        symbol [ Graphics %tmp.39 41 86 94 ];
+        %tmp.39 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.40 41 95 114 ];
+        %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.28 %tmp.29(%tmp.32, %tmp.35, %tmp.37, %tmp.38, %tmp.40);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 42 12 ]
+        ret ?;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_39_22_43_8_stop:
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_39_8_43_8_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_39_8_43_8_if_end:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 46 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %minHR.4 = local;
+        symbol [ minHR %minHR.4 46 12 17 ];
+        %tmp.41 = 255;
+        lputv %minHR.4 %tmp.41;
+        symbol [ minHR %minHR.4 46 12 17 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 47 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %maxHR.5 = local;
+        symbol [ maxHR %maxHR.5 47 12 17 ];
+        %tmp.42 = 0;
+        lputv %maxHR.5 %tmp.42;
+        symbol [ maxHR %maxHR.5 47 12 17 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 48 8 ]
+        for @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_test @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_incr @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_init:
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_begin" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_end" ]
+        %i.6 = local;
+        symbol [ i %i.6 48 17 18 ];
+        %tmp.43 = 0;
+        lputv %i.6 %tmp.43;
+        symbol [ i %i.6 48 17 18 ];
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_test:
+        %tmp.44 = lgetv %i.6;
+        symbol [ i %tmp.44 48 24 25 ];
+        %tmp.45 = lgetv %size.3;
+        symbol [ size %tmp.45 48 28 32 ];
+        %tmp.46 = lt %tmp.44 %tmp.45;
+        bf %tmp.46 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_begin:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_39_51_8_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 49 12 ]
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_49_12_49_62_if_stmt:
+        symbol [ hrHistory %tmp.48 49 16 25 ];
+        %tmp.48 = getv ? :hrHistory;
+        %tmp.49 = lgetv %i.6;
+        symbol [ i %tmp.49 49 26 27 ];
+        %tmp.50 = agetv %tmp.48 %tmp.49;
+        %tmp.51 = lgetv %maxHR.5;
+        symbol [ maxHR %tmp.51 49 31 36 ];
+        %tmp.52 = gt %tmp.50 %tmp.51;
+        bf %tmp.52 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_49_12_49_62_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_49_12_49_62_if_true:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_49_38_49_62_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 49 40 ]
+        symbol [ hrHistory %tmp.54 49 48 57 ];
+        %tmp.54 = getv ? :hrHistory;
+        %tmp.55 = lgetv %i.6;
+        symbol [ i %tmp.55 49 58 59 ];
+        %tmp.56 = agetv %tmp.54 %tmp.55;
+        lputv %maxHR.5 %tmp.56;
+        symbol [ maxHR %maxHR.5 49 40 45 ];
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_49_38_49_62_stop:
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_49_12_49_62_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_49_12_49_62_if_end:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 50 12 ]
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_50_12_50_62_if_stmt:
+        symbol [ hrHistory %tmp.58 50 16 25 ];
+        %tmp.58 = getv ? :hrHistory;
+        %tmp.59 = lgetv %i.6;
+        symbol [ i %tmp.59 50 26 27 ];
+        %tmp.60 = agetv %tmp.58 %tmp.59;
+        %tmp.61 = lgetv %minHR.4;
+        symbol [ minHR %tmp.61 50 31 36 ];
+        %tmp.62 = lt %tmp.60 %tmp.61;
+        bf %tmp.62 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_50_12_50_62_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_50_12_50_62_if_true:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_50_38_50_62_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 50 40 ]
+        symbol [ hrHistory %tmp.64 50 48 57 ];
+        %tmp.64 = getv ? :hrHistory;
+        %tmp.65 = lgetv %i.6;
+        symbol [ i %tmp.65 50 58 59 ];
+        %tmp.66 = agetv %tmp.64 %tmp.65;
+        lputv %minHR.4 %tmp.66;
+        symbol [ minHR %minHR.4 50 40 45 ];
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_50_38_50_62_stop:
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_50_12_50_62_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_50_12_50_62_if_end:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_39_51_8_stop:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_incr:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 48 ]
+        %tmp.69 = lgetv %i.6;
+        symbol [ i %tmp.69 48 34 35 ];
+        %tmp.70 = add %tmp.69 1;
+        lputv %i.6 %tmp.70;
+        symbol [ i %i.6 48 34 35 ];
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_test;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_48_8_51_8_for_end:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 52 8 ]
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_52_8_52_70_if_stmt:
+        %tmp.71 = lgetv %maxHR.5;
+        symbol [ maxHR %tmp.71 52 12 17 ];
+        %tmp.72 = lgetv %minHR.4;
+        symbol [ minHR %tmp.72 52 21 26 ];
+        %tmp.73 = eq %tmp.71 %tmp.72;
+        bf %tmp.73 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_52_8_52_70_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_52_8_52_70_if_true:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_52_28_52_70_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 52 30 ]
+        %tmp.74 = lgetv %minHR.4;
+        symbol [ minHR %tmp.74 52 38 43 ];
+        %tmp.75 = 10;
+        %tmp.76 = add %tmp.74 %tmp.75;
+        lputv %maxHR.5 %tmp.76;
+        symbol [ maxHR %maxHR.5 52 30 35 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 52 50 ]
+        %tmp.77 = lgetv %minHR.4;
+        symbol [ minHR %tmp.77 52 58 63 ];
+        %tmp.78 = 10;
+        %tmp.79 = sub %tmp.77 %tmp.78;
+        lputv %minHR.4 %tmp.79;
+        symbol [ minHR %minHR.4 52 50 55 ];
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_52_28_52_70_stop:
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_52_8_52_70_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_52_8_52_70_if_end:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 55 8 ]
+        %tmp.80 = lgetv %dc;
+        symbol [ dc %tmp.80 55 8 10 ];
+        symbol [ setAntiAlias %tmp.81 55 11 23 ];
+        %tmp.81 = getv function %tmp.80 :setAntiAlias;
+        %tmp.82 = true;
+        invoke %tmp.80 %tmp.81(%tmp.82);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 56 8 ]
+        %tmp.83 = lgetv %dc;
+        symbol [ dc %tmp.83 56 8 10 ];
+        symbol [ setPenWidth %tmp.84 56 11 22 ];
+        %tmp.84 = getv function %tmp.83 :setPenWidth;
+        %tmp.85 = 3;
+        invoke %tmp.83 %tmp.84(%tmp.85);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 57 8 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 57 8 10 ];
+        symbol [ setColor %tmp.87 57 11 19 ];
+        %tmp.87 = getv function %tmp.86 :setColor;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_begin:
+        symbol [ lastHR %tmp.89 57 20 26 ];
+        %tmp.89 = getv ? :lastHR;
+        %tmp.90 = 150;
+        %tmp.91 = gt %tmp.89 %tmp.90;
+        bf %tmp.91 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_else_false;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_true:
+        symbol [ Graphics %tmp.92 57 35 43 ];
+        %tmp.92 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.93 57 44 53 ];
+        %tmp.93 = getv %tmp.92 :COLOR_RED;
+        push %tmp.93;
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_else_false:
+        symbol [ Graphics %tmp.94 57 56 64 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.95 57 65 76 ];
+        %tmp.95 = getv %tmp.94 :COLOR_GREEN;
+        push %tmp.95;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_end:
+        %tmp.96 = phi [%tmp.91 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_begin] [%tmp.93 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_true] [%tmp.95 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_else_false] [%tmp.96 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_57_20_57_65_end];
+        symbol [ Graphics %tmp.97 57 78 86 ];
+        %tmp.97 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.98 57 87 104 ];
+        %tmp.98 = getv %tmp.97 :COLOR_TRANSPARENT;
+        invoke %tmp.86 %tmp.87(%tmp.96, %tmp.98);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 59 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %margin.7 = local;
+        symbol [ margin %margin.7 59 12 18 ];
+        %tmp.99 = 25;
+        lputv %margin.7 %tmp.99;
+        symbol [ margin %margin.7 59 12 18 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 60 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %usableWidth.8 = local;
+        symbol [ usableWidth %usableWidth.8 60 12 23 ];
+        %tmp.100 = lgetv %width.1;
+        symbol [ width %tmp.100 60 26 31 ];
+        %tmp.101 = lgetv %margin.7;
+        symbol [ margin %tmp.101 60 35 41 ];
+        %tmp.102 = 2;
+        %tmp.103 = mul %tmp.101 %tmp.102;
+        %tmp.104 = sub %tmp.100 %tmp.103;
+        lputv %usableWidth.8 %tmp.104;
+        symbol [ usableWidth %usableWidth.8 60 12 23 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 62 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %xStep.9 = local;
+        symbol [ xStep %xStep.9 62 12 17 ];
+        %tmp.105 = lgetv %usableWidth.8;
+        symbol [ usableWidth %tmp.105 62 20 31 ];
+        symbol [ toFloat %tmp.106 62 32 39 ];
+        %tmp.106 = getv function %tmp.105 :toFloat;
+        %tmp.107 = invoke %tmp.105 %tmp.106();
+        symbol [ maxPoints %tmp.109 62 45 54 ];
+        %tmp.109 = getv ? :maxPoints;
+        %tmp.110 = 1;
+        %tmp.111 = sub %tmp.109 %tmp.110;
+        %tmp.112 = div %tmp.107 %tmp.111;
+        lputv %xStep.9 %tmp.112;
+        symbol [ xStep %xStep.9 62 12 17 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 63 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %padding.10 = local;
+        symbol [ padding %padding.10 63 12 19 ];
+        %tmp.113 = lgetv %height.2;
+        symbol [ height %tmp.113 63 22 28 ];
+        %tmp.114 = 0.35;
+        %tmp.115 = mul %tmp.113 %tmp.114;
+        lputv %padding.10 %tmp.115;
+        symbol [ padding %padding.10 63 12 19 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 64 8 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop" ]
+        %chartHeight.11 = local;
+        symbol [ chartHeight %chartHeight.11 64 12 23 ];
+        %tmp.116 = lgetv %height.2;
+        symbol [ height %tmp.116 64 26 32 ];
+        %tmp.117 = lgetv %padding.10;
+        symbol [ padding %tmp.117 64 36 43 ];
+        %tmp.118 = 2;
+        %tmp.119 = mul %tmp.117 %tmp.118;
+        %tmp.120 = sub %tmp.116 %tmp.119;
+        lputv %chartHeight.11 %tmp.120;
+        symbol [ chartHeight %chartHeight.11 64 12 23 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 67 8 ]
+        for @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_test @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_incr @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_init:
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_begin" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_end" ]
+        %i.12 = local;
+        symbol [ i %i.12 67 17 18 ];
+        %tmp.121 = 0;
+        lputv %i.12 %tmp.121;
+        symbol [ i %i.12 67 17 18 ];
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_test:
+        %tmp.122 = lgetv %i.12;
+        symbol [ i %tmp.122 67 24 25 ];
+        %tmp.123 = lgetv %size.3;
+        symbol [ size %tmp.123 67 28 32 ];
+        %tmp.124 = 1;
+        %tmp.125 = sub %tmp.123 %tmp.124;
+        %tmp.126 = lt %tmp.122 %tmp.125;
+        bf %tmp.126 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_begin:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 69 12 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_stop" ]
+        %x1.13 = local;
+        symbol [ x1 %x1.13 69 16 18 ];
+        %tmp.127 = lgetv %width.1;
+        symbol [ width %tmp.127 69 21 26 ];
+        %tmp.128 = lgetv %margin.7;
+        symbol [ margin %tmp.128 69 29 35 ];
+        %tmp.129 = sub %tmp.127 %tmp.128;
+        %tmp.130 = lgetv %size.3;
+        symbol [ size %tmp.130 69 40 44 ];
+        %tmp.131 = 1;
+        %tmp.132 = sub %tmp.130 %tmp.131;
+        %tmp.133 = lgetv %i.12;
+        symbol [ i %tmp.133 69 51 52 ];
+        %tmp.134 = sub %tmp.132 %tmp.133;
+        %tmp.135 = lgetv %xStep.9;
+        symbol [ xStep %tmp.135 69 56 61 ];
+        %tmp.136 = mul %tmp.134 %tmp.135;
+        %tmp.137 = sub %tmp.129 %tmp.136;
+        lputv %x1.13 %tmp.137;
+        symbol [ x1 %x1.13 69 16 18 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 70 12 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_stop" ]
+        %x2.14 = local;
+        symbol [ x2 %x2.14 70 16 18 ];
+        %tmp.138 = lgetv %width.1;
+        symbol [ width %tmp.138 70 21 26 ];
+        %tmp.139 = lgetv %margin.7;
+        symbol [ margin %tmp.139 70 29 35 ];
+        %tmp.140 = sub %tmp.138 %tmp.139;
+        %tmp.141 = lgetv %size.3;
+        symbol [ size %tmp.141 70 40 44 ];
+        %tmp.142 = 2;
+        %tmp.143 = sub %tmp.141 %tmp.142;
+        %tmp.144 = lgetv %i.12;
+        symbol [ i %tmp.144 70 51 52 ];
+        %tmp.145 = sub %tmp.143 %tmp.144;
+        %tmp.146 = lgetv %xStep.9;
+        symbol [ xStep %tmp.146 70 56 61 ];
+        %tmp.147 = mul %tmp.145 %tmp.146;
+        %tmp.148 = sub %tmp.140 %tmp.147;
+        lputv %x2.14 %tmp.148;
+        symbol [ x2 %x2.14 70 16 18 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 72 12 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_stop" ]
+        %y1.15 = local;
+        symbol [ y1 %y1.15 72 16 18 ];
+        %tmp.149 = lgetv %height.2;
+        symbol [ height %tmp.149 72 21 27 ];
+        %tmp.150 = lgetv %padding.10;
+        symbol [ padding %tmp.150 72 31 38 ];
+        symbol [ hrHistory %tmp.152 72 43 52 ];
+        %tmp.152 = getv ? :hrHistory;
+        %tmp.153 = lgetv %i.12;
+        symbol [ i %tmp.153 72 53 54 ];
+        %tmp.154 = agetv %tmp.152 %tmp.153;
+        %tmp.155 = lgetv %minHR.4;
+        symbol [ minHR %tmp.155 72 58 63 ];
+        %tmp.156 = sub %tmp.154 %tmp.155;
+        symbol [ toFloat %tmp.157 72 65 72 ];
+        %tmp.157 = getv function %tmp.156 :toFloat;
+        %tmp.158 = invoke %tmp.156 %tmp.157();
+        %tmp.159 = lgetv %maxHR.5;
+        symbol [ maxHR %tmp.159 72 78 83 ];
+        %tmp.160 = lgetv %minHR.4;
+        symbol [ minHR %tmp.160 72 86 91 ];
+        %tmp.161 = sub %tmp.159 %tmp.160;
+        %tmp.162 = div %tmp.158 %tmp.161;
+        %tmp.163 = lgetv %chartHeight.11;
+        symbol [ chartHeight %tmp.163 72 95 106 ];
+        %tmp.164 = mul %tmp.162 %tmp.163;
+        %tmp.165 = add %tmp.150 %tmp.164;
+        %tmp.166 = sub %tmp.149 %tmp.165;
+        lputv %y1.15 %tmp.166;
+        symbol [ y1 %y1.15 72 16 18 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 73 12 ]
+        [ "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_start" "_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_stop" ]
+        %y2.16 = local;
+        symbol [ y2 %y2.16 73 16 18 ];
+        %tmp.167 = lgetv %height.2;
+        symbol [ height %tmp.167 73 21 27 ];
+        %tmp.168 = lgetv %padding.10;
+        symbol [ padding %tmp.168 73 31 38 ];
+        symbol [ hrHistory %tmp.170 73 43 52 ];
+        %tmp.170 = getv ? :hrHistory;
+        %tmp.171 = lgetv %i.12;
+        symbol [ i %tmp.171 73 53 54 ];
+        %tmp.172 = 1;
+        %tmp.173 = add %tmp.171 %tmp.172;
+        %tmp.174 = agetv %tmp.170 %tmp.173;
+        %tmp.175 = lgetv %minHR.4;
+        symbol [ minHR %tmp.175 73 60 65 ];
+        %tmp.176 = sub %tmp.174 %tmp.175;
+        symbol [ toFloat %tmp.177 73 67 74 ];
+        %tmp.177 = getv function %tmp.176 :toFloat;
+        %tmp.178 = invoke %tmp.176 %tmp.177();
+        %tmp.179 = lgetv %maxHR.5;
+        symbol [ maxHR %tmp.179 73 80 85 ];
+        %tmp.180 = lgetv %minHR.4;
+        symbol [ minHR %tmp.180 73 88 93 ];
+        %tmp.181 = sub %tmp.179 %tmp.180;
+        %tmp.182 = div %tmp.178 %tmp.181;
+        %tmp.183 = lgetv %chartHeight.11;
+        symbol [ chartHeight %tmp.183 73 97 108 ];
+        %tmp.184 = mul %tmp.182 %tmp.183;
+        %tmp.185 = add %tmp.168 %tmp.184;
+        %tmp.186 = sub %tmp.167 %tmp.185;
+        lputv %y2.16 %tmp.186;
+        symbol [ y2 %y2.16 73 16 18 ];
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 75 12 ]
+        %tmp.187 = lgetv %dc;
+        symbol [ dc %tmp.187 75 12 14 ];
+        symbol [ drawLine %tmp.188 75 15 23 ];
+        %tmp.188 = getv function %tmp.187 :drawLine;
+        %tmp.189 = lgetv %x1.13;
+        symbol [ x1 %tmp.189 75 24 26 ];
+        %tmp.190 = lgetv %y1.15;
+        symbol [ y1 %tmp.190 75 28 30 ];
+        %tmp.191 = lgetv %x2.14;
+        symbol [ x2 %tmp.191 75 32 34 ];
+        %tmp.192 = lgetv %y2.16;
+        symbol [ y2 %tmp.192 75 36 38 ];
+        invoke %tmp.187 %tmp.188(%tmp.189, %tmp.190, %tmp.191, %tmp.192);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 78 12 ]
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_78_12_81_12_if_stmt:
+        %tmp.193 = lgetv %i.12;
+        symbol [ i %tmp.193 78 16 17 ];
+        %tmp.194 = lgetv %size.3;
+        symbol [ size %tmp.194 78 21 25 ];
+        %tmp.195 = 2;
+        %tmp.196 = sub %tmp.194 %tmp.195;
+        %tmp.197 = eq %tmp.193 %tmp.196;
+        bf %tmp.197 @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_78_12_81_12_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_78_12_81_12_if_true:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_78_31_81_12_start:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 79 16 ]
+        %tmp.198 = lgetv %dc;
+        symbol [ dc %tmp.198 79 16 18 ];
+        symbol [ setColor %tmp.199 79 19 27 ];
+        %tmp.199 = getv function %tmp.198 :setColor;
+        symbol [ Graphics %tmp.200 79 28 36 ];
+        %tmp.200 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.201 79 37 48 ];
+        %tmp.201 = getv %tmp.200 :COLOR_WHITE;
+        symbol [ Graphics %tmp.202 79 50 58 ];
+        %tmp.202 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.203 79 59 76 ];
+        %tmp.203 = getv %tmp.202 :COLOR_TRANSPARENT;
+        invoke %tmp.198 %tmp.199(%tmp.201, %tmp.203);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 80 16 ]
+        %tmp.204 = lgetv %dc;
+        symbol [ dc %tmp.204 80 16 18 ];
+        symbol [ fillCircle %tmp.205 80 19 29 ];
+        %tmp.205 = getv function %tmp.204 :fillCircle;
+        %tmp.206 = lgetv %x2.14;
+        symbol [ x2 %tmp.206 80 30 32 ];
+        %tmp.207 = lgetv %y2.16;
+        symbol [ y2 %tmp.207 80 34 36 ];
+        %tmp.208 = 4;
+        invoke %tmp.204 %tmp.205(%tmp.206, %tmp.207, %tmp.208);
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_78_31_81_12_stop:
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_78_12_81_12_if_end;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_78_12_81_12_if_end:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_43_82_8_stop:
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_incr:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 67 ]
+        %tmp.211 = lgetv %i.12;
+        symbol [ i %tmp.211 67 38 39 ];
+        %tmp.212 = add %tmp.211 1;
+        lputv %i.12 %tmp.212;
+        symbol [ i %i.12 67 38 39 ];
+        goto @_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_test;
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_67_8_82_8_for_end:
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 85 8 ]
+        %tmp.213 = lgetv %dc;
+        symbol [ dc %tmp.213 85 8 10 ];
+        symbol [ setColor %tmp.214 85 11 19 ];
+        %tmp.214 = getv function %tmp.213 :setColor;
+        symbol [ Graphics %tmp.215 85 20 28 ];
+        %tmp.215 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.216 85 29 40 ];
+        %tmp.216 = getv %tmp.215 :COLOR_WHITE;
+        symbol [ Graphics %tmp.217 85 42 50 ];
+        %tmp.217 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.218 85 51 68 ];
+        %tmp.218 = getv %tmp.217 :COLOR_TRANSPARENT;
+        invoke %tmp.213 %tmp.214(%tmp.216, %tmp.218);
+[ "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc" 86 8 ]
+        %tmp.219 = lgetv %dc;
+        symbol [ dc %tmp.219 86 8 10 ];
+        symbol [ drawText %tmp.220 86 11 19 ];
+        %tmp.220 = getv function %tmp.219 :drawText;
+        %tmp.221 = lgetv %width.1;
+        symbol [ width %tmp.221 86 20 25 ];
+        %tmp.222 = 2;
+        %tmp.223 = div %tmp.221 %tmp.222;
+        %tmp.224 = lgetv %height.2;
+        symbol [ height %tmp.224 86 29 35 ];
+        %tmp.225 = 0.2;
+        %tmp.226 = mul %tmp.224 %tmp.225;
+        symbol [ Graphics %tmp.227 86 43 51 ];
+        %tmp.227 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.228 86 52 63 ];
+        %tmp.228 = getv %tmp.227 :FONT_MEDIUM;
+        symbol [ lastHR %tmp.230 86 65 71 ];
+        %tmp.230 = getv ? :lastHR;
+        symbol [ toString %tmp.231 86 72 80 ];
+        %tmp.231 = getv function %tmp.230 :toString;
+        %tmp.232 = invoke %tmp.230 %tmp.231();
+        %tmp.233 = " BPM";
+        %tmp.234 = add %tmp.232 %tmp.233;
+        symbol [ Graphics %tmp.235 86 93 101 ];
+        %tmp.235 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.236 86 102 121 ];
+        %tmp.236 = getv %tmp.235 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.219 %tmp.220(%tmp.223, %tmp.226, %tmp.228, %tmp.234, %tmp.236);
+_home_pancala_GarminProjects_RRintervalGraph_source_RRintervalGraphView_mc_31_40_87_4_stop:
+    }
+}
+[ @file = "/home/pancala/GarminProjects/RRintervalGraph/source/RRintervalGraphView.mc"; @line = 1; ]
+<init> {
+}

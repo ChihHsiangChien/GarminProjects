@@ -1,0 +1,1563 @@
+[ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Strings,12,11,18]; ]
+    module Strings {
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [ModeAuto,13,27,35]; @symbol_type<0> = [ResourceId,13,39,49]; ]
+        var ModeAuto as ResourceId;
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [ModeTitle,14,27,36]; @symbol_type<0> = [ResourceId,14,40,50]; ]
+        var ModeTitle as ResourceId;
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [ModeZoom,15,27,35]; @symbol_type<0> = [ResourceId,15,39,49]; ]
+        var ModeZoom as ResourceId;
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; @symbol_vardef = [ModeWide,16,27,35]; @symbol_type<0> = [ResourceId,16,39,49]; ]
+        var ModeWide as ResourceId;
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; @symbol_vardef = [AppName,17,27,34]; @symbol_type<0> = [ResourceId,17,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 20; @symbol_moduledef = [Styles,20,11,17]; ]
+    module Styles {
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 20; ]
+        <init> {
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 21; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,21,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 21; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 22 18 ]
+                symbol [ Graphics %tmp.1 22 34 42 ];
+                %tmp.1 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.2 22 43 62 ];
+                %tmp.2 = getv %tmp.1 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.2;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 23 18 ]
+                symbol [ Graphics %tmp.3 23 25 33 ];
+                %tmp.3 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.4 23 34 44 ];
+                %tmp.4 = getv %tmp.3 :FONT_SMALL;
+                putv self :font %tmp.4;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 22; @position = 18; @symbol_constdef = [justification,22,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 23; @position = 18; @symbol_constdef = [font,23,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 26; @symbol_moduledef = [system_size__menu_header,26,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 26; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 27; @position = 18; @symbol_constdef = [width,27,18,23]; @symbol_type<0> = [Number,27,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 28; @position = 18; @symbol_constdef = [height,28,18,24]; @symbol_type<0> = [Number,28,28,34]; ]
+            const height as Number = 90;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 31; @symbol_moduledef = [system_loc__hint_button_left_bottom,31,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 31; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 32; @position = 18; @symbol_constdef = [exclude,32,18,25]; @symbol_type<0> = [Boolean,32,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 35; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,35,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 35; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 36 18 ]
+                symbol [ Graphics %tmp.5 36 34 42 ];
+                %tmp.5 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.6 36 43 62 ];
+                %tmp.6 = getv %tmp.5 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.7 36 63 71 ];
+                %tmp.7 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.8 36 72 92 ];
+                %tmp.8 = getv %tmp.7 :TEXT_JUSTIFY_VCENTER;
+                %tmp.9 = bitor %tmp.6 %tmp.8;
+                putv self :justification %tmp.9;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 37 18 ]
+                symbol [ Graphics %tmp.10 37 25 33 ];
+                %tmp.10 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.11 37 34 44 ];
+                %tmp.11 = getv %tmp.10 :FONT_SMALL;
+                putv self :font %tmp.11;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 36; @position = 18; @symbol_constdef = [justification,36,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 37; @position = 18; @symbol_constdef = [font,37,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 40; @symbol_moduledef = [prompt_loc__body_no_title,40,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 40; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 41; @position = 18; @symbol_constdef = [x,41,18,19]; @symbol_type<0> = [Number,41,23,29]; ]
+            const x as Number = 39;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 42; @position = 18; @symbol_constdef = [y,42,18,19]; @symbol_type<0> = [Number,42,23,29]; ]
+            const y as Number = 58;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 45; @symbol_moduledef = [system_icon_dark__about,45,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 45; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [filename,46,18,26]; @symbol_type<0> = [String,46,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__about.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [compress,47,18,26]; @symbol_type<0> = [String,47,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 48; @position = 18; @symbol_constdef = [dithering,48,18,27]; @symbol_type<0> = [String,48,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 49; @position = 18; @symbol_constdef = [automaticPalette,49,18,34]; @symbol_type<0> = [String,49,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 52; @symbol_moduledef = [system_icon_light__question,52,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 52; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [filename,53,18,26]; @symbol_type<0> = [String,53,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__question.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [compress,54,18,26]; @symbol_type<0> = [String,54,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 55; @position = 18; @symbol_constdef = [dithering,55,18,27]; @symbol_type<0> = [String,55,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 56; @position = 18; @symbol_constdef = [automaticPalette,56,18,34]; @symbol_type<0> = [String,56,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 59; @symbol_moduledef = [system_loc__hint_button_left_top,59,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 59; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [exclude,60,18,25]; @symbol_type<0> = [Boolean,60,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 63; @symbol_moduledef = [prompt_font__title,63,15,33]; ]
+        module prompt_font__title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 63; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 64 18 ]
+                symbol [ Graphics %tmp.12 64 34 42 ];
+                %tmp.12 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.13 64 43 62 ];
+                %tmp.13 = getv %tmp.12 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.14 64 63 71 ];
+                %tmp.14 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.15 64 72 92 ];
+                %tmp.15 = getv %tmp.14 :TEXT_JUSTIFY_VCENTER;
+                %tmp.16 = bitor %tmp.13 %tmp.15;
+                putv self :justification %tmp.16;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 65 18 ]
+                symbol [ Graphics %tmp.17 65 25 33 ];
+                %tmp.17 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.18 65 34 44 ];
+                %tmp.18 = getv %tmp.17 :FONT_XTINY;
+                putv self :font %tmp.18;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 64; @position = 18; @symbol_constdef = [justification,64,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 65; @position = 18; @symbol_constdef = [font,65,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 68; @symbol_moduledef = [system_icon_dark__discard,68,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 68; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [filename,69,18,26]; @symbol_type<0> = [String,69,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__discard.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [compress,70,18,26]; @symbol_type<0> = [String,70,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [dithering,71,18,27]; @symbol_type<0> = [String,71,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [automaticPalette,72,18,34]; @symbol_type<0> = [String,72,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 75; @symbol_moduledef = [system_size__menu_item,75,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 75; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [width,76,18,23]; @symbol_type<0> = [Number,76,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [height,77,18,24]; @symbol_type<0> = [Number,77,28,34]; ]
+            const height as Number = 100;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 80; @symbol_moduledef = [system_color_dark__text,80,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 80; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 82 18 ]
+                symbol [ Graphics %tmp.19 82 31 39 ];
+                %tmp.19 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.20 82 40 57 ];
+                %tmp.20 = getv %tmp.19 :COLOR_TRANSPARENT;
+                putv self :background %tmp.20;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [color,81,18,23]; @symbol_type<0> = [Number,81,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [background,82,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 85; @symbol_moduledef = [system_icon_destructive__discard,85,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 85; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 86; @position = 18; @symbol_constdef = [filename,86,18,26]; @symbol_type<0> = [String,86,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_destructive__discard.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [dithering,87,18,27]; @symbol_type<0> = [String,87,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [packingFormat,88,18,31]; @symbol_type<0> = [String,88,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 91; @symbol_moduledef = [system_icon_dark__hint_action_menu,91,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 91; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [exclude,92,18,25]; @symbol_type<0> = [Boolean,92,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 95; @symbol_moduledef = [prompt_size__title,95,15,33]; ]
+        module prompt_size__title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 95; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [width,96,18,23]; @symbol_type<0> = [Number,96,27,33]; ]
+            const width as Number = 165;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [height,97,18,24]; @symbol_type<0> = [Number,97,28,34]; ]
+            const height as Number = 70;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 100; @symbol_moduledef = [confirmation_font__body,100,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 100; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 101 18 ]
+                symbol [ Graphics %tmp.21 101 34 42 ];
+                %tmp.21 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.22 101 43 62 ];
+                %tmp.22 = getv %tmp.21 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.23 101 63 71 ];
+                %tmp.23 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.24 101 72 92 ];
+                %tmp.24 = getv %tmp.23 :TEXT_JUSTIFY_VCENTER;
+                %tmp.25 = bitor %tmp.22 %tmp.24;
+                putv self :justification %tmp.25;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 102 18 ]
+                symbol [ Graphics %tmp.26 102 25 33 ];
+                %tmp.26 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.27 102 34 43 ];
+                %tmp.27 = getv %tmp.26 :FONT_TINY;
+                putv self :font %tmp.27;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [justification,101,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [font,102,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 105; @symbol_moduledef = [system_color_dark__background,105,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 105; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 106; @position = 18; @symbol_constdef = [color,106,18,23]; @symbol_type<0> = [Number,106,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [background,107,18,28]; @symbol_type<0> = [Number,107,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 110; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,110,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 110; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 111; @position = 18; @symbol_constdef = [exclude,111,18,25]; @symbol_type<0> = [Boolean,111,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 114; @symbol_moduledef = [system_size__launch_icon,114,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 114; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [scaleX,115,18,24]; @symbol_type<0> = [Number,115,28,34]; ]
+            const scaleX as Number = 54;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 116; @position = 18; @symbol_constdef = [scaleY,116,18,24]; @symbol_type<0> = [Number,116,28,34]; ]
+            const scaleY as Number = 54;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 117; @position = 18; @symbol_constdef = [scaleRelativeTo,117,18,33]; @symbol_type<0> = [String,117,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 120; @symbol_moduledef = [confirmation_input__confirm,120,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 120; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [y1,121,18,20]; @symbol_type<0> = [Number,121,24,30]; ]
+            const y1 as Number = 297;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [x1,122,18,20]; @symbol_type<0> = [Number,122,24,30]; ]
+            const x1 as Number = 72;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [y2,123,18,20]; @symbol_type<0> = [Number,123,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [x2,124,18,20]; @symbol_type<0> = [Number,124,24,30]; ]
+            const x2 as Number = 318;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 127; @symbol_moduledef = [prompt_font__body_with_title,127,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 127; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 128 18 ]
+                symbol [ Graphics %tmp.28 128 34 42 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.29 128 43 62 ];
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.29;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 129 18 ]
+                symbol [ Graphics %tmp.30 129 25 33 ];
+                %tmp.30 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.31 129 34 43 ];
+                %tmp.31 = getv %tmp.30 :FONT_TINY;
+                putv self :font %tmp.31;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [justification,128,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [font,129,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 132; @symbol_moduledef = [confirmation_loc__body,132,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 132; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [x,133,18,19]; @symbol_type<0> = [Number,133,23,29]; ]
+            const x as Number = 80;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [y,134,18,19]; @symbol_type<0> = [Number,134,23,29]; ]
+            const y as Number = 78;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 137; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,137,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 137; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [exclude,138,18,25]; @symbol_type<0> = [Boolean,138,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 141; @symbol_moduledef = [prompt_color_dark__background,141,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 141; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 142; @position = 18; @symbol_constdef = [color,142,18,23]; @symbol_type<0> = [Number,142,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [background,143,18,28]; @symbol_type<0> = [Number,143,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 146; @symbol_moduledef = [system_icon_destructive__hint_action_menu,146,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 146; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 147; @position = 18; @symbol_constdef = [exclude,147,18,25]; @symbol_type<0> = [Boolean,147,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 150; @symbol_moduledef = [system_loc__hint_action_menu,150,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 150; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [exclude,151,18,25]; @symbol_type<0> = [Boolean,151,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 154; @symbol_moduledef = [confirmation_icon__hint_confirm,154,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 154; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [filename,155,18,26]; @symbol_type<0> = [String,155,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 156; @position = 18; @symbol_constdef = [dithering,156,18,27]; @symbol_type<0> = [String,156,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [packingFormat,157,18,31]; @symbol_type<0> = [String,157,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 160; @symbol_moduledef = [system_loc__hint_button_left_middle,160,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 160; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 161; @position = 18; @symbol_constdef = [exclude,161,18,25]; @symbol_type<0> = [Boolean,161,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 164; @symbol_moduledef = [prompt_size__body_no_title,164,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 164; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [width,165,18,23]; @symbol_type<0> = [Number,165,27,33]; ]
+            const width as Number = 312;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [height,166,18,24]; @symbol_type<0> = [Number,166,28,34]; ]
+            const height as Number = 253;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 169; @symbol_moduledef = [system_icon_light__hint_button_left_top,169,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [exclude,170,18,25]; @symbol_type<0> = [Boolean,170,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 173; @symbol_moduledef = [prompt_color_light__background,173,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 173; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [color,174,18,23]; @symbol_type<0> = [Number,174,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [background,175,18,28]; @symbol_type<0> = [Number,175,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 178; @symbol_moduledef = [confirmation_input__delete,178,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 178; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 179 18 ]
+                symbol [ WatchUi %tmp.32 179 27 34 ];
+                %tmp.32 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.33 179 35 44 ];
+                %tmp.33 = getv %tmp.32 :KEY_ENTER;
+                putv self :button %tmp.33;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [button,179,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 182; @symbol_moduledef = [system_icon_dark__hint_button_left_top,182,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [exclude,183,18,25]; @symbol_type<0> = [Boolean,183,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 186; @symbol_moduledef = [system_input__action_menu,186,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 186; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 187 18 ]
+                symbol [ WatchUi %tmp.34 187 27 34 ];
+                %tmp.34 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ACTION_MENU %tmp.35 187 35 50 ];
+                %tmp.35 = getv %tmp.34 :KEY_ACTION_MENU;
+                putv self :button %tmp.35;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [button,187,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 190; @symbol_moduledef = [system_icon_light__save,190,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 190; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 191; @position = 18; @symbol_constdef = [filename,191,18,26]; @symbol_type<0> = [String,191,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__save.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 192; @position = 18; @symbol_constdef = [compress,192,18,26]; @symbol_type<0> = [String,192,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [dithering,193,18,27]; @symbol_type<0> = [String,193,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [automaticPalette,194,18,34]; @symbol_type<0> = [String,194,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 197; @symbol_moduledef = [prompt_color_light__body,197,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 197; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 199 18 ]
+                symbol [ Graphics %tmp.36 199 31 39 ];
+                %tmp.36 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.37 199 40 57 ];
+                %tmp.37 = getv %tmp.36 :COLOR_TRANSPARENT;
+                putv self :background %tmp.37;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [color,198,18,23]; @symbol_type<0> = [Number,198,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 199; @position = 18; @symbol_constdef = [background,199,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 202; @symbol_moduledef = [system_loc__subwindow,202,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 202; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [exclude,203,18,25]; @symbol_type<0> = [Boolean,203,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 206; @symbol_moduledef = [system_icon_light__warning,206,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 206; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [filename,207,18,26]; @symbol_type<0> = [String,207,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__warning.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [compress,208,18,26]; @symbol_type<0> = [String,208,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 209; @position = 18; @symbol_constdef = [dithering,209,18,27]; @symbol_type<0> = [String,209,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [automaticPalette,210,18,34]; @symbol_type<0> = [String,210,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 213; @symbol_moduledef = [confirmation_color_light__body,213,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 213; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 215 18 ]
+                symbol [ Graphics %tmp.38 215 31 39 ];
+                %tmp.38 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.39 215 40 57 ];
+                %tmp.39 = getv %tmp.38 :COLOR_TRANSPARENT;
+                putv self :background %tmp.39;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 214; @position = 18; @symbol_constdef = [color,214,18,23]; @symbol_type<0> = [Number,214,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [background,215,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 218; @symbol_moduledef = [confirmation_icon_light__hint_keep,218,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 218; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [filename,219,18,26]; @symbol_type<0> = [String,219,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 220; @position = 18; @symbol_constdef = [dithering,220,18,27]; @symbol_type<0> = [String,220,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [packingFormat,221,18,31]; @symbol_type<0> = [String,221,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 224; @symbol_moduledef = [activity_color_light__background,224,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 224; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 225; @position = 18; @symbol_constdef = [color,225,18,23]; @symbol_type<0> = [Number,225,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [background,226,18,28]; @symbol_type<0> = [Number,226,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 229; @symbol_moduledef = [system_icon_positive__hint_button_right_top,229,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 229; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [filename,230,18,26]; @symbol_type<0> = [String,230,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [dithering,231,18,27]; @symbol_type<0> = [String,231,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [packingFormat,232,18,31]; @symbol_type<0> = [String,232,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 235; @symbol_moduledef = [system_size__screen,235,15,34]; ]
+        module system_size__screen {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 235; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [width,236,18,23]; @symbol_type<0> = [Number,236,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 237; @position = 18; @symbol_constdef = [height,237,18,24]; @symbol_type<0> = [Number,237,28,34]; ]
+            const height as Number = 390;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 240; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,240,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [filename,241,18,26]; @symbol_type<0> = [String,241,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 242; @position = 18; @symbol_constdef = [dithering,242,18,27]; @symbol_type<0> = [String,242,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 243; @position = 18; @symbol_constdef = [packingFormat,243,18,31]; @symbol_type<0> = [String,243,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 246; @symbol_moduledef = [system_color_light__background,246,15,45]; ]
+        module system_color_light__background {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 246; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 247; @position = 18; @symbol_constdef = [color,247,18,23]; @symbol_type<0> = [Number,247,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 248; @position = 18; @symbol_constdef = [background,248,18,28]; @symbol_type<0> = [Number,248,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 251; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,251,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 251; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 252; @position = 18; @symbol_constdef = [filename,252,18,26]; @symbol_type<0> = [String,252,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 253; @position = 18; @symbol_constdef = [dithering,253,18,27]; @symbol_type<0> = [String,253,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [packingFormat,254,18,31]; @symbol_type<0> = [String,254,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 257; @symbol_moduledef = [confirmation_loc__hint_confirm,257,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 257; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 258; @position = 18; @symbol_constdef = [x,258,18,19]; @symbol_type<0> = [Number,258,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 259; @position = 18; @symbol_constdef = [horizontalJustification,259,18,41]; @symbol_type<0> = [String,259,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [y,260,18,19]; @symbol_type<0> = [Number,260,23,29]; ]
+            const y as Number = 147;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 263; @symbol_moduledef = [activity_color_dark__text,263,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 263; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 265 18 ]
+                symbol [ Graphics %tmp.40 265 31 39 ];
+                %tmp.40 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.41 265 40 57 ];
+                %tmp.41 = getv %tmp.40 :COLOR_TRANSPARENT;
+                putv self :background %tmp.41;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [color,264,18,23]; @symbol_type<0> = [Number,264,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [background,265,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 268; @symbol_moduledef = [confirmation_input__keep,268,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 268; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 269 18 ]
+                symbol [ WatchUi %tmp.42 269 27 34 ];
+                %tmp.42 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.43 269 35 42 ];
+                %tmp.43 = getv %tmp.42 :KEY_ESC;
+                putv self :button %tmp.43;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [button,269,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 272; @symbol_moduledef = [prompt_loc__body_with_title,272,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 272; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 273; @position = 18; @symbol_constdef = [x,273,18,19]; @symbol_type<0> = [Number,273,23,29]; ]
+            const x as Number = 39;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [y,274,18,19]; @symbol_type<0> = [Number,274,23,29]; ]
+            const y as Number = 98;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 277; @symbol_moduledef = [system_icon_dark__search,277,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 277; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [filename,278,18,26]; @symbol_type<0> = [String,278,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__search.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [compress,279,18,26]; @symbol_type<0> = [String,279,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [dithering,280,18,27]; @symbol_type<0> = [String,280,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [automaticPalette,281,18,34]; @symbol_type<0> = [String,281,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 284; @symbol_moduledef = [activity_color_light__text,284,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 284; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 286 18 ]
+                symbol [ Graphics %tmp.44 286 31 39 ];
+                %tmp.44 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.45 286 40 57 ];
+                %tmp.45 = getv %tmp.44 :COLOR_TRANSPARENT;
+                putv self :background %tmp.45;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [color,285,18,23]; @symbol_type<0> = [Number,285,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [background,286,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 289; @symbol_moduledef = [confirmation_icon__hint_keep,289,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 289; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [filename,290,18,26]; @symbol_type<0> = [String,290,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [dithering,291,18,27]; @symbol_type<0> = [String,291,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [packingFormat,292,18,31]; @symbol_type<0> = [String,292,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 295; @symbol_moduledef = [system_icon_dark__save,295,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 295; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 296; @position = 18; @symbol_constdef = [filename,296,18,26]; @symbol_type<0> = [String,296,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__save.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 297; @position = 18; @symbol_constdef = [compress,297,18,26]; @symbol_type<0> = [String,297,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [dithering,298,18,27]; @symbol_type<0> = [String,298,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [automaticPalette,299,18,34]; @symbol_type<0> = [String,299,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 302; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,302,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 302; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [exclude,303,18,25]; @symbol_type<0> = [Boolean,303,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 306; @symbol_moduledef = [system_icon_light__search,306,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [filename,307,18,26]; @symbol_type<0> = [String,307,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__search.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [compress,308,18,26]; @symbol_type<0> = [String,308,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [dithering,309,18,27]; @symbol_type<0> = [String,309,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [automaticPalette,310,18,34]; @symbol_type<0> = [String,310,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 313; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,313,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 313; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [exclude,314,18,25]; @symbol_type<0> = [Boolean,314,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 317; @symbol_moduledef = [system_icon_positive__hint_button_left_top,317,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 317; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [exclude,318,18,25]; @symbol_type<0> = [Boolean,318,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 321; @symbol_moduledef = [system_loc__hint_button_right_bottom,321,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 321; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [x,322,18,19]; @symbol_type<0> = [Number,322,23,29]; ]
+            const x as Number = 322;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [y,323,18,19]; @symbol_type<0> = [Number,323,23,29]; ]
+            const y as Number = 258;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 326; @symbol_moduledef = [confirmation_icon_dark__hint_reject,326,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 326; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [filename,327,18,26]; @symbol_type<0> = [String,327,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 328; @position = 18; @symbol_constdef = [dithering,328,18,27]; @symbol_type<0> = [String,328,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [packingFormat,329,18,31]; @symbol_type<0> = [String,329,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 332; @symbol_moduledef = [confirmation_color_dark__body,332,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 332; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 334 18 ]
+                symbol [ Graphics %tmp.46 334 31 39 ];
+                %tmp.46 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.47 334 40 57 ];
+                %tmp.47 = getv %tmp.46 :COLOR_TRANSPARENT;
+                putv self :background %tmp.47;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [color,333,18,23]; @symbol_type<0> = [Number,333,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [background,334,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 337; @symbol_moduledef = [confirmation_icon_light__hint_confirm,337,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [filename,338,18,26]; @symbol_type<0> = [String,338,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [dithering,339,18,27]; @symbol_type<0> = [String,339,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [packingFormat,340,18,31]; @symbol_type<0> = [String,340,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 343; @symbol_moduledef = [prompt_color_dark__title,343,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 343; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 345 18 ]
+                symbol [ Graphics %tmp.48 345 31 39 ];
+                %tmp.48 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.49 345 40 57 ];
+                %tmp.49 = getv %tmp.48 :COLOR_TRANSPARENT;
+                putv self :background %tmp.49;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [color,344,18,23]; @symbol_type<0> = [Number,344,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [background,345,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 348; @symbol_moduledef = [system_icon_destructive__cancel,348,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 348; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [filename,349,18,26]; @symbol_type<0> = [String,349,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_destructive__cancel.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 350; @position = 18; @symbol_constdef = [dithering,350,18,27]; @symbol_type<0> = [String,350,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [packingFormat,351,18,31]; @symbol_type<0> = [String,351,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 354; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,354,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 354; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [filename,355,18,26]; @symbol_type<0> = [String,355,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 356; @position = 18; @symbol_constdef = [dithering,356,18,27]; @symbol_type<0> = [String,356,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [packingFormat,357,18,31]; @symbol_type<0> = [String,357,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 360; @symbol_moduledef = [prompt_loc__title,360,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 360; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [x,361,18,19]; @symbol_type<0> = [Number,361,23,29]; ]
+            const x as Number = 113;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [y,362,18,19]; @symbol_type<0> = [Number,362,23,29]; ]
+            const y as Number = 19;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 365; @symbol_moduledef = [confirmation_font_enhanced_readability__body,365,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 365; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 366 18 ]
+                symbol [ Graphics %tmp.50 366 34 42 ];
+                %tmp.50 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.51 366 43 62 ];
+                %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.52 366 63 71 ];
+                %tmp.52 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.53 366 72 92 ];
+                %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_VCENTER;
+                %tmp.54 = bitor %tmp.51 %tmp.53;
+                putv self :justification %tmp.54;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 367 18 ]
+                symbol [ Graphics %tmp.55 367 25 33 ];
+                %tmp.55 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.56 367 34 44 ];
+                %tmp.56 = getv %tmp.55 :FONT_SMALL;
+                putv self :font %tmp.56;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [justification,366,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [font,367,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 370; @symbol_moduledef = [prompt_color_light__title,370,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 370; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 372 18 ]
+                symbol [ Graphics %tmp.57 372 31 39 ];
+                %tmp.57 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.58 372 40 57 ];
+                %tmp.58 = getv %tmp.57 :COLOR_TRANSPARENT;
+                putv self :background %tmp.58;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 371; @position = 18; @symbol_constdef = [color,371,18,23]; @symbol_type<0> = [Number,371,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [background,372,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 375; @symbol_moduledef = [system_icon_dark__hint_button_right_top,375,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 375; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 376; @position = 18; @symbol_constdef = [filename,376,18,26]; @symbol_type<0> = [String,376,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [dithering,377,18,27]; @symbol_type<0> = [String,377,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [packingFormat,378,18,31]; @symbol_type<0> = [String,378,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 381; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,381,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 381; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [exclude,382,18,25]; @symbol_type<0> = [Boolean,382,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 385; @symbol_moduledef = [confirmation_icon_dark__hint_keep,385,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 385; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 386; @position = 18; @symbol_constdef = [filename,386,18,26]; @symbol_type<0> = [String,386,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [dithering,387,18,27]; @symbol_type<0> = [String,387,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [packingFormat,388,18,31]; @symbol_type<0> = [String,388,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 391; @symbol_moduledef = [system_icon_light__cancel,391,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 391; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [filename,392,18,26]; @symbol_type<0> = [String,392,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__cancel.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [compress,393,18,26]; @symbol_type<0> = [String,393,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 394; @position = 18; @symbol_constdef = [dithering,394,18,27]; @symbol_type<0> = [String,394,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [automaticPalette,395,18,34]; @symbol_type<0> = [String,395,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 398; @symbol_moduledef = [confirmation_icon_light__hint_reject,398,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 398; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [filename,399,18,26]; @symbol_type<0> = [String,399,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [dithering,400,18,27]; @symbol_type<0> = [String,400,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [packingFormat,401,18,31]; @symbol_type<0> = [String,401,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 404; @symbol_moduledef = [system_icon_light__about,404,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [filename,405,18,26]; @symbol_type<0> = [String,405,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__about.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 406; @position = 18; @symbol_constdef = [compress,406,18,26]; @symbol_type<0> = [String,406,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [dithering,407,18,27]; @symbol_type<0> = [String,407,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [automaticPalette,408,18,34]; @symbol_type<0> = [String,408,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 411; @symbol_moduledef = [system_size__toast_icon,411,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 411; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [scaleX,412,18,24]; @symbol_type<0> = [Number,412,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [scaleY,413,18,24]; @symbol_type<0> = [Number,413,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [scaleRelativeTo,414,18,33]; @symbol_type<0> = [String,414,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 417; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,417,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 417; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [exclude,418,18,25]; @symbol_type<0> = [Boolean,418,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 421; @symbol_moduledef = [confirmation_icon__hint_reject,421,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 421; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [filename,422,18,26]; @symbol_type<0> = [String,422,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [dithering,423,18,27]; @symbol_type<0> = [String,423,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [packingFormat,424,18,31]; @symbol_type<0> = [String,424,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 427; @symbol_moduledef = [system_icon_light__hint_action_menu,427,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 427; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [exclude,428,18,25]; @symbol_type<0> = [Boolean,428,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 431; @symbol_moduledef = [system_icon_light__hint_button_right_middle,431,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 431; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [exclude,432,18,25]; @symbol_type<0> = [Boolean,432,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 435; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,435,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [exclude,436,18,25]; @symbol_type<0> = [Boolean,436,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 439; @symbol_moduledef = [confirmation_loc__hint_reject,439,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 439; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 440; @position = 18; @symbol_constdef = [x,440,18,19]; @symbol_type<0> = [Number,440,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [horizontalJustification,441,18,41]; @symbol_type<0> = [String,441,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [y,442,18,19]; @symbol_type<0> = [Number,442,23,29]; ]
+            const y as Number = 1;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 445; @symbol_moduledef = [confirmation_icon_dark__hint_delete,445,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 445; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [filename,446,18,26]; @symbol_type<0> = [String,446,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [dithering,447,18,27]; @symbol_type<0> = [String,447,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [packingFormat,448,18,31]; @symbol_type<0> = [String,448,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 451; @symbol_moduledef = [activity_color_dark__background,451,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 451; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [color,452,18,23]; @symbol_type<0> = [Number,452,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [background,453,18,28]; @symbol_type<0> = [Number,453,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 456; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,456,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [exclude,457,18,25]; @symbol_type<0> = [Boolean,457,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 460; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,460,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 460; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [exclude,461,18,25]; @symbol_type<0> = [Boolean,461,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 464; @symbol_moduledef = [system_size__menu_icon,464,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 464; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [scaleX,465,18,24]; @symbol_type<0> = [Number,465,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [scaleY,466,18,24]; @symbol_type<0> = [Number,466,28,34]; ]
+            const scaleY as Number = 45;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [scaleRelativeTo,467,18,33]; @symbol_type<0> = [String,467,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 470; @symbol_moduledef = [system_icon_destructive__warning,470,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [filename,471,18,26]; @symbol_type<0> = [String,471,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_destructive__warning.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 472; @position = 18; @symbol_constdef = [dithering,472,18,27]; @symbol_type<0> = [String,472,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [packingFormat,473,18,31]; @symbol_type<0> = [String,473,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 476; @symbol_moduledef = [system_loc__hint_button_right_middle,476,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 476; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 477; @position = 18; @symbol_constdef = [exclude,477,18,25]; @symbol_type<0> = [Boolean,477,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 480; @symbol_moduledef = [system_icon_dark__cancel,480,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 480; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [filename,481,18,26]; @symbol_type<0> = [String,481,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__cancel.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [compress,482,18,26]; @symbol_type<0> = [String,482,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [dithering,483,18,27]; @symbol_type<0> = [String,483,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 484; @position = 18; @symbol_constdef = [automaticPalette,484,18,34]; @symbol_type<0> = [String,484,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 487; @symbol_moduledef = [prompt_size__body_with_title,487,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 487; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [width,488,18,23]; @symbol_type<0> = [Number,488,27,33]; ]
+            const width as Number = 312;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [height,489,18,24]; @symbol_type<0> = [Number,489,28,34]; ]
+            const height as Number = 215;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 492; @symbol_moduledef = [system_loc__hint_button_right_top,492,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 492; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [x,493,18,19]; @symbol_type<0> = [Number,493,23,29]; ]
+            const x as Number = 319;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [y,494,18,19]; @symbol_type<0> = [Number,494,23,29]; ]
+            const y as Number = 72;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 497; @symbol_moduledef = [system_color_light__text,497,15,39]; ]
+        module system_color_light__text {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 497; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 499 18 ]
+                symbol [ Graphics %tmp.59 499 31 39 ];
+                %tmp.59 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.60 499 40 57 ];
+                %tmp.60 = getv %tmp.59 :COLOR_TRANSPARENT;
+                putv self :background %tmp.60;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [color,498,18,23]; @symbol_type<0> = [Number,498,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [background,499,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 502; @symbol_moduledef = [system_icon_light__check,502,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 502; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [filename,503,18,26]; @symbol_type<0> = [String,503,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__check.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [compress,504,18,26]; @symbol_type<0> = [String,504,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [dithering,505,18,27]; @symbol_type<0> = [String,505,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [automaticPalette,506,18,34]; @symbol_type<0> = [String,506,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 509; @symbol_moduledef = [confirmation_input__reject,509,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 509; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [y1,510,18,20]; @symbol_type<0> = [Number,510,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [x1,511,18,20]; @symbol_type<0> = [Number,511,24,30]; ]
+            const x1 as Number = 97;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [y2,512,18,20]; @symbol_type<0> = [Number,512,24,30]; ]
+            const y2 as Number = 76;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [x2,513,18,20]; @symbol_type<0> = [Number,513,24,30]; ]
+            const x2 as Number = 293;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 516; @symbol_moduledef = [system_icon_light__revert,516,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 516; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 517; @position = 18; @symbol_constdef = [filename,517,18,26]; @symbol_type<0> = [String,517,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__revert.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [compress,518,18,26]; @symbol_type<0> = [String,518,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 519; @position = 18; @symbol_constdef = [dithering,519,18,27]; @symbol_type<0> = [String,519,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [automaticPalette,520,18,34]; @symbol_type<0> = [String,520,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 523; @symbol_moduledef = [system_size__subwindow,523,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [exclude,524,18,25]; @symbol_type<0> = [Boolean,524,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 527; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,527,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 527; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [exclude,528,18,25]; @symbol_type<0> = [Boolean,528,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 531; @symbol_moduledef = [system_icon_dark__check,531,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 531; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 532; @position = 18; @symbol_constdef = [filename,532,18,26]; @symbol_type<0> = [String,532,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__check.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [compress,533,18,26]; @symbol_type<0> = [String,533,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [dithering,534,18,27]; @symbol_type<0> = [String,534,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [automaticPalette,535,18,34]; @symbol_type<0> = [String,535,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 538; @symbol_moduledef = [confirmation_loc__hint_keep,538,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 538; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [x,539,18,19]; @symbol_type<0> = [Number,539,23,29]; ]
+            const x as Number = 322;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [y,540,18,19]; @symbol_type<0> = [Number,540,23,29]; ]
+            const y as Number = 258;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 543; @symbol_moduledef = [confirmation_loc__hint_delete,543,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 543; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [x,544,18,19]; @symbol_type<0> = [Number,544,23,29]; ]
+            const x as Number = 319;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [y,545,18,19]; @symbol_type<0> = [Number,545,23,29]; ]
+            const y as Number = 72;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 548; @symbol_moduledef = [system_icon_positive__hint_action_menu,548,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 548; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [exclude,549,18,25]; @symbol_type<0> = [Boolean,549,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 552; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,552,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 552; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [exclude,553,18,25]; @symbol_type<0> = [Boolean,553,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 556; @symbol_moduledef = [system_icon_light__hint_button_left_middle,556,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 556; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 557; @position = 18; @symbol_constdef = [exclude,557,18,25]; @symbol_type<0> = [Boolean,557,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 560; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,560,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 560; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [filename,561,18,26]; @symbol_type<0> = [String,561,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [dithering,562,18,27]; @symbol_type<0> = [String,562,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [packingFormat,563,18,31]; @symbol_type<0> = [String,563,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 566; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,566,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 566; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [filename,567,18,26]; @symbol_type<0> = [String,567,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [dithering,568,18,27]; @symbol_type<0> = [String,568,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [packingFormat,569,18,31]; @symbol_type<0> = [String,569,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 572; @symbol_moduledef = [system_icon_dark__revert,572,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 572; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [filename,573,18,26]; @symbol_type<0> = [String,573,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__revert.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [compress,574,18,26]; @symbol_type<0> = [String,574,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [dithering,575,18,27]; @symbol_type<0> = [String,575,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [automaticPalette,576,18,34]; @symbol_type<0> = [String,576,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 579; @symbol_moduledef = [confirmation_icon_light__hint_delete,579,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 579; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [filename,580,18,26]; @symbol_type<0> = [String,580,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 581; @position = 18; @symbol_constdef = [dithering,581,18,27]; @symbol_type<0> = [String,581,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [packingFormat,582,18,31]; @symbol_type<0> = [String,582,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 585; @symbol_moduledef = [system_icon_dark__question,585,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 585; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [filename,586,18,26]; @symbol_type<0> = [String,586,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__question.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [compress,587,18,26]; @symbol_type<0> = [String,587,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [dithering,588,18,27]; @symbol_type<0> = [String,588,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [automaticPalette,589,18,34]; @symbol_type<0> = [String,589,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 592; @symbol_moduledef = [system_icon_light__discard,592,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 592; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [filename,593,18,26]; @symbol_type<0> = [String,593,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__discard.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [compress,594,18,26]; @symbol_type<0> = [String,594,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 595; @position = 18; @symbol_constdef = [dithering,595,18,27]; @symbol_type<0> = [String,595,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [automaticPalette,596,18,34]; @symbol_type<0> = [String,596,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 599; @symbol_moduledef = [device_info,599,15,26]; ]
+        module device_info {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 599; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 601 18 ]
+                symbol [ Toybox %tmp.62 601 32 38 ];
+                %tmp.62 = getv ? :Toybox;
+                symbol [ System %tmp.63 601 39 45 ];
+                %tmp.63 = getv %tmp.62 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.64 601 46 64 ];
+                %tmp.64 = getv %tmp.63 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.64;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [screenWidth,600,18,29]; @symbol_type<0> = [Number,600,33,39]; ]
+            const screenWidth as Number = 390;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [screenShape,601,18,29]; ]
+            const screenShape;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [hasNightMode,602,18,30]; @symbol_type<0> = [Boolean,602,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 603; @position = 18; @symbol_constdef = [hasGpu,603,18,24]; @symbol_type<0> = [Boolean,603,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [screenHeight,604,18,30]; @symbol_type<0> = [Number,604,34,40]; ]
+            const screenHeight as Number = 390;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [hasTouchScreen,605,18,32]; @symbol_type<0> = [Boolean,605,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,606,18,44]; @symbol_type<0> = [Boolean,606,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 609; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,609,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 609; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 610; @position = 18; @symbol_constdef = [filename,610,18,26]; @symbol_type<0> = [String,610,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [dithering,611,18,27]; @symbol_type<0> = [String,611,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [packingFormat,612,18,31]; @symbol_type<0> = [String,612,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 615; @symbol_moduledef = [prompt_font__body_no_title,615,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 615; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 616 18 ]
+                symbol [ Graphics %tmp.65 616 34 42 ];
+                %tmp.65 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.66 616 43 62 ];
+                %tmp.66 = getv %tmp.65 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.67 616 63 71 ];
+                %tmp.67 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.68 616 72 92 ];
+                %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_VCENTER;
+                %tmp.69 = bitor %tmp.66 %tmp.68;
+                putv self :justification %tmp.69;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 617 18 ]
+                symbol [ Graphics %tmp.70 617 25 33 ];
+                %tmp.70 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.71 617 34 43 ];
+                %tmp.71 = getv %tmp.70 :FONT_TINY;
+                putv self :font %tmp.71;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [justification,616,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [font,617,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 620; @symbol_moduledef = [prompt_size__title_icon,620,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 620; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [scaleX,621,18,24]; @symbol_type<0> = [Float,621,28,33]; ]
+            const scaleX as Float = 0.12;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [scaleRelativeTo,622,18,33]; @symbol_type<0> = [String,622,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 625; @symbol_moduledef = [system_icon_dark__warning,625,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [filename,626,18,26]; @symbol_type<0> = [String,626,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_dark__warning.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [compress,627,18,26]; @symbol_type<0> = [String,627,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [dithering,628,18,27]; @symbol_type<0> = [String,628,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [automaticPalette,629,18,34]; @symbol_type<0> = [String,629,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 632; @symbol_moduledef = [prompt_loc__title_icon,632,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 632; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [x,633,18,19]; @symbol_type<0> = [Number,633,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [y,634,18,19]; @symbol_type<0> = [Number,634,23,29]; ]
+            const y as Number = 39;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [horizontalJustification,635,18,41]; @symbol_type<0> = [String,635,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [verticalJustification,636,18,39]; @symbol_type<0> = [String,636,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 639; @symbol_moduledef = [prompt_font_enhanced_readability__title,639,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 639; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 640 18 ]
+                symbol [ Graphics %tmp.72 640 34 42 ];
+                %tmp.72 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.73 640 43 62 ];
+                %tmp.73 = getv %tmp.72 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.74 640 63 71 ];
+                %tmp.74 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.75 640 72 92 ];
+                %tmp.75 = getv %tmp.74 :TEXT_JUSTIFY_VCENTER;
+                %tmp.76 = bitor %tmp.73 %tmp.75;
+                putv self :justification %tmp.76;
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 641 18 ]
+                symbol [ Graphics %tmp.77 641 25 33 ];
+                %tmp.77 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.78 641 34 43 ];
+                %tmp.78 = getv %tmp.77 :FONT_TINY;
+                putv self :font %tmp.78;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [justification,640,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [font,641,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 644; @symbol_moduledef = [prompt_color_dark__body,644,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 644; ]
+            <init> {
+[ "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen" 646 18 ]
+                symbol [ Graphics %tmp.79 646 31 39 ];
+                %tmp.79 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.80 646 40 57 ];
+                %tmp.80 = getv %tmp.79 :COLOR_TRANSPARENT;
+                putv self :background %tmp.80;
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [color,645,18,23]; @symbol_type<0> = [Number,645,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [background,646,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 649; @symbol_moduledef = [confirmation_icon__hint_delete,649,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 649; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [filename,650,18,26]; @symbol_type<0> = [String,650,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [dithering,651,18,27]; @symbol_type<0> = [String,651,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [packingFormat,652,18,31]; @symbol_type<0> = [String,652,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 655; @symbol_moduledef = [system_icon_light__hint_button_right_top,655,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 655; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 656; @position = 18; @symbol_constdef = [filename,656,18,26]; @symbol_type<0> = [String,656,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 657; @position = 18; @symbol_constdef = [dithering,657,18,27]; @symbol_type<0> = [String,657,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [packingFormat,658,18,31]; @symbol_type<0> = [String,658,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 661; @symbol_moduledef = [confirmation_size__body,661,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 661; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [width,662,18,23]; @symbol_type<0> = [Number,662,27,33]; ]
+            const width as Number = 231;
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [height,663,18,24]; @symbol_type<0> = [Number,663,28,34]; ]
+            const height as Number = 234;
+        }
+        [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 666; @symbol_moduledef = [system_icon_positive__check,666,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 666; ]
+            <init> {
+            }
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [filename,667,18,26]; @symbol_type<0> = [String,667,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\vivoactive6\\system_icon_positive__check.svg";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [dithering,668,18,27]; @symbol_type<0> = [String,668,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [packingFormat,669,18,31]; @symbol_type<0> = [String,669,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "c:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\bin\gen\006-B4625-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

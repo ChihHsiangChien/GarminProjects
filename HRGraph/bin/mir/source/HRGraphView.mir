@@ -1,0 +1,1049 @@
+[ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Activity,3,14,22]; ]
+import Toybox.Activity;
+[ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 6; @symbol_classdef = [HRGraphView,6,6,17]; @symbol_extends<0> = [WatchUi,6,26,33]; @symbol_extends<1> = [DataField,6,34,43]; ]
+class HRGraphView extends WatchUi.DataField {
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 6; ]
+    <init> {
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 8 16 ]
+        %tmp.1 = newa 0;
+        putv self :hrHistory %tmp.1;
+    }
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 8; @position = 16; @symbol_vardef = [hrHistory,8,16,25]; @symbol_type<0> = [Array,8,29,34]; @symbol_type<1> = [Number,8,35,41]; ]
+    private
+    var hrHistory as Array<Number>;
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 9; @position = 16; @symbol_vardef = [maxPoints,9,16,25]; ]
+    private
+    var maxPoints = 60;
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 10; @position = 16; @symbol_vardef = [lastHR,10,16,22]; ]
+    private
+    var lastHR = 0;
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 12; @symbol_functiondef = [initialize,12,13,23]; ]
+    function initialize() as Void {
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_12_26_14_4_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 13 8 ]
+        symbol [ DataField %tmp.2 13 8 17 ];
+        %tmp.2 = getv ? :DataField;
+        symbol [ initialize %tmp.3 13 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_12_26_14_4_stop:
+    }
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 17; @symbol_functiondef = [compute,17,13,20]; @symbol_param<0> = [info,17,21,25]; @symbol_param<0>_type<0> = [Activity,17,29,37]; @symbol_param<0>_type<1> = [Info,17,38,42]; ]
+    function compute(info as Activity.Info) as Void {
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_17_52_30_4_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 18 8 ]
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_8_29_8_if_stmt:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_12_18_53_begin:
+        %tmp.1 = lgetv %info;
+        symbol [ info %tmp.1 18 12 16 ];
+        %tmp.2 = null;
+        %tmp.3 = ne %tmp.1 %tmp.2;
+        bf %tmp.3 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_8_29_8_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_28_18_53_true:
+        %tmp.4 = lgetv %info;
+        symbol [ info %tmp.4 18 28 32 ];
+        %tmp.5 = as %tmp.4 { (!Null) };
+        symbol [ currentHeartRate %tmp.6 18 33 49 ];
+        %tmp.6 = getv %tmp.5 :currentHeartRate;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        push %tmp.8;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_28_18_53_end:
+        %tmp.9 = phi [%tmp.3 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_12_18_53_begin] [%tmp.8 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_28_18_53_true] [%tmp.9 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_28_18_53_end];
+        bf %tmp.9 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_8_29_8_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_8_29_8_if_true:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_59_29_8_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 19 12 ]
+        %tmp.10 = lgetv %info;
+        symbol [ info %tmp.10 19 21 25 ];
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ currentHeartRate %tmp.12 19 26 42 ];
+        %tmp.12 = getv %tmp.11 :currentHeartRate;
+        symbol [ lastHR ? 19 12 18 ];
+        putv self :lastHR %tmp.12;
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 20 12 ]
+        symbol [ hrHistory %tmp.14 20 12 21 ];
+        %tmp.14 = getv ? :hrHistory;
+        symbol [ add %tmp.15 20 22 25 ];
+        %tmp.15 = getv function %tmp.14 :add;
+        symbol [ lastHR %tmp.17 20 26 32 ];
+        %tmp.17 = getv ? :lastHR;
+        invoke %tmp.14 %tmp.15(%tmp.17);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 24 12 ]
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_24_12_26_12_if_stmt:
+        symbol [ hrHistory %tmp.19 24 16 25 ];
+        %tmp.19 = getv ? :hrHistory;
+        symbol [ size %tmp.20 24 26 30 ];
+        %tmp.20 = getv function %tmp.19 :size;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        symbol [ maxPoints %tmp.23 24 35 44 ];
+        %tmp.23 = getv ? :maxPoints;
+        %tmp.24 = gt %tmp.21 %tmp.23;
+        bf %tmp.24 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_24_12_26_12_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_24_12_26_12_if_true:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_24_46_26_12_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 25 16 ]
+        symbol [ hrHistory %tmp.26 25 16 25 ];
+        %tmp.26 = getv ? :hrHistory;
+        symbol [ remove %tmp.27 25 26 32 ];
+        %tmp.27 = getv function %tmp.26 :remove;
+        %tmp.28 = 0;
+        invoke %tmp.26 %tmp.27(%tmp.28);
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_24_46_26_12_stop:
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_24_12_26_12_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_24_12_26_12_if_end:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_59_29_8_stop:
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_8_29_8_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_18_8_29_8_if_end:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_17_52_30_4_stop:
+    }
+    [ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 31; @symbol_functiondef = [onUpdate,31,13,21]; @symbol_param<0> = [dc,31,22,24]; @symbol_param<0>_type<0> = [Dc,31,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 32 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %screenWidth.1 = local;
+        symbol [ screenWidth %screenWidth.1 32 12 23 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 32 26 28 ];
+        symbol [ getWidth %tmp.2 32 29 37 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %screenWidth.1 %tmp.3;
+        symbol [ screenWidth %screenWidth.1 32 12 23 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 33 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %screenHeight.2 = local;
+        symbol [ screenHeight %screenHeight.2 33 12 24 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 33 27 29 ];
+        symbol [ getHeight %tmp.5 33 30 39 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %screenHeight.2 %tmp.6;
+        symbol [ screenHeight %screenHeight.2 33 12 24 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 35 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %sideMargin.3 = local;
+        symbol [ sideMargin %sideMargin.3 35 12 22 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_begin:
+        %tmp.7 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.7 35 26 37 ];
+        %tmp.8 = 60;
+        %tmp.9 = gte %tmp.7 %tmp.8;
+        bf %tmp.9 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_else_false;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_true:
+        %tmp.10 = 30;
+        push %tmp.10;
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_else_false:
+        %tmp.11 = 25;
+        push %tmp.11;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_end:
+        %tmp.12 = phi [%tmp.9 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_begin] [%tmp.10 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_true] [%tmp.11 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_else_false] [%tmp.12 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_35_25_35_52_end];
+        lputv %sideMargin.3 %tmp.12;
+        symbol [ sideMargin %sideMargin.3 35 12 22 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 36 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %rectWidth.4 = local;
+        symbol [ rectWidth %rectWidth.4 36 12 21 ];
+        %tmp.13 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.13 36 24 35 ];
+        %tmp.14 = lgetv %sideMargin.3;
+        symbol [ sideMargin %tmp.14 36 38 48 ];
+        %tmp.15 = 2;
+        %tmp.16 = mul %tmp.14 %tmp.15;
+        %tmp.17 = sub %tmp.13 %tmp.16;
+        lputv %rectWidth.4 %tmp.17;
+        symbol [ rectWidth %rectWidth.4 36 12 21 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 37 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %offsetX.5 = local;
+        symbol [ offsetX %offsetX.5 37 12 19 ];
+        %tmp.18 = lgetv %sideMargin.3;
+        symbol [ sideMargin %tmp.18 37 22 32 ];
+        lputv %offsetX.5 %tmp.18;
+        symbol [ offsetX %offsetX.5 37 12 19 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 39 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %rectHeight.6 = local;
+        symbol [ rectHeight %rectHeight.6 39 12 22 ];
+        %tmp.19 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.19 39 25 37 ];
+        %tmp.20 = 0.4;
+        %tmp.21 = mul %tmp.19 %tmp.20;
+        lputv %rectHeight.6 %tmp.21;
+        symbol [ rectHeight %rectHeight.6 39 12 22 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 40 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %offsetY.7 = local;
+        symbol [ offsetY %offsetY.7 40 12 19 ];
+        %tmp.22 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.22 40 22 34 ];
+        %tmp.23 = 0.3;
+        %tmp.24 = mul %tmp.22 %tmp.23;
+        lputv %offsetY.7 %tmp.24;
+        symbol [ offsetY %offsetY.7 40 12 19 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 42 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 42 8 10 ];
+        symbol [ setColor %tmp.26 42 11 19 ];
+        %tmp.26 = getv function %tmp.25 :setColor;
+        symbol [ Graphics %tmp.27 42 20 28 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.28 42 29 40 ];
+        %tmp.28 = getv %tmp.27 :COLOR_BLACK;
+        symbol [ Graphics %tmp.29 42 42 50 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.30 42 51 62 ];
+        %tmp.30 = getv %tmp.29 :COLOR_BLACK;
+        invoke %tmp.25 %tmp.26(%tmp.28, %tmp.30);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 43 8 ]
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 43 8 10 ];
+        symbol [ clear %tmp.32 43 11 16 ];
+        %tmp.32 = getv function %tmp.31 :clear;
+        invoke %tmp.31 %tmp.32();
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 45 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %size.8 = local;
+        symbol [ size %size.8 45 12 16 ];
+        symbol [ hrHistory %tmp.34 45 19 28 ];
+        %tmp.34 = getv ? :hrHistory;
+        symbol [ size %tmp.35 45 29 33 ];
+        %tmp.35 = getv function %tmp.34 :size;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        lputv %size.8 %tmp.36;
+        symbol [ size %size.8 45 12 16 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 46 8 ]
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_46_8_50_8_if_stmt:
+        %tmp.37 = lgetv %size.8;
+        symbol [ size %tmp.37 46 12 16 ];
+        %tmp.38 = 2;
+        %tmp.39 = lt %tmp.37 %tmp.38;
+        bf %tmp.39 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_46_8_50_8_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_46_8_50_8_if_true:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_46_22_50_8_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 47 12 ]
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 47 12 14 ];
+        symbol [ setColor %tmp.41 47 15 23 ];
+        %tmp.41 = getv function %tmp.40 :setColor;
+        symbol [ Graphics %tmp.42 47 24 32 ];
+        %tmp.42 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.43 47 33 44 ];
+        %tmp.43 = getv %tmp.42 :COLOR_WHITE;
+        symbol [ Graphics %tmp.44 47 46 54 ];
+        %tmp.44 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.45 47 55 72 ];
+        %tmp.45 = getv %tmp.44 :COLOR_TRANSPARENT;
+        invoke %tmp.40 %tmp.41(%tmp.43, %tmp.45);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 48 12 ]
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 48 12 14 ];
+        symbol [ drawText %tmp.47 48 15 23 ];
+        %tmp.47 = getv function %tmp.46 :drawText;
+        %tmp.48 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.48 48 24 35 ];
+        %tmp.49 = 2;
+        %tmp.50 = div %tmp.48 %tmp.49;
+        %tmp.51 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.51 48 39 51 ];
+        %tmp.52 = 2;
+        %tmp.53 = div %tmp.51 %tmp.52;
+        symbol [ Graphics %tmp.54 48 55 63 ];
+        %tmp.54 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.55 48 64 74 ];
+        %tmp.55 = getv %tmp.54 :FONT_SMALL;
+        %tmp.56 = "Collecting data...";
+        symbol [ Graphics %tmp.57 48 98 106 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.58 48 107 126 ];
+        %tmp.58 = getv %tmp.57 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.46 %tmp.47(%tmp.50, %tmp.53, %tmp.55, %tmp.56, %tmp.58);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 49 12 ]
+        ret ?;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_46_22_50_8_stop:
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_46_8_50_8_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_46_8_50_8_if_end:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 53 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %minHR.9 = local;
+        symbol [ minHR %minHR.9 53 12 17 ];
+        %tmp.59 = 255;
+        lputv %minHR.9 %tmp.59;
+        symbol [ minHR %minHR.9 53 12 17 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 54 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %maxHR.10 = local;
+        symbol [ maxHR %maxHR.10 54 12 17 ];
+        %tmp.60 = 0;
+        lputv %maxHR.10 %tmp.60;
+        symbol [ maxHR %maxHR.10 54 12 17 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 55 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %points.11 = local;
+        symbol [ points %points.11 55 12 18 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_begin:
+        %tmp.61 = lgetv %size.8;
+        symbol [ size %tmp.61 55 22 26 ];
+        symbol [ maxPoints %tmp.63 55 29 38 ];
+        %tmp.63 = getv ? :maxPoints;
+        %tmp.64 = lt %tmp.61 %tmp.63;
+        bf %tmp.64 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_else_false;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_true:
+        %tmp.65 = lgetv %size.8;
+        symbol [ size %tmp.65 55 42 46 ];
+        push %tmp.65;
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_else_false:
+        symbol [ maxPoints %tmp.67 55 49 58 ];
+        %tmp.67 = getv ? :maxPoints;
+        push %tmp.67;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_end:
+        %tmp.68 = phi [%tmp.64 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_begin] [%tmp.65 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_true] [%tmp.67 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_else_false] [%tmp.68 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_55_21_55_49_end];
+        lputv %points.11 %tmp.68;
+        symbol [ points %points.11 55 12 18 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 56 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %start.12 = local;
+        symbol [ start %start.12 56 12 17 ];
+        %tmp.69 = lgetv %size.8;
+        symbol [ size %tmp.69 56 20 24 ];
+        %tmp.70 = lgetv %points.11;
+        symbol [ points %tmp.70 56 27 33 ];
+        %tmp.71 = sub %tmp.69 %tmp.70;
+        lputv %start.12 %tmp.71;
+        symbol [ start %start.12 56 12 17 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 57 8 ]
+        for @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_test @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_incr @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_init:
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_begin" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_end" ]
+        %i.13 = local;
+        symbol [ i %i.13 57 17 18 ];
+        %tmp.72 = lgetv %start.12;
+        symbol [ start %tmp.72 57 21 26 ];
+        lputv %i.13 %tmp.72;
+        symbol [ i %i.13 57 17 18 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_test:
+        %tmp.73 = lgetv %i.13;
+        symbol [ i %tmp.73 57 28 29 ];
+        %tmp.74 = lgetv %size.8;
+        symbol [ size %tmp.74 57 32 36 ];
+        %tmp.75 = lt %tmp.73 %tmp.74;
+        bf %tmp.75 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_begin:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_43_60_8_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 58 12 ]
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_58_12_58_62_if_stmt:
+        symbol [ hrHistory %tmp.77 58 16 25 ];
+        %tmp.77 = getv ? :hrHistory;
+        %tmp.78 = lgetv %i.13;
+        symbol [ i %tmp.78 58 26 27 ];
+        %tmp.79 = agetv %tmp.77 %tmp.78;
+        %tmp.80 = lgetv %maxHR.10;
+        symbol [ maxHR %tmp.80 58 31 36 ];
+        %tmp.81 = gt %tmp.79 %tmp.80;
+        bf %tmp.81 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_58_12_58_62_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_58_12_58_62_if_true:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_58_38_58_62_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 58 40 ]
+        symbol [ hrHistory %tmp.83 58 48 57 ];
+        %tmp.83 = getv ? :hrHistory;
+        %tmp.84 = lgetv %i.13;
+        symbol [ i %tmp.84 58 58 59 ];
+        %tmp.85 = agetv %tmp.83 %tmp.84;
+        lputv %maxHR.10 %tmp.85;
+        symbol [ maxHR %maxHR.10 58 40 45 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_58_38_58_62_stop:
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_58_12_58_62_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_58_12_58_62_if_end:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 59 12 ]
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_59_12_59_62_if_stmt:
+        symbol [ hrHistory %tmp.87 59 16 25 ];
+        %tmp.87 = getv ? :hrHistory;
+        %tmp.88 = lgetv %i.13;
+        symbol [ i %tmp.88 59 26 27 ];
+        %tmp.89 = agetv %tmp.87 %tmp.88;
+        %tmp.90 = lgetv %minHR.9;
+        symbol [ minHR %tmp.90 59 31 36 ];
+        %tmp.91 = lt %tmp.89 %tmp.90;
+        bf %tmp.91 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_59_12_59_62_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_59_12_59_62_if_true:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_59_38_59_62_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 59 40 ]
+        symbol [ hrHistory %tmp.93 59 48 57 ];
+        %tmp.93 = getv ? :hrHistory;
+        %tmp.94 = lgetv %i.13;
+        symbol [ i %tmp.94 59 58 59 ];
+        %tmp.95 = agetv %tmp.93 %tmp.94;
+        lputv %minHR.9 %tmp.95;
+        symbol [ minHR %minHR.9 59 40 45 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_59_38_59_62_stop:
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_59_12_59_62_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_59_12_59_62_if_end:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_43_60_8_stop:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_incr:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 57 ]
+        %tmp.98 = lgetv %i.13;
+        symbol [ i %tmp.98 57 38 39 ];
+        %tmp.99 = add %tmp.98 1;
+        lputv %i.13 %tmp.99;
+        symbol [ i %i.13 57 38 39 ];
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_test;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_57_8_60_8_for_end:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 62 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %origMinHR.14 = local;
+        symbol [ origMinHR %origMinHR.14 62 12 21 ];
+        %tmp.100 = lgetv %minHR.9;
+        symbol [ minHR %tmp.100 62 24 29 ];
+        lputv %origMinHR.14 %tmp.100;
+        symbol [ origMinHR %origMinHR.14 62 12 21 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 63 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %origMaxHR.15 = local;
+        symbol [ origMaxHR %origMaxHR.15 63 12 21 ];
+        %tmp.101 = lgetv %maxHR.10;
+        symbol [ maxHR %tmp.101 63 24 29 ];
+        lputv %origMaxHR.15 %tmp.101;
+        symbol [ origMaxHR %origMaxHR.15 63 12 21 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 65 8 ]
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_8_69_8_if_stmt:
+        %tmp.102 = lgetv %maxHR.10;
+        symbol [ maxHR %tmp.102 65 13 18 ];
+        %tmp.103 = lgetv %minHR.9;
+        symbol [ minHR %tmp.103 65 21 26 ];
+        %tmp.104 = sub %tmp.102 %tmp.103;
+        %tmp.105 = 10;
+        %tmp.106 = lt %tmp.104 %tmp.105;
+        bf %tmp.106 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_8_69_8_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_8_69_8_if_true:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_34_69_8_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 66 12 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_34_69_8_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_34_69_8_stop" ]
+        %mid.16 = local;
+        symbol [ mid %mid.16 66 16 19 ];
+        %tmp.107 = lgetv %maxHR.10;
+        symbol [ maxHR %tmp.107 66 23 28 ];
+        %tmp.108 = lgetv %minHR.9;
+        symbol [ minHR %tmp.108 66 31 36 ];
+        %tmp.109 = add %tmp.107 %tmp.108;
+        %tmp.110 = 2.0;
+        %tmp.111 = div %tmp.109 %tmp.110;
+        lputv %mid.16 %tmp.111;
+        symbol [ mid %mid.16 66 16 19 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 67 12 ]
+        %tmp.112 = lgetv %mid.16;
+        symbol [ mid %tmp.112 67 20 23 ];
+        %tmp.113 = 5;
+        %tmp.114 = sub %tmp.112 %tmp.113;
+        lputv %minHR.9 %tmp.114;
+        symbol [ minHR %minHR.9 67 12 17 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 68 12 ]
+        %tmp.115 = lgetv %mid.16;
+        symbol [ mid %tmp.115 68 20 23 ];
+        %tmp.116 = 5;
+        %tmp.117 = add %tmp.115 %tmp.116;
+        lputv %maxHR.10 %tmp.117;
+        symbol [ maxHR %maxHR.10 68 12 17 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_34_69_8_stop:
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_8_69_8_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_65_8_69_8_if_end:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 72 8 ]
+        %tmp.118 = lgetv %dc;
+        symbol [ dc %tmp.118 72 8 10 ];
+        symbol [ setAntiAlias %tmp.119 72 11 23 ];
+        %tmp.119 = getv function %tmp.118 :setAntiAlias;
+        %tmp.120 = true;
+        invoke %tmp.118 %tmp.119(%tmp.120);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 74 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %lineColor.17 = local;
+        symbol [ lineColor %lineColor.17 74 12 21 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_begin:
+        symbol [ lastHR %tmp.122 74 25 31 ];
+        %tmp.122 = getv ? :lastHR;
+        %tmp.123 = 150;
+        %tmp.124 = gt %tmp.122 %tmp.123;
+        bf %tmp.124 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_else_false;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_true:
+        symbol [ Graphics %tmp.125 74 41 49 ];
+        %tmp.125 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.126 74 50 59 ];
+        %tmp.126 = getv %tmp.125 :COLOR_RED;
+        push %tmp.126;
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_else_false:
+        symbol [ Graphics %tmp.127 74 62 70 ];
+        %tmp.127 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.128 74 71 82 ];
+        %tmp.128 = getv %tmp.127 :COLOR_GREEN;
+        push %tmp.128;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_end:
+        %tmp.129 = phi [%tmp.124 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_begin] [%tmp.126 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_true] [%tmp.128 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_else_false] [%tmp.129 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_74_24_74_71_end];
+        lputv %lineColor.17 %tmp.129;
+        symbol [ lineColor %lineColor.17 74 12 21 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 75 8 ]
+        %tmp.130 = lgetv %dc;
+        symbol [ dc %tmp.130 75 8 10 ];
+        symbol [ setColor %tmp.131 75 11 19 ];
+        %tmp.131 = getv function %tmp.130 :setColor;
+        %tmp.132 = lgetv %lineColor.17;
+        symbol [ lineColor %tmp.132 75 20 29 ];
+        symbol [ Graphics %tmp.133 75 31 39 ];
+        %tmp.133 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.134 75 40 57 ];
+        %tmp.134 = getv %tmp.133 :COLOR_TRANSPARENT;
+        invoke %tmp.130 %tmp.131(%tmp.132, %tmp.134);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 78 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %xStep.18 = local;
+        symbol [ xStep %xStep.18 78 12 17 ];
+        %tmp.135 = lgetv %rectWidth.4;
+        symbol [ rectWidth %tmp.135 78 20 29 ];
+        symbol [ toFloat %tmp.136 78 30 37 ];
+        %tmp.136 = getv function %tmp.135 :toFloat;
+        %tmp.137 = invoke %tmp.135 %tmp.136();
+        symbol [ maxPoints %tmp.139 78 43 52 ];
+        %tmp.139 = getv ? :maxPoints;
+        %tmp.140 = 1;
+        %tmp.141 = sub %tmp.139 %tmp.140;
+        %tmp.142 = div %tmp.137 %tmp.141;
+        lputv %xStep.18 %tmp.142;
+        symbol [ xStep %xStep.18 78 12 17 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 80 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %xStart.19 = local;
+        symbol [ xStart %xStart.19 80 12 18 ];
+        %tmp.143 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.143 80 21 28 ];
+        %tmp.144 = lgetv %rectWidth.4;
+        symbol [ rectWidth %tmp.144 80 31 40 ];
+        %tmp.145 = add %tmp.143 %tmp.144;
+        %tmp.146 = lgetv %xStep.18;
+        symbol [ xStep %tmp.146 80 43 48 ];
+        %tmp.147 = lgetv %points.11;
+        symbol [ points %tmp.147 80 52 58 ];
+        %tmp.148 = 1;
+        %tmp.149 = sub %tmp.147 %tmp.148;
+        %tmp.150 = mul %tmp.146 %tmp.149;
+        %tmp.151 = sub %tmp.145 %tmp.150;
+        lputv %xStart.19 %tmp.151;
+        symbol [ xStart %xStart.19 80 12 18 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 81 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %topPadding.20 = local;
+        symbol [ topPadding %topPadding.20 81 12 22 ];
+        %tmp.152 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.152 81 25 35 ];
+        %tmp.153 = 0.10;
+        %tmp.154 = mul %tmp.152 %tmp.153;
+        lputv %topPadding.20 %tmp.154;
+        symbol [ topPadding %topPadding.20 81 12 22 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 82 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %bottomPadding.21 = local;
+        symbol [ bottomPadding %bottomPadding.21 82 12 25 ];
+        %tmp.155 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.155 82 28 38 ];
+        %tmp.156 = 0.10;
+        %tmp.157 = mul %tmp.155 %tmp.156;
+        lputv %bottomPadding.21 %tmp.157;
+        symbol [ bottomPadding %bottomPadding.21 82 12 25 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 83 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %chartHeight.22 = local;
+        symbol [ chartHeight %chartHeight.22 83 12 23 ];
+        %tmp.158 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.158 83 26 36 ];
+        %tmp.159 = lgetv %topPadding.20;
+        symbol [ topPadding %tmp.159 83 40 50 ];
+        %tmp.160 = lgetv %bottomPadding.21;
+        symbol [ bottomPadding %tmp.160 83 53 66 ];
+        %tmp.161 = add %tmp.159 %tmp.160;
+        %tmp.162 = sub %tmp.158 %tmp.161;
+        lputv %chartHeight.22 %tmp.162;
+        symbol [ chartHeight %chartHeight.22 83 12 23 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 86 8 ]
+        %tmp.163 = lgetv %dc;
+        symbol [ dc %tmp.163 86 8 10 ];
+        symbol [ setColor %tmp.164 86 11 19 ];
+        %tmp.164 = getv function %tmp.163 :setColor;
+        symbol [ Graphics %tmp.165 86 20 28 ];
+        %tmp.165 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.166 86 29 40 ];
+        %tmp.166 = getv %tmp.165 :COLOR_WHITE;
+        symbol [ Graphics %tmp.167 86 42 50 ];
+        %tmp.167 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.168 86 51 68 ];
+        %tmp.168 = getv %tmp.167 :COLOR_TRANSPARENT;
+        invoke %tmp.163 %tmp.164(%tmp.166, %tmp.168);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 87 8 ]
+        %tmp.169 = lgetv %dc;
+        symbol [ dc %tmp.169 87 8 10 ];
+        symbol [ setPenWidth %tmp.170 87 11 22 ];
+        %tmp.170 = getv function %tmp.169 :setPenWidth;
+        %tmp.171 = 1;
+        invoke %tmp.169 %tmp.170(%tmp.171);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 89 8 ]
+        %tmp.172 = lgetv %dc;
+        symbol [ dc %tmp.172 89 8 10 ];
+        symbol [ drawLine %tmp.173 89 11 19 ];
+        %tmp.173 = getv function %tmp.172 :drawLine;
+        %tmp.174 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.174 89 20 27 ];
+        %tmp.175 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.175 89 29 36 ];
+        %tmp.176 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.176 89 38 45 ];
+        %tmp.177 = lgetv %rectWidth.4;
+        symbol [ rectWidth %tmp.177 89 48 57 ];
+        %tmp.178 = add %tmp.176 %tmp.177;
+        %tmp.179 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.179 89 59 66 ];
+        invoke %tmp.172 %tmp.173(%tmp.174, %tmp.175, %tmp.178, %tmp.179);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 91 8 ]
+        %tmp.180 = lgetv %dc;
+        symbol [ dc %tmp.180 91 8 10 ];
+        symbol [ drawLine %tmp.181 91 11 19 ];
+        %tmp.181 = getv function %tmp.180 :drawLine;
+        %tmp.182 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.182 91 20 27 ];
+        %tmp.183 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.183 91 29 36 ];
+        %tmp.184 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.184 91 39 49 ];
+        %tmp.185 = add %tmp.183 %tmp.184;
+        %tmp.186 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.186 91 51 58 ];
+        %tmp.187 = lgetv %rectWidth.4;
+        symbol [ rectWidth %tmp.187 91 61 70 ];
+        %tmp.188 = add %tmp.186 %tmp.187;
+        %tmp.189 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.189 91 72 79 ];
+        %tmp.190 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.190 91 82 92 ];
+        %tmp.191 = add %tmp.189 %tmp.190;
+        invoke %tmp.180 %tmp.181(%tmp.182, %tmp.185, %tmp.188, %tmp.191);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 93 8 ]
+        %tmp.192 = lgetv %dc;
+        symbol [ dc %tmp.192 93 8 10 ];
+        symbol [ drawLine %tmp.193 93 11 19 ];
+        %tmp.193 = getv function %tmp.192 :drawLine;
+        %tmp.194 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.194 93 20 27 ];
+        %tmp.195 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.195 93 29 36 ];
+        %tmp.196 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.196 93 38 45 ];
+        %tmp.197 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.197 93 47 54 ];
+        %tmp.198 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.198 93 57 67 ];
+        %tmp.199 = add %tmp.197 %tmp.198;
+        invoke %tmp.192 %tmp.193(%tmp.194, %tmp.195, %tmp.196, %tmp.199);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 95 8 ]
+        %tmp.200 = lgetv %dc;
+        symbol [ dc %tmp.200 95 8 10 ];
+        symbol [ drawLine %tmp.201 95 11 19 ];
+        %tmp.201 = getv function %tmp.200 :drawLine;
+        %tmp.202 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.202 95 20 27 ];
+        %tmp.203 = lgetv %rectWidth.4;
+        symbol [ rectWidth %tmp.203 95 30 39 ];
+        %tmp.204 = add %tmp.202 %tmp.203;
+        %tmp.205 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.205 95 41 48 ];
+        %tmp.206 = lgetv %offsetX.5;
+        symbol [ offsetX %tmp.206 95 50 57 ];
+        %tmp.207 = lgetv %rectWidth.4;
+        symbol [ rectWidth %tmp.207 95 60 69 ];
+        %tmp.208 = add %tmp.206 %tmp.207;
+        %tmp.209 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.209 95 71 78 ];
+        %tmp.210 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.210 95 81 91 ];
+        %tmp.211 = add %tmp.209 %tmp.210;
+        invoke %tmp.200 %tmp.201(%tmp.204, %tmp.205, %tmp.208, %tmp.211);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 99 8 ]
+        %tmp.212 = lgetv %dc;
+        symbol [ dc %tmp.212 99 8 10 ];
+        symbol [ setColor %tmp.213 99 11 19 ];
+        %tmp.213 = getv function %tmp.212 :setColor;
+        %tmp.214 = lgetv %lineColor.17;
+        symbol [ lineColor %tmp.214 99 20 29 ];
+        symbol [ Graphics %tmp.215 99 31 39 ];
+        %tmp.215 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.216 99 40 57 ];
+        %tmp.216 = getv %tmp.215 :COLOR_TRANSPARENT;
+        invoke %tmp.212 %tmp.213(%tmp.214, %tmp.216);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 100 8 ]
+        %tmp.217 = lgetv %dc;
+        symbol [ dc %tmp.217 100 8 10 ];
+        symbol [ setPenWidth %tmp.218 100 11 22 ];
+        %tmp.218 = getv function %tmp.217 :setPenWidth;
+        %tmp.219 = 3;
+        invoke %tmp.217 %tmp.218(%tmp.219);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 101 8 ]
+        for @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_test @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_incr @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_init:
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_begin" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_end" ]
+        %i.23 = local;
+        symbol [ i %i.23 101 17 18 ];
+        %tmp.220 = lgetv %start.12;
+        symbol [ start %tmp.220 101 21 26 ];
+        lputv %i.23 %tmp.220;
+        symbol [ i %i.23 101 17 18 ];
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_test:
+        %tmp.221 = lgetv %i.23;
+        symbol [ i %tmp.221 101 28 29 ];
+        %tmp.222 = lgetv %size.8;
+        symbol [ size %tmp.222 101 32 36 ];
+        %tmp.223 = 1;
+        %tmp.224 = sub %tmp.222 %tmp.223;
+        %tmp.225 = lt %tmp.221 %tmp.224;
+        bf %tmp.225 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_begin:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 102 12 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_stop" ]
+        %idx.24 = local;
+        symbol [ idx %idx.24 102 16 19 ];
+        %tmp.226 = lgetv %i.23;
+        symbol [ i %tmp.226 102 22 23 ];
+        %tmp.227 = lgetv %start.12;
+        symbol [ start %tmp.227 102 26 31 ];
+        %tmp.228 = sub %tmp.226 %tmp.227;
+        lputv %idx.24 %tmp.228;
+        symbol [ idx %idx.24 102 16 19 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 103 12 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_stop" ]
+        %x1.25 = local;
+        symbol [ x1 %x1.25 103 16 18 ];
+        %tmp.229 = lgetv %xStart.19;
+        symbol [ xStart %tmp.229 103 21 27 ];
+        %tmp.230 = lgetv %idx.24;
+        symbol [ idx %tmp.230 103 31 34 ];
+        %tmp.231 = lgetv %xStep.18;
+        symbol [ xStep %tmp.231 103 37 42 ];
+        %tmp.232 = mul %tmp.230 %tmp.231;
+        %tmp.233 = add %tmp.229 %tmp.232;
+        lputv %x1.25 %tmp.233;
+        symbol [ x1 %x1.25 103 16 18 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 104 12 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_stop" ]
+        %x2.26 = local;
+        symbol [ x2 %x2.26 104 16 18 ];
+        %tmp.234 = lgetv %xStart.19;
+        symbol [ xStart %tmp.234 104 21 27 ];
+        %tmp.235 = lgetv %idx.24;
+        symbol [ idx %tmp.235 104 32 35 ];
+        %tmp.236 = 1;
+        %tmp.237 = add %tmp.235 %tmp.236;
+        %tmp.238 = lgetv %xStep.18;
+        symbol [ xStep %tmp.238 104 43 48 ];
+        %tmp.239 = mul %tmp.237 %tmp.238;
+        %tmp.240 = add %tmp.234 %tmp.239;
+        lputv %x2.26 %tmp.240;
+        symbol [ x2 %x2.26 104 16 18 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 106 12 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_stop" ]
+        %y1.27 = local;
+        symbol [ y1 %y1.27 106 16 18 ];
+        %tmp.241 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.241 106 21 28 ];
+        %tmp.242 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.242 106 31 41 ];
+        %tmp.243 = add %tmp.241 %tmp.242;
+        %tmp.244 = lgetv %bottomPadding.21;
+        symbol [ bottomPadding %tmp.244 106 45 58 ];
+        symbol [ hrHistory %tmp.246 106 63 72 ];
+        %tmp.246 = getv ? :hrHistory;
+        %tmp.247 = lgetv %i.23;
+        symbol [ i %tmp.247 106 73 74 ];
+        %tmp.248 = agetv %tmp.246 %tmp.247;
+        %tmp.249 = lgetv %minHR.9;
+        symbol [ minHR %tmp.249 106 78 83 ];
+        %tmp.250 = sub %tmp.248 %tmp.249;
+        symbol [ toFloat %tmp.251 106 85 92 ];
+        %tmp.251 = getv function %tmp.250 :toFloat;
+        %tmp.252 = invoke %tmp.250 %tmp.251();
+        %tmp.253 = lgetv %maxHR.10;
+        symbol [ maxHR %tmp.253 106 98 103 ];
+        %tmp.254 = lgetv %minHR.9;
+        symbol [ minHR %tmp.254 106 106 111 ];
+        %tmp.255 = sub %tmp.253 %tmp.254;
+        %tmp.256 = div %tmp.252 %tmp.255;
+        %tmp.257 = lgetv %chartHeight.22;
+        symbol [ chartHeight %tmp.257 106 115 126 ];
+        %tmp.258 = mul %tmp.256 %tmp.257;
+        %tmp.259 = add %tmp.244 %tmp.258;
+        %tmp.260 = sub %tmp.243 %tmp.259;
+        lputv %y1.27 %tmp.260;
+        symbol [ y1 %y1.27 106 16 18 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 107 12 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_stop" ]
+        %y2.28 = local;
+        symbol [ y2 %y2.28 107 16 18 ];
+        %tmp.261 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.261 107 21 28 ];
+        %tmp.262 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.262 107 31 41 ];
+        %tmp.263 = add %tmp.261 %tmp.262;
+        %tmp.264 = lgetv %bottomPadding.21;
+        symbol [ bottomPadding %tmp.264 107 45 58 ];
+        symbol [ hrHistory %tmp.266 107 63 72 ];
+        %tmp.266 = getv ? :hrHistory;
+        %tmp.267 = lgetv %i.23;
+        symbol [ i %tmp.267 107 73 74 ];
+        %tmp.268 = 1;
+        %tmp.269 = add %tmp.267 %tmp.268;
+        %tmp.270 = agetv %tmp.266 %tmp.269;
+        %tmp.271 = lgetv %minHR.9;
+        symbol [ minHR %tmp.271 107 80 85 ];
+        %tmp.272 = sub %tmp.270 %tmp.271;
+        symbol [ toFloat %tmp.273 107 87 94 ];
+        %tmp.273 = getv function %tmp.272 :toFloat;
+        %tmp.274 = invoke %tmp.272 %tmp.273();
+        %tmp.275 = lgetv %maxHR.10;
+        symbol [ maxHR %tmp.275 107 100 105 ];
+        %tmp.276 = lgetv %minHR.9;
+        symbol [ minHR %tmp.276 107 108 113 ];
+        %tmp.277 = sub %tmp.275 %tmp.276;
+        %tmp.278 = div %tmp.274 %tmp.277;
+        %tmp.279 = lgetv %chartHeight.22;
+        symbol [ chartHeight %tmp.279 107 117 128 ];
+        %tmp.280 = mul %tmp.278 %tmp.279;
+        %tmp.281 = add %tmp.264 %tmp.280;
+        %tmp.282 = sub %tmp.263 %tmp.281;
+        lputv %y2.28 %tmp.282;
+        symbol [ y2 %y2.28 107 16 18 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 109 12 ]
+        %tmp.283 = lgetv %dc;
+        symbol [ dc %tmp.283 109 12 14 ];
+        symbol [ drawLine %tmp.284 109 15 23 ];
+        %tmp.284 = getv function %tmp.283 :drawLine;
+        %tmp.285 = lgetv %x1.25;
+        symbol [ x1 %tmp.285 109 24 26 ];
+        %tmp.286 = lgetv %y1.27;
+        symbol [ y1 %tmp.286 109 28 30 ];
+        %tmp.287 = lgetv %x2.26;
+        symbol [ x2 %tmp.287 109 32 34 ];
+        %tmp.288 = lgetv %y2.28;
+        symbol [ y2 %tmp.288 109 36 38 ];
+        invoke %tmp.283 %tmp.284(%tmp.285, %tmp.286, %tmp.287, %tmp.288);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 111 12 ]
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_111_12_114_12_if_stmt:
+        %tmp.289 = lgetv %i.23;
+        symbol [ i %tmp.289 111 16 17 ];
+        %tmp.290 = lgetv %size.8;
+        symbol [ size %tmp.290 111 21 25 ];
+        %tmp.291 = 2;
+        %tmp.292 = sub %tmp.290 %tmp.291;
+        %tmp.293 = eq %tmp.289 %tmp.292;
+        bf %tmp.293 @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_111_12_114_12_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_111_12_114_12_if_true:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_111_31_114_12_start:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 112 16 ]
+        %tmp.294 = lgetv %dc;
+        symbol [ dc %tmp.294 112 16 18 ];
+        symbol [ setColor %tmp.295 112 19 27 ];
+        %tmp.295 = getv function %tmp.294 :setColor;
+        symbol [ Graphics %tmp.296 112 28 36 ];
+        %tmp.296 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.297 112 37 48 ];
+        %tmp.297 = getv %tmp.296 :COLOR_WHITE;
+        symbol [ Graphics %tmp.298 112 50 58 ];
+        %tmp.298 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.299 112 59 76 ];
+        %tmp.299 = getv %tmp.298 :COLOR_TRANSPARENT;
+        invoke %tmp.294 %tmp.295(%tmp.297, %tmp.299);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 113 16 ]
+        %tmp.300 = lgetv %dc;
+        symbol [ dc %tmp.300 113 16 18 ];
+        symbol [ fillCircle %tmp.301 113 19 29 ];
+        %tmp.301 = getv function %tmp.300 :fillCircle;
+        %tmp.302 = lgetv %x2.26;
+        symbol [ x2 %tmp.302 113 30 32 ];
+        %tmp.303 = lgetv %y2.28;
+        symbol [ y2 %tmp.303 113 34 36 ];
+        %tmp.304 = 4;
+        invoke %tmp.300 %tmp.301(%tmp.302, %tmp.303, %tmp.304);
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_111_31_114_12_stop:
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_111_12_114_12_if_end;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_111_12_114_12_if_end:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_47_115_8_stop:
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_incr:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 101 ]
+        %tmp.307 = lgetv %i.23;
+        symbol [ i %tmp.307 101 42 43 ];
+        %tmp.308 = add %tmp.307 1;
+        lputv %i.23 %tmp.308;
+        symbol [ i %i.23 101 42 43 ];
+        goto @_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_test;
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_101_8_115_8_for_end:
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 119 8 ]
+        %tmp.309 = lgetv %dc;
+        symbol [ dc %tmp.309 119 8 10 ];
+        symbol [ setColor %tmp.310 119 11 19 ];
+        %tmp.310 = getv function %tmp.309 :setColor;
+        symbol [ Graphics %tmp.311 119 20 28 ];
+        %tmp.311 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.312 119 29 40 ];
+        %tmp.312 = getv %tmp.311 :COLOR_WHITE;
+        symbol [ Graphics %tmp.313 119 42 50 ];
+        %tmp.313 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.314 119 51 68 ];
+        %tmp.314 = getv %tmp.313 :COLOR_TRANSPARENT;
+        invoke %tmp.309 %tmp.310(%tmp.312, %tmp.314);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 120 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %hrTextY.29 = local;
+        symbol [ hrTextY %hrTextY.29 120 12 19 ];
+        %tmp.315 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.315 120 22 29 ];
+        %tmp.316 = 2;
+        %tmp.317 = div %tmp.315 %tmp.316;
+        lputv %hrTextY.29 %tmp.317;
+        symbol [ hrTextY %hrTextY.29 120 12 19 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 121 8 ]
+        %tmp.318 = lgetv %dc;
+        symbol [ dc %tmp.318 121 8 10 ];
+        symbol [ drawText %tmp.319 121 11 19 ];
+        %tmp.319 = getv function %tmp.318 :drawText;
+        %tmp.320 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.320 121 20 31 ];
+        %tmp.321 = 2;
+        %tmp.322 = div %tmp.320 %tmp.321;
+        %tmp.323 = lgetv %hrTextY.29;
+        symbol [ hrTextY %tmp.323 121 35 42 ];
+        symbol [ Graphics %tmp.324 121 44 52 ];
+        %tmp.324 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.325 121 53 64 ];
+        %tmp.325 = getv %tmp.324 :FONT_MEDIUM;
+        symbol [ lastHR %tmp.327 121 66 72 ];
+        %tmp.327 = getv ? :lastHR;
+        symbol [ toString %tmp.328 121 73 81 ];
+        %tmp.328 = getv function %tmp.327 :toString;
+        %tmp.329 = invoke %tmp.327 %tmp.328();
+        symbol [ Graphics %tmp.330 121 85 93 ];
+        %tmp.330 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.331 121 94 113 ];
+        %tmp.331 = getv %tmp.330 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.318 %tmp.319(%tmp.322, %tmp.323, %tmp.325, %tmp.329, %tmp.331);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 124 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %minText.30 = local;
+        symbol [ minText %minText.30 124 12 19 ];
+        %tmp.332 = "min: ";
+        %tmp.333 = lgetv %origMinHR.14;
+        symbol [ origMinHR %tmp.333 124 32 41 ];
+        symbol [ toString %tmp.334 124 42 50 ];
+        %tmp.334 = getv function %tmp.333 :toString;
+        %tmp.335 = invoke %tmp.333 %tmp.334();
+        %tmp.336 = add %tmp.332 %tmp.335;
+        lputv %minText.30 %tmp.336;
+        symbol [ minText %minText.30 124 12 19 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 125 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %maxText.31 = local;
+        symbol [ maxText %maxText.31 125 12 19 ];
+        %tmp.337 = "max: ";
+        %tmp.338 = lgetv %origMaxHR.15;
+        symbol [ origMaxHR %tmp.338 125 32 41 ];
+        symbol [ toString %tmp.339 125 42 50 ];
+        %tmp.339 = getv function %tmp.338 :toString;
+        %tmp.340 = invoke %tmp.338 %tmp.339();
+        %tmp.341 = add %tmp.337 %tmp.340;
+        lputv %maxText.31 %tmp.341;
+        symbol [ maxText %maxText.31 125 12 19 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 126 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %labelY_min.32 = local;
+        symbol [ labelY_min %labelY_min.32 126 12 22 ];
+        %tmp.342 = lgetv %offsetY.7;
+        symbol [ offsetY %tmp.342 126 25 32 ];
+        %tmp.343 = lgetv %rectHeight.6;
+        symbol [ rectHeight %tmp.343 126 35 45 ];
+        %tmp.344 = add %tmp.342 %tmp.343;
+        %tmp.345 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.345 126 49 61 ];
+        %tmp.346 = 0.02;
+        %tmp.347 = mul %tmp.345 %tmp.346;
+        %tmp.348 = add %tmp.344 %tmp.347;
+        lputv %labelY_min.32 %tmp.348;
+        symbol [ labelY_min %labelY_min.32 126 12 22 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 127 8 ]
+        [ "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_start" "_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop" ]
+        %labelY_max.33 = local;
+        symbol [ labelY_max %labelY_max.33 127 12 22 ];
+        %tmp.349 = lgetv %labelY_min.32;
+        symbol [ labelY_min %tmp.349 127 25 35 ];
+        %tmp.350 = lgetv %screenHeight.2;
+        symbol [ screenHeight %tmp.350 127 39 51 ];
+        %tmp.351 = 0.08;
+        %tmp.352 = mul %tmp.350 %tmp.351;
+        %tmp.353 = add %tmp.349 %tmp.352;
+        lputv %labelY_max.33 %tmp.353;
+        symbol [ labelY_max %labelY_max.33 127 12 22 ];
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 129 8 ]
+        %tmp.354 = lgetv %dc;
+        symbol [ dc %tmp.354 129 8 10 ];
+        symbol [ drawText %tmp.355 129 11 19 ];
+        %tmp.355 = getv function %tmp.354 :drawText;
+        %tmp.356 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.356 129 20 31 ];
+        %tmp.357 = 2;
+        %tmp.358 = div %tmp.356 %tmp.357;
+        %tmp.359 = lgetv %labelY_min.32;
+        symbol [ labelY_min %tmp.359 129 35 45 ];
+        symbol [ Graphics %tmp.360 129 47 55 ];
+        %tmp.360 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.361 129 56 66 ];
+        %tmp.361 = getv %tmp.360 :FONT_SMALL;
+        %tmp.362 = lgetv %minText.30;
+        symbol [ minText %tmp.362 129 68 75 ];
+        symbol [ Graphics %tmp.363 129 77 85 ];
+        %tmp.363 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.364 129 86 105 ];
+        %tmp.364 = getv %tmp.363 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.354 %tmp.355(%tmp.358, %tmp.359, %tmp.361, %tmp.362, %tmp.364);
+[ "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" 131 8 ]
+        %tmp.365 = lgetv %dc;
+        symbol [ dc %tmp.365 131 8 10 ];
+        symbol [ drawText %tmp.366 131 11 19 ];
+        %tmp.366 = getv function %tmp.365 :drawText;
+        %tmp.367 = lgetv %screenWidth.1;
+        symbol [ screenWidth %tmp.367 131 20 31 ];
+        %tmp.368 = 2;
+        %tmp.369 = div %tmp.367 %tmp.368;
+        %tmp.370 = lgetv %labelY_max.33;
+        symbol [ labelY_max %tmp.370 131 35 45 ];
+        symbol [ Graphics %tmp.371 131 47 55 ];
+        %tmp.371 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.372 131 56 66 ];
+        %tmp.372 = getv %tmp.371 :FONT_SMALL;
+        %tmp.373 = lgetv %maxText.31;
+        symbol [ maxText %tmp.373 131 68 75 ];
+        symbol [ Graphics %tmp.374 131 77 85 ];
+        %tmp.374 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.375 131 86 105 ];
+        %tmp.375 = getv %tmp.374 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.365 %tmp.366(%tmp.369, %tmp.370, %tmp.372, %tmp.373, %tmp.375);
+_home_pancala_GarminProjects_HRGraph_source_HRGraphView_mc_31_40_132_4_stop:
+    }
+}
+[ @file = "/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc"; @line = 1; ]
+<init> {
+}

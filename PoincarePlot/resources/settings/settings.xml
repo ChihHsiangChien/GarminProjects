@@ -1,0 +1,9 @@
+<settings>
+    <setting propertyKey="@Properties.VisualMode" title="@Strings.ModeTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ModeWide</listEntry>
+            <listEntry value="1">@Strings.ModeZoom</listEntry>
+            <listEntry value="2">@Strings.ModeAuto</listEntry>
+        </settingConfig>
+    </setting>
+</settings>

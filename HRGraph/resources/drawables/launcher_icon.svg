@@ -1,0 +1,13 @@
+<svg width="54" height="54" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="27" cy="27" r="27" fill="#2A2A2A" />
+
+    <path fill="#FF4F4F" 
+          d="M27 47 C 9 35, 5 24, 16 15 C 21 11, 27 18, 27 18 C 27 18, 33 11, 38 15 C 49 24, 45 35, 27 47 Z" />
+
+    <path fill="none" 
+          stroke="#00FF00" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          d="M 10 30 L 18 30 L 21 26 L 23 35 L 27 10 L 31 41 L 33 30 L 44 30" />
+</svg>

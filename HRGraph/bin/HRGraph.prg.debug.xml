@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/home/pancala/GarminProjects/HRGraph/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="1" lineNum="6" parent="globals/HRGraphApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="2" lineNum="28" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="2" lineNum="29" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="4" lineNum="6" parent="globals/HRGraphView" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="4" lineNum="8" parent="globals/HRGraphView" pc="268435524" symbol="&lt;init&gt;"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="5" lineNum="13" parent="globals/HRGraphApp" pc="268435534" symbol="onStart"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="6" lineNum="21" parent="globals/HRGraphApp" pc="268435537" symbol="getInitialView"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="6" lineNum="22" parent="globals/HRGraphApp" pc="268435539" symbol="getInitialView"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="7" lineNum="8" parent="globals/HRGraphApp" pc="268435565" symbol="initialize"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="7" lineNum="9" parent="globals/HRGraphApp" pc="268435567" symbol="initialize"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphApp.mc" id="8" lineNum="17" parent="globals/HRGraphApp" pc="268435580" symbol="onStop"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="9" lineNum="17" parent="globals/HRGraphView" pc="268435583" symbol="compute"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="9" lineNum="18" parent="globals/HRGraphView" pc="268435585" symbol="compute"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="9" lineNum="19" parent="globals/HRGraphView" pc="268435602" symbol="compute"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="9" lineNum="20" parent="globals/HRGraphView" pc="268435616" symbol="compute"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="9" lineNum="24" parent="globals/HRGraphView" pc="268435635" symbol="compute"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="9" lineNum="25" parent="globals/HRGraphView" pc="268435655" symbol="compute"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="10" lineNum="12" parent="globals/HRGraphView" pc="268435677" symbol="initialize"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="10" lineNum="13" parent="globals/HRGraphView" pc="268435679" symbol="initialize"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="31" parent="globals/HRGraphView" pc="268435692" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="32" parent="globals/HRGraphView" pc="268435695" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="33" parent="globals/HRGraphView" pc="268435704" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="35" parent="globals/HRGraphView" pc="268435713" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="36" parent="globals/HRGraphView" pc="268435730" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="37" parent="globals/HRGraphView" pc="268435740" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="39" parent="globals/HRGraphView" pc="268435744" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="40" parent="globals/HRGraphView" pc="268435754" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="42" parent="globals/HRGraphView" pc="268435764" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="43" parent="globals/HRGraphView" pc="268435776" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="45" parent="globals/HRGraphView" pc="268435784" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="46" parent="globals/HRGraphView" pc="268435797" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="47" parent="globals/HRGraphView" pc="268435805" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="48" parent="globals/HRGraphView" pc="268435822" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="49" parent="globals/HRGraphView" pc="268435851" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="53" parent="globals/HRGraphView" pc="268435855" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="54" parent="globals/HRGraphView" pc="268435860" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="55" parent="globals/HRGraphView" pc="268435863" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="56" parent="globals/HRGraphView" pc="268435886" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="57" parent="globals/HRGraphView" pc="268435893" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="58" parent="globals/HRGraphView" pc="268435905" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="58" parent="globals/HRGraphView" pc="268435919" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="59" parent="globals/HRGraphView" pc="268435932" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="59" parent="globals/HRGraphView" pc="268435946" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="62" parent="globals/HRGraphView" pc="268435969" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="63" parent="globals/HRGraphView" pc="268435973" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="65" parent="globals/HRGraphView" pc="268435977" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="66" parent="globals/HRGraphView" pc="268435988" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="67" parent="globals/HRGraphView" pc="268436001" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="68" parent="globals/HRGraphView" pc="268436008" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="72" parent="globals/HRGraphView" pc="268436018" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="74" parent="globals/HRGraphView" pc="268436029" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="75" parent="globals/HRGraphView" pc="268436055" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="78" parent="globals/HRGraphView" pc="268436069" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="80" parent="globals/HRGraphView" pc="268436087" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="81" parent="globals/HRGraphView" pc="268436103" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="82" parent="globals/HRGraphView" pc="268436113" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="83" parent="globals/HRGraphView" pc="268436123" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="86" parent="globals/HRGraphView" pc="268436133" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="87" parent="globals/HRGraphView" pc="268436150" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="89" parent="globals/HRGraphView" pc="268436162" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="91" parent="globals/HRGraphView" pc="268436183" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="93" parent="globals/HRGraphView" pc="268436210" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="95" parent="globals/HRGraphView" pc="268436231" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="99" parent="globals/HRGraphView" pc="268436258" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="100" parent="globals/HRGraphView" pc="268436272" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="101" parent="globals/HRGraphView" pc="268436284" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="102" parent="globals/HRGraphView" pc="268436299" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="103" parent="globals/HRGraphView" pc="268436306" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="104" parent="globals/HRGraphView" pc="268436316" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="106" parent="globals/HRGraphView" pc="268436329" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="107" parent="globals/HRGraphView" pc="268436366" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="109" parent="globals/HRGraphView" pc="268436406" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="111" parent="globals/HRGraphView" pc="268436424" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="112" parent="globals/HRGraphView" pc="268436435" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="113" parent="globals/HRGraphView" pc="268436452" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="119" parent="globals/HRGraphView" pc="268436481" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="120" parent="globals/HRGraphView" pc="268436498" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="121" parent="globals/HRGraphView" pc="268436505" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="124" parent="globals/HRGraphView" pc="268436537" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="125" parent="globals/HRGraphView" pc="268436552" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="126" parent="globals/HRGraphView" pc="268436567" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="127" parent="globals/HRGraphView" pc="268436583" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="129" parent="globals/HRGraphView" pc="268436596" symbol="onUpdate"/>
+        <entry filename="/home/pancala/GarminProjects/HRGraph/source/HRGraphView.mc" id="11" lineNum="131" parent="globals/HRGraphView" pc="268436619" symbol="onUpdate"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="8" symbol="&lt;globals/HRGraphView/&lt;&gt;lastHR&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="11" symbol="AppName"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="5" object="true" symbol="HRGraphApp"/>
+        <entry field="true" id="9" symbol="&lt;globals/HRGraphView/&lt;&gt;maxPoints&gt;"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="10" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="6" object="true" symbol="HRGraphView"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="7" symbol="&lt;globals/HRGraphView/&lt;&gt;hrHistory&gt;"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435676" name="info" stackId="1" startPc="268435583"/>
+        <entry arg="true" endPc="268436642" name="dc" stackId="1" startPc="268435692"/>
+        <entry endPc="268436641" name="screenWidth" stackId="2" startPc="268435695"/>
+        <entry endPc="268436641" name="screenHeight" stackId="3" startPc="268435695"/>
+        <entry endPc="268436641" name="sideMargin" stackId="4" startPc="268435695"/>
+        <entry endPc="268436641" name="rectWidth" stackId="5" startPc="268435695"/>
+        <entry endPc="268436641" name="offsetX" stackId="6" startPc="268435695"/>
+        <entry endPc="268436641" name="rectHeight" stackId="7" startPc="268435695"/>
+        <entry endPc="268436641" name="offsetY" stackId="8" startPc="268435695"/>
+        <entry endPc="268436641" name="size" stackId="9" startPc="268435695"/>
+        <entry endPc="268436641" name="minHR" stackId="10" startPc="268435695"/>
+        <entry endPc="268436641" name="maxHR" stackId="11" startPc="268435695"/>
+        <entry endPc="268436641" name="points" stackId="12" startPc="268435695"/>
+        <entry endPc="268436641" name="start" stackId="13" startPc="268435695"/>
+        <entry endPc="268435968" name="i" stackId="14" startPc="268435905"/>
+        <entry endPc="268436641" name="origMinHR" stackId="15" startPc="268435695"/>
+        <entry endPc="268436641" name="origMaxHR" stackId="16" startPc="268435695"/>
+        <entry endPc="268436014" name="mid" stackId="17" startPc="268435988"/>
+        <entry endPc="268436641" name="lineColor" stackId="18" startPc="268435695"/>
+        <entry endPc="268436641" name="xStep" stackId="19" startPc="268435695"/>
+        <entry endPc="268436641" name="xStart" stackId="20" startPc="268435695"/>
+        <entry endPc="268436641" name="topPadding" stackId="21" startPc="268435695"/>
+        <entry endPc="268436641" name="bottomPadding" stackId="22" startPc="268435695"/>
+        <entry endPc="268436641" name="chartHeight" stackId="23" startPc="268435695"/>
+        <entry endPc="268436480" name="i" stackId="24" startPc="268436299"/>
+        <entry endPc="268436470" name="idx" stackId="25" startPc="268436299"/>
+        <entry endPc="268436470" name="x1" stackId="26" startPc="268436299"/>
+        <entry endPc="268436470" name="x2" stackId="27" startPc="268436299"/>
+        <entry endPc="268436470" name="y1" stackId="28" startPc="268436299"/>
+        <entry endPc="268436470" name="y2" stackId="29" startPc="268436299"/>
+        <entry endPc="268436641" name="hrTextY" stackId="30" startPc="268435695"/>
+        <entry endPc="268436641" name="minText" stackId="31" startPc="268435695"/>
+        <entry endPc="268436641" name="maxText" stackId="32" startPc="268435695"/>
+        <entry endPc="268436641" name="labelY_min" stackId="33" startPc="268435695"/>
+        <entry endPc="268436641" name="labelY_max" stackId="34" startPc="268435695"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4625-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/HRGraphApp" offset="116" parentId="globals" symbolId="HRGraphApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="187" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/HRGraphView" offset="231" parentId="globals" symbolId="HRGraphView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="320" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="355" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="HRGraphApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435533" name="&lt;init&gt;" parent="HRGraphView" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435536" name="onStart" parent="HRGraphApp" startPc="268435534">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435564" name="getInitialView" parent="HRGraphApp" startPc="268435537">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435579" name="initialize" parent="HRGraphApp" startPc="268435565">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435582" name="onStop" parent="HRGraphApp" startPc="268435580">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435676" name="compute" parent="HRGraphView" startPc="268435583">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435691" name="initialize" parent="HRGraphView" startPc="268435677">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436642" name="onUpdate" parent="HRGraphView" startPc="268435692">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

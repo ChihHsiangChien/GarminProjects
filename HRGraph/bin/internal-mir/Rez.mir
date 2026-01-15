@@ -1,0 +1,1555 @@
+[ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Strings,12,11,18]; ]
+    module Strings {
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [AppName,13,27,34]; @symbol_type<0> = [ResourceId,13,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 16; @symbol_moduledef = [Styles,16,11,17]; ]
+    module Styles {
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 16; ]
+        <init> {
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 17; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,17,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 17; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 18 18 ]
+                symbol [ Graphics %tmp.1 18 34 42 ];
+                %tmp.1 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.2 18 43 62 ];
+                %tmp.2 = getv %tmp.1 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.2;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 19 18 ]
+                symbol [ Graphics %tmp.3 19 25 33 ];
+                %tmp.3 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.4 19 34 44 ];
+                %tmp.4 = getv %tmp.3 :FONT_SMALL;
+                putv self :font %tmp.4;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 18; @position = 18; @symbol_constdef = [justification,18,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 19; @position = 18; @symbol_constdef = [font,19,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 22; @symbol_moduledef = [system_size__menu_header,22,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 22; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 23; @position = 18; @symbol_constdef = [width,23,18,23]; @symbol_type<0> = [Number,23,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 24; @position = 18; @symbol_constdef = [height,24,18,24]; @symbol_type<0> = [Number,24,28,34]; ]
+            const height as Number = 90;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 27; @symbol_moduledef = [system_loc__hint_button_left_bottom,27,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 27; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 28; @position = 18; @symbol_constdef = [exclude,28,18,25]; @symbol_type<0> = [Boolean,28,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 31; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,31,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 31; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 32 18 ]
+                symbol [ Graphics %tmp.5 32 34 42 ];
+                %tmp.5 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.6 32 43 62 ];
+                %tmp.6 = getv %tmp.5 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.7 32 63 71 ];
+                %tmp.7 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.8 32 72 92 ];
+                %tmp.8 = getv %tmp.7 :TEXT_JUSTIFY_VCENTER;
+                %tmp.9 = bitor %tmp.6 %tmp.8;
+                putv self :justification %tmp.9;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 33 18 ]
+                symbol [ Graphics %tmp.10 33 25 33 ];
+                %tmp.10 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.11 33 34 44 ];
+                %tmp.11 = getv %tmp.10 :FONT_SMALL;
+                putv self :font %tmp.11;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 32; @position = 18; @symbol_constdef = [justification,32,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 33; @position = 18; @symbol_constdef = [font,33,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 36; @symbol_moduledef = [prompt_loc__body_no_title,36,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 36; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 37; @position = 18; @symbol_constdef = [x,37,18,19]; @symbol_type<0> = [Number,37,23,29]; ]
+            const x as Number = 39;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 38; @position = 18; @symbol_constdef = [y,38,18,19]; @symbol_type<0> = [Number,38,23,29]; ]
+            const y as Number = 58;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 41; @symbol_moduledef = [system_icon_dark__about,41,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 41; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 42; @position = 18; @symbol_constdef = [filename,42,18,26]; @symbol_type<0> = [String,42,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__about.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 43; @position = 18; @symbol_constdef = [compress,43,18,26]; @symbol_type<0> = [String,43,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 44; @position = 18; @symbol_constdef = [dithering,44,18,27]; @symbol_type<0> = [String,44,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 45; @position = 18; @symbol_constdef = [automaticPalette,45,18,34]; @symbol_type<0> = [String,45,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 48; @symbol_moduledef = [system_icon_light__question,48,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 48; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 49; @position = 18; @symbol_constdef = [filename,49,18,26]; @symbol_type<0> = [String,49,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__question.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 50; @position = 18; @symbol_constdef = [compress,50,18,26]; @symbol_type<0> = [String,50,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [dithering,51,18,27]; @symbol_type<0> = [String,51,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [automaticPalette,52,18,34]; @symbol_type<0> = [String,52,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 55; @symbol_moduledef = [system_loc__hint_button_left_top,55,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 55; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 56; @position = 18; @symbol_constdef = [exclude,56,18,25]; @symbol_type<0> = [Boolean,56,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 59; @symbol_moduledef = [prompt_font__title,59,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 59; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 60 18 ]
+                symbol [ Graphics %tmp.12 60 34 42 ];
+                %tmp.12 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.13 60 43 62 ];
+                %tmp.13 = getv %tmp.12 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.14 60 63 71 ];
+                %tmp.14 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.15 60 72 92 ];
+                %tmp.15 = getv %tmp.14 :TEXT_JUSTIFY_VCENTER;
+                %tmp.16 = bitor %tmp.13 %tmp.15;
+                putv self :justification %tmp.16;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 61 18 ]
+                symbol [ Graphics %tmp.17 61 25 33 ];
+                %tmp.17 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.18 61 34 44 ];
+                %tmp.18 = getv %tmp.17 :FONT_XTINY;
+                putv self :font %tmp.18;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [justification,60,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [font,61,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 64; @symbol_moduledef = [system_icon_dark__discard,64,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 64; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 65; @position = 18; @symbol_constdef = [filename,65,18,26]; @symbol_type<0> = [String,65,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__discard.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [compress,66,18,26]; @symbol_type<0> = [String,66,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [dithering,67,18,27]; @symbol_type<0> = [String,67,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [automaticPalette,68,18,34]; @symbol_type<0> = [String,68,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 71; @symbol_moduledef = [system_size__menu_item,71,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 71; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [width,72,18,23]; @symbol_type<0> = [Number,72,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [height,73,18,24]; @symbol_type<0> = [Number,73,28,34]; ]
+            const height as Number = 100;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 76; @symbol_moduledef = [system_color_dark__text,76,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 76; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 78 18 ]
+                symbol [ Graphics %tmp.19 78 31 39 ];
+                %tmp.19 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.20 78 40 57 ];
+                %tmp.20 = getv %tmp.19 :COLOR_TRANSPARENT;
+                putv self :background %tmp.20;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [color,77,18,23]; @symbol_type<0> = [Number,77,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 78; @position = 18; @symbol_constdef = [background,78,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 81; @symbol_moduledef = [system_icon_destructive__discard,81,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 81; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [filename,82,18,26]; @symbol_type<0> = [String,82,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_destructive__discard.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [dithering,83,18,27]; @symbol_type<0> = [String,83,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 84; @position = 18; @symbol_constdef = [packingFormat,84,18,31]; @symbol_type<0> = [String,84,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 87; @symbol_moduledef = [system_icon_dark__hint_action_menu,87,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 87; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [exclude,88,18,25]; @symbol_type<0> = [Boolean,88,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 91; @symbol_moduledef = [prompt_size__title,91,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 91; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [width,92,18,23]; @symbol_type<0> = [Number,92,27,33]; ]
+            const width as Number = 165;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [height,93,18,24]; @symbol_type<0> = [Number,93,28,34]; ]
+            const height as Number = 70;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 96; @symbol_moduledef = [confirmation_font__body,96,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 96; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 97 18 ]
+                symbol [ Graphics %tmp.21 97 34 42 ];
+                %tmp.21 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.22 97 43 62 ];
+                %tmp.22 = getv %tmp.21 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.23 97 63 71 ];
+                %tmp.23 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.24 97 72 92 ];
+                %tmp.24 = getv %tmp.23 :TEXT_JUSTIFY_VCENTER;
+                %tmp.25 = bitor %tmp.22 %tmp.24;
+                putv self :justification %tmp.25;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 98 18 ]
+                symbol [ Graphics %tmp.26 98 25 33 ];
+                %tmp.26 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.27 98 34 43 ];
+                %tmp.27 = getv %tmp.26 :FONT_TINY;
+                putv self :font %tmp.27;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [justification,97,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [font,98,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 101; @symbol_moduledef = [system_color_dark__background,101,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 101; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [color,102,18,23]; @symbol_type<0> = [Number,102,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [background,103,18,28]; @symbol_type<0> = [Number,103,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 106; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,106,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 106; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [exclude,107,18,25]; @symbol_type<0> = [Boolean,107,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 110; @symbol_moduledef = [system_size__launch_icon,110,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 110; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 111; @position = 18; @symbol_constdef = [scaleX,111,18,24]; @symbol_type<0> = [Number,111,28,34]; ]
+            const scaleX as Number = 54;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [scaleY,112,18,24]; @symbol_type<0> = [Number,112,28,34]; ]
+            const scaleY as Number = 54;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [scaleRelativeTo,113,18,33]; @symbol_type<0> = [String,113,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 116; @symbol_moduledef = [confirmation_input__confirm,116,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 116; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 117; @position = 18; @symbol_constdef = [y1,117,18,20]; @symbol_type<0> = [Number,117,24,30]; ]
+            const y1 as Number = 297;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [x1,118,18,20]; @symbol_type<0> = [Number,118,24,30]; ]
+            const x1 as Number = 72;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [y2,119,18,20]; @symbol_type<0> = [Number,119,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [x2,120,18,20]; @symbol_type<0> = [Number,120,24,30]; ]
+            const x2 as Number = 318;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 123; @symbol_moduledef = [prompt_font__body_with_title,123,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 123; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 124 18 ]
+                symbol [ Graphics %tmp.28 124 34 42 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.29 124 43 62 ];
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.29;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 125 18 ]
+                symbol [ Graphics %tmp.30 125 25 33 ];
+                %tmp.30 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.31 125 34 43 ];
+                %tmp.31 = getv %tmp.30 :FONT_TINY;
+                putv self :font %tmp.31;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [justification,124,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [font,125,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 128; @symbol_moduledef = [confirmation_loc__body,128,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 128; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [x,129,18,19]; @symbol_type<0> = [Number,129,23,29]; ]
+            const x as Number = 80;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [y,130,18,19]; @symbol_type<0> = [Number,130,23,29]; ]
+            const y as Number = 78;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 133; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,133,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 133; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [exclude,134,18,25]; @symbol_type<0> = [Boolean,134,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 137; @symbol_moduledef = [prompt_color_dark__background,137,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 137; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [color,138,18,23]; @symbol_type<0> = [Number,138,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [background,139,18,28]; @symbol_type<0> = [Number,139,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 142; @symbol_moduledef = [system_icon_destructive__hint_action_menu,142,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 142; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [exclude,143,18,25]; @symbol_type<0> = [Boolean,143,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 146; @symbol_moduledef = [system_loc__hint_action_menu,146,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 146; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 147; @position = 18; @symbol_constdef = [exclude,147,18,25]; @symbol_type<0> = [Boolean,147,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 150; @symbol_moduledef = [confirmation_icon__hint_confirm,150,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 150; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [filename,151,18,26]; @symbol_type<0> = [String,151,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 152; @position = 18; @symbol_constdef = [dithering,152,18,27]; @symbol_type<0> = [String,152,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [packingFormat,153,18,31]; @symbol_type<0> = [String,153,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 156; @symbol_moduledef = [system_loc__hint_button_left_middle,156,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 156; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [exclude,157,18,25]; @symbol_type<0> = [Boolean,157,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 160; @symbol_moduledef = [prompt_size__body_no_title,160,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 160; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 161; @position = 18; @symbol_constdef = [width,161,18,23]; @symbol_type<0> = [Number,161,27,33]; ]
+            const width as Number = 312;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [height,162,18,24]; @symbol_type<0> = [Number,162,28,34]; ]
+            const height as Number = 253;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 165; @symbol_moduledef = [system_icon_light__hint_button_left_top,165,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 165; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [exclude,166,18,25]; @symbol_type<0> = [Boolean,166,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 169; @symbol_moduledef = [prompt_color_light__background,169,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [color,170,18,23]; @symbol_type<0> = [Number,170,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [background,171,18,28]; @symbol_type<0> = [Number,171,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 174; @symbol_moduledef = [confirmation_input__delete,174,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 174; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 175 18 ]
+                symbol [ WatchUi %tmp.32 175 27 34 ];
+                %tmp.32 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.33 175 35 44 ];
+                %tmp.33 = getv %tmp.32 :KEY_ENTER;
+                putv self :button %tmp.33;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [button,175,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 178; @symbol_moduledef = [system_icon_dark__hint_button_left_top,178,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 178; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [exclude,179,18,25]; @symbol_type<0> = [Boolean,179,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 182; @symbol_moduledef = [system_input__action_menu,182,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 182; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 183 18 ]
+                symbol [ WatchUi %tmp.34 183 27 34 ];
+                %tmp.34 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ACTION_MENU %tmp.35 183 35 50 ];
+                %tmp.35 = getv %tmp.34 :KEY_ACTION_MENU;
+                putv self :button %tmp.35;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [button,183,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 186; @symbol_moduledef = [system_icon_light__save,186,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 186; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [filename,187,18,26]; @symbol_type<0> = [String,187,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__save.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [compress,188,18,26]; @symbol_type<0> = [String,188,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [dithering,189,18,27]; @symbol_type<0> = [String,189,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [automaticPalette,190,18,34]; @symbol_type<0> = [String,190,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 193; @symbol_moduledef = [prompt_color_light__body,193,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 193; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 195 18 ]
+                symbol [ Graphics %tmp.36 195 31 39 ];
+                %tmp.36 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.37 195 40 57 ];
+                %tmp.37 = getv %tmp.36 :COLOR_TRANSPARENT;
+                putv self :background %tmp.37;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [color,194,18,23]; @symbol_type<0> = [Number,194,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 195; @position = 18; @symbol_constdef = [background,195,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 198; @symbol_moduledef = [system_loc__subwindow,198,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 198; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 199; @position = 18; @symbol_constdef = [exclude,199,18,25]; @symbol_type<0> = [Boolean,199,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 202; @symbol_moduledef = [system_icon_light__warning,202,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 202; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [filename,203,18,26]; @symbol_type<0> = [String,203,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__warning.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [compress,204,18,26]; @symbol_type<0> = [String,204,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 205; @position = 18; @symbol_constdef = [dithering,205,18,27]; @symbol_type<0> = [String,205,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [automaticPalette,206,18,34]; @symbol_type<0> = [String,206,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 209; @symbol_moduledef = [confirmation_color_light__body,209,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 209; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 211 18 ]
+                symbol [ Graphics %tmp.38 211 31 39 ];
+                %tmp.38 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.39 211 40 57 ];
+                %tmp.39 = getv %tmp.38 :COLOR_TRANSPARENT;
+                putv self :background %tmp.39;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 210; @position = 18; @symbol_constdef = [color,210,18,23]; @symbol_type<0> = [Number,210,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [background,211,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 214; @symbol_moduledef = [confirmation_icon_light__hint_keep,214,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 214; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [filename,215,18,26]; @symbol_type<0> = [String,215,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 216; @position = 18; @symbol_constdef = [dithering,216,18,27]; @symbol_type<0> = [String,216,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [packingFormat,217,18,31]; @symbol_type<0> = [String,217,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 220; @symbol_moduledef = [activity_color_light__background,220,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 220; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [color,221,18,23]; @symbol_type<0> = [Number,221,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [background,222,18,28]; @symbol_type<0> = [Number,222,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 225; @symbol_moduledef = [system_icon_positive__hint_button_right_top,225,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [filename,226,18,26]; @symbol_type<0> = [String,226,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [dithering,227,18,27]; @symbol_type<0> = [String,227,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [packingFormat,228,18,31]; @symbol_type<0> = [String,228,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 231; @symbol_moduledef = [system_size__screen,231,15,34]; ]
+        module system_size__screen {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 231; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [width,232,18,23]; @symbol_type<0> = [Number,232,27,33]; ]
+            const width as Number = 390;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [height,233,18,24]; @symbol_type<0> = [Number,233,28,34]; ]
+            const height as Number = 390;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 236; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,236,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 236; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 237; @position = 18; @symbol_constdef = [filename,237,18,26]; @symbol_type<0> = [String,237,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 238; @position = 18; @symbol_constdef = [dithering,238,18,27]; @symbol_type<0> = [String,238,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [packingFormat,239,18,31]; @symbol_type<0> = [String,239,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 242; @symbol_moduledef = [system_color_light__background,242,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 242; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 243; @position = 18; @symbol_constdef = [color,243,18,23]; @symbol_type<0> = [Number,243,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [background,244,18,28]; @symbol_type<0> = [Number,244,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 247; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,247,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 247; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 248; @position = 18; @symbol_constdef = [filename,248,18,26]; @symbol_type<0> = [String,248,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [dithering,249,18,27]; @symbol_type<0> = [String,249,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [packingFormat,250,18,31]; @symbol_type<0> = [String,250,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 253; @symbol_moduledef = [confirmation_loc__hint_confirm,253,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [x,254,18,19]; @symbol_type<0> = [Number,254,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [horizontalJustification,255,18,41]; @symbol_type<0> = [String,255,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [y,256,18,19]; @symbol_type<0> = [Number,256,23,29]; ]
+            const y as Number = 147;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 259; @symbol_moduledef = [activity_color_dark__text,259,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 259; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 261 18 ]
+                symbol [ Graphics %tmp.40 261 31 39 ];
+                %tmp.40 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.41 261 40 57 ];
+                %tmp.41 = getv %tmp.40 :COLOR_TRANSPARENT;
+                putv self :background %tmp.41;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [color,260,18,23]; @symbol_type<0> = [Number,260,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [background,261,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 264; @symbol_moduledef = [confirmation_input__keep,264,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 264; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 265 18 ]
+                symbol [ WatchUi %tmp.42 265 27 34 ];
+                %tmp.42 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.43 265 35 42 ];
+                %tmp.43 = getv %tmp.42 :KEY_ESC;
+                putv self :button %tmp.43;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [button,265,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 268; @symbol_moduledef = [prompt_loc__body_with_title,268,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 268; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [x,269,18,19]; @symbol_type<0> = [Number,269,23,29]; ]
+            const x as Number = 39;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [y,270,18,19]; @symbol_type<0> = [Number,270,23,29]; ]
+            const y as Number = 98;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 273; @symbol_moduledef = [system_icon_dark__search,273,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [filename,274,18,26]; @symbol_type<0> = [String,274,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__search.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [compress,275,18,26]; @symbol_type<0> = [String,275,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [dithering,276,18,27]; @symbol_type<0> = [String,276,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [automaticPalette,277,18,34]; @symbol_type<0> = [String,277,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 280; @symbol_moduledef = [activity_color_light__text,280,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 280; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 282 18 ]
+                symbol [ Graphics %tmp.44 282 31 39 ];
+                %tmp.44 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.45 282 40 57 ];
+                %tmp.45 = getv %tmp.44 :COLOR_TRANSPARENT;
+                putv self :background %tmp.45;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [color,281,18,23]; @symbol_type<0> = [Number,281,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [background,282,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 285; @symbol_moduledef = [confirmation_icon__hint_keep,285,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 285; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [filename,286,18,26]; @symbol_type<0> = [String,286,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 287; @position = 18; @symbol_constdef = [dithering,287,18,27]; @symbol_type<0> = [String,287,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 288; @position = 18; @symbol_constdef = [packingFormat,288,18,31]; @symbol_type<0> = [String,288,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 291; @symbol_moduledef = [system_icon_dark__save,291,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 291; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [filename,292,18,26]; @symbol_type<0> = [String,292,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__save.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [compress,293,18,26]; @symbol_type<0> = [String,293,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [dithering,294,18,27]; @symbol_type<0> = [String,294,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [automaticPalette,295,18,34]; @symbol_type<0> = [String,295,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 298; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,298,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 298; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [exclude,299,18,25]; @symbol_type<0> = [Boolean,299,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 302; @symbol_moduledef = [system_icon_light__search,302,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 302; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [filename,303,18,26]; @symbol_type<0> = [String,303,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__search.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 304; @position = 18; @symbol_constdef = [compress,304,18,26]; @symbol_type<0> = [String,304,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [dithering,305,18,27]; @symbol_type<0> = [String,305,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [automaticPalette,306,18,34]; @symbol_type<0> = [String,306,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 309; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,309,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 309; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [exclude,310,18,25]; @symbol_type<0> = [Boolean,310,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 313; @symbol_moduledef = [system_icon_positive__hint_button_left_top,313,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 313; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [exclude,314,18,25]; @symbol_type<0> = [Boolean,314,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 317; @symbol_moduledef = [system_loc__hint_button_right_bottom,317,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 317; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [x,318,18,19]; @symbol_type<0> = [Number,318,23,29]; ]
+            const x as Number = 322;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [y,319,18,19]; @symbol_type<0> = [Number,319,23,29]; ]
+            const y as Number = 258;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 322; @symbol_moduledef = [confirmation_icon_dark__hint_reject,322,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 322; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [filename,323,18,26]; @symbol_type<0> = [String,323,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [dithering,324,18,27]; @symbol_type<0> = [String,324,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [packingFormat,325,18,31]; @symbol_type<0> = [String,325,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 328; @symbol_moduledef = [confirmation_color_dark__body,328,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 328; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 330 18 ]
+                symbol [ Graphics %tmp.46 330 31 39 ];
+                %tmp.46 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.47 330 40 57 ];
+                %tmp.47 = getv %tmp.46 :COLOR_TRANSPARENT;
+                putv self :background %tmp.47;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [color,329,18,23]; @symbol_type<0> = [Number,329,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [background,330,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 333; @symbol_moduledef = [confirmation_icon_light__hint_confirm,333,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 333; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [filename,334,18,26]; @symbol_type<0> = [String,334,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [dithering,335,18,27]; @symbol_type<0> = [String,335,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [packingFormat,336,18,31]; @symbol_type<0> = [String,336,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 339; @symbol_moduledef = [prompt_color_dark__title,339,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 339; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 341 18 ]
+                symbol [ Graphics %tmp.48 341 31 39 ];
+                %tmp.48 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.49 341 40 57 ];
+                %tmp.49 = getv %tmp.48 :COLOR_TRANSPARENT;
+                putv self :background %tmp.49;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [color,340,18,23]; @symbol_type<0> = [Number,340,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [background,341,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 344; @symbol_moduledef = [system_icon_destructive__cancel,344,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 344; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [filename,345,18,26]; @symbol_type<0> = [String,345,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_destructive__cancel.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [dithering,346,18,27]; @symbol_type<0> = [String,346,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [packingFormat,347,18,31]; @symbol_type<0> = [String,347,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 350; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,350,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 350; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [filename,351,18,26]; @symbol_type<0> = [String,351,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [dithering,352,18,27]; @symbol_type<0> = [String,352,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [packingFormat,353,18,31]; @symbol_type<0> = [String,353,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 356; @symbol_moduledef = [prompt_loc__title,356,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 356; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [x,357,18,19]; @symbol_type<0> = [Number,357,23,29]; ]
+            const x as Number = 113;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [y,358,18,19]; @symbol_type<0> = [Number,358,23,29]; ]
+            const y as Number = 19;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 361; @symbol_moduledef = [confirmation_font_enhanced_readability__body,361,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 361; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 362 18 ]
+                symbol [ Graphics %tmp.50 362 34 42 ];
+                %tmp.50 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.51 362 43 62 ];
+                %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.52 362 63 71 ];
+                %tmp.52 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.53 362 72 92 ];
+                %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_VCENTER;
+                %tmp.54 = bitor %tmp.51 %tmp.53;
+                putv self :justification %tmp.54;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 363 18 ]
+                symbol [ Graphics %tmp.55 363 25 33 ];
+                %tmp.55 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.56 363 34 44 ];
+                %tmp.56 = getv %tmp.55 :FONT_SMALL;
+                putv self :font %tmp.56;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [justification,362,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [font,363,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 366; @symbol_moduledef = [prompt_color_light__title,366,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 366; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 368 18 ]
+                symbol [ Graphics %tmp.57 368 31 39 ];
+                %tmp.57 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.58 368 40 57 ];
+                %tmp.58 = getv %tmp.57 :COLOR_TRANSPARENT;
+                putv self :background %tmp.58;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [color,367,18,23]; @symbol_type<0> = [Number,367,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [background,368,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 371; @symbol_moduledef = [system_icon_dark__hint_button_right_top,371,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 371; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 372; @position = 18; @symbol_constdef = [filename,372,18,26]; @symbol_type<0> = [String,372,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [dithering,373,18,27]; @symbol_type<0> = [String,373,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [packingFormat,374,18,31]; @symbol_type<0> = [String,374,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 377; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,377,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 377; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [exclude,378,18,25]; @symbol_type<0> = [Boolean,378,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 381; @symbol_moduledef = [confirmation_icon_dark__hint_keep,381,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 381; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [filename,382,18,26]; @symbol_type<0> = [String,382,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [dithering,383,18,27]; @symbol_type<0> = [String,383,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [packingFormat,384,18,31]; @symbol_type<0> = [String,384,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 387; @symbol_moduledef = [system_icon_light__cancel,387,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 387; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [filename,388,18,26]; @symbol_type<0> = [String,388,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__cancel.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [compress,389,18,26]; @symbol_type<0> = [String,389,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [dithering,390,18,27]; @symbol_type<0> = [String,390,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 391; @position = 18; @symbol_constdef = [automaticPalette,391,18,34]; @symbol_type<0> = [String,391,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 394; @symbol_moduledef = [confirmation_icon_light__hint_reject,394,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 394; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [filename,395,18,26]; @symbol_type<0> = [String,395,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 396; @position = 18; @symbol_constdef = [dithering,396,18,27]; @symbol_type<0> = [String,396,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [packingFormat,397,18,31]; @symbol_type<0> = [String,397,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 400; @symbol_moduledef = [system_icon_light__about,400,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 400; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [filename,401,18,26]; @symbol_type<0> = [String,401,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__about.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [compress,402,18,26]; @symbol_type<0> = [String,402,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [dithering,403,18,27]; @symbol_type<0> = [String,403,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [automaticPalette,404,18,34]; @symbol_type<0> = [String,404,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 407; @symbol_moduledef = [system_size__toast_icon,407,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 407; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [scaleX,408,18,24]; @symbol_type<0> = [Number,408,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [scaleY,409,18,24]; @symbol_type<0> = [Number,409,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [scaleRelativeTo,410,18,33]; @symbol_type<0> = [String,410,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 413; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,413,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 413; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [exclude,414,18,25]; @symbol_type<0> = [Boolean,414,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 417; @symbol_moduledef = [confirmation_icon__hint_reject,417,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 417; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [filename,418,18,26]; @symbol_type<0> = [String,418,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 419; @position = 18; @symbol_constdef = [dithering,419,18,27]; @symbol_type<0> = [String,419,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 420; @position = 18; @symbol_constdef = [packingFormat,420,18,31]; @symbol_type<0> = [String,420,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 423; @symbol_moduledef = [system_icon_light__hint_action_menu,423,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 423; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [exclude,424,18,25]; @symbol_type<0> = [Boolean,424,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 427; @symbol_moduledef = [system_icon_light__hint_button_right_middle,427,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 427; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [exclude,428,18,25]; @symbol_type<0> = [Boolean,428,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 431; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,431,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 431; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [exclude,432,18,25]; @symbol_type<0> = [Boolean,432,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 435; @symbol_moduledef = [confirmation_loc__hint_reject,435,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [x,436,18,19]; @symbol_type<0> = [Number,436,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [horizontalJustification,437,18,41]; @symbol_type<0> = [String,437,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [y,438,18,19]; @symbol_type<0> = [Number,438,23,29]; ]
+            const y as Number = 1;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 441; @symbol_moduledef = [confirmation_icon_dark__hint_delete,441,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [filename,442,18,26]; @symbol_type<0> = [String,442,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [dithering,443,18,27]; @symbol_type<0> = [String,443,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [packingFormat,444,18,31]; @symbol_type<0> = [String,444,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 447; @symbol_moduledef = [activity_color_dark__background,447,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 447; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [color,448,18,23]; @symbol_type<0> = [Number,448,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [background,449,18,28]; @symbol_type<0> = [Number,449,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 452; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,452,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [exclude,453,18,25]; @symbol_type<0> = [Boolean,453,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 456; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,456,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [exclude,457,18,25]; @symbol_type<0> = [Boolean,457,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 460; @symbol_moduledef = [system_size__menu_icon,460,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 460; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [scaleX,461,18,24]; @symbol_type<0> = [Number,461,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [scaleY,462,18,24]; @symbol_type<0> = [Number,462,28,34]; ]
+            const scaleY as Number = 45;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 463; @position = 18; @symbol_constdef = [scaleRelativeTo,463,18,33]; @symbol_type<0> = [String,463,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 466; @symbol_moduledef = [system_icon_destructive__warning,466,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 466; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [filename,467,18,26]; @symbol_type<0> = [String,467,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_destructive__warning.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [dithering,468,18,27]; @symbol_type<0> = [String,468,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [packingFormat,469,18,31]; @symbol_type<0> = [String,469,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 472; @symbol_moduledef = [system_loc__hint_button_right_middle,472,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 472; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [exclude,473,18,25]; @symbol_type<0> = [Boolean,473,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 476; @symbol_moduledef = [system_icon_dark__cancel,476,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 476; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 477; @position = 18; @symbol_constdef = [filename,477,18,26]; @symbol_type<0> = [String,477,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__cancel.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 478; @position = 18; @symbol_constdef = [compress,478,18,26]; @symbol_type<0> = [String,478,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [dithering,479,18,27]; @symbol_type<0> = [String,479,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [automaticPalette,480,18,34]; @symbol_type<0> = [String,480,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 483; @symbol_moduledef = [prompt_size__body_with_title,483,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 483; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 484; @position = 18; @symbol_constdef = [width,484,18,23]; @symbol_type<0> = [Number,484,27,33]; ]
+            const width as Number = 312;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [height,485,18,24]; @symbol_type<0> = [Number,485,28,34]; ]
+            const height as Number = 215;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 488; @symbol_moduledef = [system_loc__hint_button_right_top,488,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 488; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [x,489,18,19]; @symbol_type<0> = [Number,489,23,29]; ]
+            const x as Number = 319;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [y,490,18,19]; @symbol_type<0> = [Number,490,23,29]; ]
+            const y as Number = 72;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 493; @symbol_moduledef = [system_color_light__text,493,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 493; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 495 18 ]
+                symbol [ Graphics %tmp.59 495 31 39 ];
+                %tmp.59 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.60 495 40 57 ];
+                %tmp.60 = getv %tmp.59 :COLOR_TRANSPARENT;
+                putv self :background %tmp.60;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [color,494,18,23]; @symbol_type<0> = [Number,494,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 495; @position = 18; @symbol_constdef = [background,495,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 498; @symbol_moduledef = [system_icon_light__check,498,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 498; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [filename,499,18,26]; @symbol_type<0> = [String,499,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__check.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [compress,500,18,26]; @symbol_type<0> = [String,500,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 501; @position = 18; @symbol_constdef = [dithering,501,18,27]; @symbol_type<0> = [String,501,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [automaticPalette,502,18,34]; @symbol_type<0> = [String,502,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 505; @symbol_moduledef = [confirmation_input__reject,505,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 505; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [y1,506,18,20]; @symbol_type<0> = [Number,506,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [x1,507,18,20]; @symbol_type<0> = [Number,507,24,30]; ]
+            const x1 as Number = 97;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [y2,508,18,20]; @symbol_type<0> = [Number,508,24,30]; ]
+            const y2 as Number = 76;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 509; @position = 18; @symbol_constdef = [x2,509,18,20]; @symbol_type<0> = [Number,509,24,30]; ]
+            const x2 as Number = 293;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 512; @symbol_moduledef = [system_icon_light__revert,512,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 512; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [filename,513,18,26]; @symbol_type<0> = [String,513,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__revert.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [compress,514,18,26]; @symbol_type<0> = [String,514,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [dithering,515,18,27]; @symbol_type<0> = [String,515,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [automaticPalette,516,18,34]; @symbol_type<0> = [String,516,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 519; @symbol_moduledef = [system_size__subwindow,519,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [exclude,520,18,25]; @symbol_type<0> = [Boolean,520,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 523; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,523,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [exclude,524,18,25]; @symbol_type<0> = [Boolean,524,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 527; @symbol_moduledef = [system_icon_dark__check,527,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 527; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [filename,528,18,26]; @symbol_type<0> = [String,528,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__check.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [compress,529,18,26]; @symbol_type<0> = [String,529,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [dithering,530,18,27]; @symbol_type<0> = [String,530,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [automaticPalette,531,18,34]; @symbol_type<0> = [String,531,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 534; @symbol_moduledef = [confirmation_loc__hint_keep,534,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [x,535,18,19]; @symbol_type<0> = [Number,535,23,29]; ]
+            const x as Number = 322;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [y,536,18,19]; @symbol_type<0> = [Number,536,23,29]; ]
+            const y as Number = 258;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 539; @symbol_moduledef = [confirmation_loc__hint_delete,539,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 539; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [x,540,18,19]; @symbol_type<0> = [Number,540,23,29]; ]
+            const x as Number = 319;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [y,541,18,19]; @symbol_type<0> = [Number,541,23,29]; ]
+            const y as Number = 72;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 544; @symbol_moduledef = [system_icon_positive__hint_action_menu,544,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [exclude,545,18,25]; @symbol_type<0> = [Boolean,545,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 548; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,548,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 548; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 549; @position = 18; @symbol_constdef = [exclude,549,18,25]; @symbol_type<0> = [Boolean,549,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 552; @symbol_moduledef = [system_icon_light__hint_button_left_middle,552,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 552; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [exclude,553,18,25]; @symbol_type<0> = [Boolean,553,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 556; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,556,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 556; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 557; @position = 18; @symbol_constdef = [filename,557,18,26]; @symbol_type<0> = [String,557,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [dithering,558,18,27]; @symbol_type<0> = [String,558,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [packingFormat,559,18,31]; @symbol_type<0> = [String,559,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 562; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,562,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 562; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 563; @position = 18; @symbol_constdef = [filename,563,18,26]; @symbol_type<0> = [String,563,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [dithering,564,18,27]; @symbol_type<0> = [String,564,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [packingFormat,565,18,31]; @symbol_type<0> = [String,565,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 568; @symbol_moduledef = [system_icon_dark__revert,568,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 568; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [filename,569,18,26]; @symbol_type<0> = [String,569,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__revert.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [compress,570,18,26]; @symbol_type<0> = [String,570,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 571; @position = 18; @symbol_constdef = [dithering,571,18,27]; @symbol_type<0> = [String,571,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [automaticPalette,572,18,34]; @symbol_type<0> = [String,572,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 575; @symbol_moduledef = [confirmation_icon_light__hint_delete,575,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 575; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [filename,576,18,26]; @symbol_type<0> = [String,576,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [dithering,577,18,27]; @symbol_type<0> = [String,577,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [packingFormat,578,18,31]; @symbol_type<0> = [String,578,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 581; @symbol_moduledef = [system_icon_dark__question,581,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 581; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [filename,582,18,26]; @symbol_type<0> = [String,582,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__question.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [compress,583,18,26]; @symbol_type<0> = [String,583,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [dithering,584,18,27]; @symbol_type<0> = [String,584,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [automaticPalette,585,18,34]; @symbol_type<0> = [String,585,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 588; @symbol_moduledef = [system_icon_light__discard,588,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [filename,589,18,26]; @symbol_type<0> = [String,589,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__discard.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [compress,590,18,26]; @symbol_type<0> = [String,590,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 591; @position = 18; @symbol_constdef = [dithering,591,18,27]; @symbol_type<0> = [String,591,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [automaticPalette,592,18,34]; @symbol_type<0> = [String,592,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 595; @symbol_moduledef = [device_info,595,15,26]; ]
+        module device_info {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 595; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 597 18 ]
+                symbol [ Toybox %tmp.62 597 32 38 ];
+                %tmp.62 = getv ? :Toybox;
+                symbol [ System %tmp.63 597 39 45 ];
+                %tmp.63 = getv %tmp.62 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.64 597 46 64 ];
+                %tmp.64 = getv %tmp.63 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.64;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [screenWidth,596,18,29]; @symbol_type<0> = [Number,596,33,39]; ]
+            const screenWidth as Number = 390;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 597; @position = 18; @symbol_constdef = [screenShape,597,18,29]; ]
+            const screenShape;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [hasNightMode,598,18,30]; @symbol_type<0> = [Boolean,598,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [hasGpu,599,18,24]; @symbol_type<0> = [Boolean,599,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [screenHeight,600,18,30]; @symbol_type<0> = [Number,600,34,40]; ]
+            const screenHeight as Number = 390;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [hasTouchScreen,601,18,32]; @symbol_type<0> = [Boolean,601,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,602,18,44]; @symbol_type<0> = [Boolean,602,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 605; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,605,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 605; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [filename,606,18,26]; @symbol_type<0> = [String,606,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [dithering,607,18,27]; @symbol_type<0> = [String,607,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [packingFormat,608,18,31]; @symbol_type<0> = [String,608,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 611; @symbol_moduledef = [prompt_font__body_no_title,611,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 611; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 612 18 ]
+                symbol [ Graphics %tmp.65 612 34 42 ];
+                %tmp.65 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.66 612 43 62 ];
+                %tmp.66 = getv %tmp.65 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.67 612 63 71 ];
+                %tmp.67 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.68 612 72 92 ];
+                %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_VCENTER;
+                %tmp.69 = bitor %tmp.66 %tmp.68;
+                putv self :justification %tmp.69;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 613 18 ]
+                symbol [ Graphics %tmp.70 613 25 33 ];
+                %tmp.70 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.71 613 34 43 ];
+                %tmp.71 = getv %tmp.70 :FONT_TINY;
+                putv self :font %tmp.71;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [justification,612,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [font,613,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 616; @symbol_moduledef = [prompt_size__title_icon,616,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 616; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [scaleX,617,18,24]; @symbol_type<0> = [Float,617,28,33]; ]
+            const scaleX as Float = 0.12;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [scaleRelativeTo,618,18,33]; @symbol_type<0> = [String,618,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 621; @symbol_moduledef = [system_icon_dark__warning,621,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 621; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [filename,622,18,26]; @symbol_type<0> = [String,622,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_dark__warning.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 623; @position = 18; @symbol_constdef = [compress,623,18,26]; @symbol_type<0> = [String,623,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [dithering,624,18,27]; @symbol_type<0> = [String,624,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [automaticPalette,625,18,34]; @symbol_type<0> = [String,625,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 628; @symbol_moduledef = [prompt_loc__title_icon,628,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 628; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [x,629,18,19]; @symbol_type<0> = [Number,629,23,29]; ]
+            const x as Number = 195;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [y,630,18,19]; @symbol_type<0> = [Number,630,23,29]; ]
+            const y as Number = 39;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 631; @position = 18; @symbol_constdef = [horizontalJustification,631,18,41]; @symbol_type<0> = [String,631,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [verticalJustification,632,18,39]; @symbol_type<0> = [String,632,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 635; @symbol_moduledef = [prompt_font_enhanced_readability__title,635,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 635; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 636 18 ]
+                symbol [ Graphics %tmp.72 636 34 42 ];
+                %tmp.72 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.73 636 43 62 ];
+                %tmp.73 = getv %tmp.72 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.74 636 63 71 ];
+                %tmp.74 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.75 636 72 92 ];
+                %tmp.75 = getv %tmp.74 :TEXT_JUSTIFY_VCENTER;
+                %tmp.76 = bitor %tmp.73 %tmp.75;
+                putv self :justification %tmp.76;
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 637 18 ]
+                symbol [ Graphics %tmp.77 637 25 33 ];
+                %tmp.77 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.78 637 34 43 ];
+                %tmp.78 = getv %tmp.77 :FONT_TINY;
+                putv self :font %tmp.78;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [justification,636,18,31]; ]
+            const justification;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [font,637,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 640; @symbol_moduledef = [prompt_color_dark__body,640,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 640; ]
+            <init> {
+[ "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen" 642 18 ]
+                symbol [ Graphics %tmp.79 642 31 39 ];
+                %tmp.79 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.80 642 40 57 ];
+                %tmp.80 = getv %tmp.79 :COLOR_TRANSPARENT;
+                putv self :background %tmp.80;
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [color,641,18,23]; @symbol_type<0> = [Number,641,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [background,642,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 645; @symbol_moduledef = [confirmation_icon__hint_delete,645,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 645; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [filename,646,18,26]; @symbol_type<0> = [String,646,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [dithering,647,18,27]; @symbol_type<0> = [String,647,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [packingFormat,648,18,31]; @symbol_type<0> = [String,648,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 651; @symbol_moduledef = [system_icon_light__hint_button_right_top,651,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 651; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [filename,652,18,26]; @symbol_type<0> = [String,652,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [dithering,653,18,27]; @symbol_type<0> = [String,653,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [packingFormat,654,18,31]; @symbol_type<0> = [String,654,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 657; @symbol_moduledef = [confirmation_size__body,657,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 657; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [width,658,18,23]; @symbol_type<0> = [Number,658,27,33]; ]
+            const width as Number = 231;
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [height,659,18,24]; @symbol_type<0> = [Number,659,28,34]; ]
+            const height as Number = 234;
+        }
+        [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 662; @symbol_moduledef = [system_icon_positive__check,662,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 662; ]
+            <init> {
+            }
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [filename,663,18,26]; @symbol_type<0> = [String,663,30,36]; ]
+            const filename as String = "/home/pancala/.Garmin/ConnectIQ/Devices/vivoactive6/system_icon_positive__check.svg";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 664; @position = 18; @symbol_constdef = [dithering,664,18,27]; @symbol_type<0> = [String,664,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 665; @position = 18; @symbol_constdef = [packingFormat,665,18,31]; @symbol_type<0> = [String,665,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "/home/pancala/GarminProjects/HRGraph/bin/gen/006-B4625-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
