@@ -200,8 +200,8 @@ class PoincareView extends WatchUi.View {
             dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
             dc.drawText(screenW/2, offsetY - 25, Graphics.FONT_XTINY, infoStr, Graphics.TEXT_JUSTIFY_CENTER);
 
-            // 繪製最後 10 點的連線 (僅在 AUTO 模式)
-            if (displayMode == 2 && pointsCount > 1) {
+            // 繪製最後 10 點的連線
+            if (pointsCount > 1) {
                  var rangeToCheck = 10;
                  if (rangeToCheck > pointsCount) { rangeToCheck = pointsCount; }
                  
@@ -335,13 +335,13 @@ class PoincareView extends WatchUi.View {
             var maxBpm = 0;
 
             if (displayMode == 0) {
-                // Wide Mode: 60 - 120 BPM
+                // Wide Mode: 60 - 130 BPM
                 minBpm = 60; 
-                maxBpm = 120;
+                maxBpm = 130;
             } else if (displayMode == 1) {
-                // Zoom Mode: 50 - 80 BPM
-                minBpm = 50; 
-                maxBpm = 80;
+                // Zoom Mode: 60 - 90 BPM
+                minBpm = 60; 
+                maxBpm = 90;
             }
 
             if (displayMode == 0 || displayMode == 1) {

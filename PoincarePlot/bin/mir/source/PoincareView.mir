@@ -1171,116 +1171,106 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         invoke %tmp.91 %tmp.92(%tmp.96, %tmp.100, %tmp.102, %tmp.103, %tmp.105);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 204 12 ]
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_12_247_12_if_stmt:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_16_204_50_begin:
-        symbol [ displayMode %tmp.107 204 16 27 ];
-        %tmp.107 = getv ? :displayMode;
-        %tmp.108 = 2;
-        %tmp.109 = eq %tmp.107 %tmp.108;
+        symbol [ pointsCount %tmp.107 204 16 27 ];
+        %tmp.107 = getv ? :pointsCount;
+        %tmp.108 = 1;
+        %tmp.109 = gt %tmp.107 %tmp.108;
         bf %tmp.109 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_12_247_12_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_36_204_50_true:
-        symbol [ pointsCount %tmp.111 204 36 47 ];
-        %tmp.111 = getv ? :pointsCount;
-        %tmp.112 = 1;
-        %tmp.113 = gt %tmp.111 %tmp.112;
-        push %tmp.113;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_36_204_50_end:
-        %tmp.114 = phi [%tmp.109 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_16_204_50_begin] [%tmp.113 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_36_204_50_true] [%tmp.114 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_36_204_50_end];
-        bf %tmp.114 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_12_247_12_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_12_247_12_if_true:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_start:
+C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 205 17 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_stop" ]
+        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_stop" ]
         %rangeToCheck.5 = local;
         symbol [ rangeToCheck %rangeToCheck.5 205 21 33 ];
-        %tmp.115 = 10;
-        lputv %rangeToCheck.5 %tmp.115;
+        %tmp.110 = 10;
+        lputv %rangeToCheck.5 %tmp.110;
         symbol [ rangeToCheck %rangeToCheck.5 205 21 33 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 206 17 ]
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_17_206_79_if_stmt:
-        %tmp.116 = lgetv %rangeToCheck.5;
-        symbol [ rangeToCheck %tmp.116 206 21 33 ];
-        symbol [ pointsCount %tmp.118 206 36 47 ];
-        %tmp.118 = getv ? :pointsCount;
-        %tmp.119 = gt %tmp.116 %tmp.118;
-        bf %tmp.119 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_17_206_79_if_end;
+        %tmp.111 = lgetv %rangeToCheck.5;
+        symbol [ rangeToCheck %tmp.111 206 21 33 ];
+        symbol [ pointsCount %tmp.113 206 36 47 ];
+        %tmp.113 = getv ? :pointsCount;
+        %tmp.114 = gt %tmp.111 %tmp.113;
+        bf %tmp.114 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_17_206_79_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_17_206_79_if_true:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_49_206_79_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 206 51 ]
-        symbol [ pointsCount %tmp.121 206 66 77 ];
-        %tmp.121 = getv ? :pointsCount;
-        lputv %rangeToCheck.5 %tmp.121;
+        symbol [ pointsCount %tmp.116 206 66 77 ];
+        %tmp.116 = getv ? :pointsCount;
+        lputv %rangeToCheck.5 %tmp.116;
         symbol [ rangeToCheck %rangeToCheck.5 206 51 63 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_49_206_79_stop:
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_17_206_79_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_206_17_206_79_if_end:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 208 17 ]
-        %tmp.122 = lgetv %dc;
-        symbol [ dc %tmp.122 208 17 19 ];
-        symbol [ setPenWidth %tmp.123 208 20 31 ];
-        %tmp.123 = getv function %tmp.122 :setPenWidth;
-        %tmp.124 = 1;
-        invoke %tmp.122 %tmp.123(%tmp.124);
+        %tmp.117 = lgetv %dc;
+        symbol [ dc %tmp.117 208 17 19 ];
+        symbol [ setPenWidth %tmp.118 208 20 31 ];
+        %tmp.118 = getv function %tmp.117 :setPenWidth;
+        %tmp.119 = 1;
+        invoke %tmp.117 %tmp.118(%tmp.119);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 209 17 ]
-        %tmp.125 = lgetv %dc;
-        symbol [ dc %tmp.125 209 17 19 ];
-        symbol [ setColor %tmp.126 209 20 28 ];
-        %tmp.126 = getv function %tmp.125 :setColor;
-        symbol [ Graphics %tmp.127 209 29 37 ];
-        %tmp.127 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.128 209 38 51 ];
-        %tmp.128 = getv %tmp.127 :COLOR_LT_GRAY;
-        symbol [ Graphics %tmp.129 209 53 61 ];
-        %tmp.129 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.130 209 62 79 ];
-        %tmp.130 = getv %tmp.129 :COLOR_TRANSPARENT;
-        invoke %tmp.125 %tmp.126(%tmp.128, %tmp.130);
+        %tmp.120 = lgetv %dc;
+        symbol [ dc %tmp.120 209 17 19 ];
+        symbol [ setColor %tmp.121 209 20 28 ];
+        %tmp.121 = getv function %tmp.120 :setColor;
+        symbol [ Graphics %tmp.122 209 29 37 ];
+        %tmp.122 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.123 209 38 51 ];
+        %tmp.123 = getv %tmp.122 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.124 209 53 61 ];
+        %tmp.124 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.125 209 62 79 ];
+        %tmp.125 = getv %tmp.124 :COLOR_TRANSPARENT;
+        invoke %tmp.120 %tmp.121(%tmp.123, %tmp.125);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 213 17 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_stop" ]
+        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_stop" ]
         %lastIdx.6 = local;
         symbol [ lastIdx %lastIdx.6 213 21 28 ];
-        symbol [ writeIndex %tmp.132 213 32 42 ];
-        %tmp.132 = getv ? :writeIndex;
-        %tmp.133 = 1;
-        %tmp.134 = sub %tmp.132 %tmp.133;
-        symbol [ maxPoints %tmp.136 213 49 58 ];
-        %tmp.136 = getv ? :maxPoints;
-        %tmp.137 = add %tmp.134 %tmp.136;
-        symbol [ maxPoints %tmp.139 213 62 71 ];
-        %tmp.139 = getv ? :maxPoints;
-        %tmp.140 = mod %tmp.137 %tmp.139;
-        lputv %lastIdx.6 %tmp.140;
+        symbol [ writeIndex %tmp.127 213 32 42 ];
+        %tmp.127 = getv ? :writeIndex;
+        %tmp.128 = 1;
+        %tmp.129 = sub %tmp.127 %tmp.128;
+        symbol [ maxPoints %tmp.131 213 49 58 ];
+        %tmp.131 = getv ? :maxPoints;
+        %tmp.132 = add %tmp.129 %tmp.131;
+        symbol [ maxPoints %tmp.134 213 62 71 ];
+        %tmp.134 = getv ? :maxPoints;
+        %tmp.135 = mod %tmp.132 %tmp.134;
+        lputv %lastIdx.6 %tmp.135;
         symbol [ lastIdx %lastIdx.6 213 21 28 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 214 17 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_stop" ]
+        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_stop" ]
         %prevRaw.7 = local;
         symbol [ prevRaw %prevRaw.7 214 21 28 ];
-        symbol [ pointsBuffer %tmp.142 214 31 43 ];
-        %tmp.142 = getv ? :pointsBuffer;
-        %tmp.143 = lgetv %lastIdx.6;
-        symbol [ lastIdx %tmp.143 214 44 51 ];
-        %tmp.144 = agetv %tmp.142 %tmp.143;
-        %tmp.145 = as %tmp.144 Array<Number>;
-        symbol [ Array %tmp.145 214 56 61 ];
-        symbol [ Number %tmp.145 214 62 68 ];
-        lputv %prevRaw.7 %tmp.145;
+        symbol [ pointsBuffer %tmp.137 214 31 43 ];
+        %tmp.137 = getv ? :pointsBuffer;
+        %tmp.138 = lgetv %lastIdx.6;
+        symbol [ lastIdx %tmp.138 214 44 51 ];
+        %tmp.139 = agetv %tmp.137 %tmp.138;
+        %tmp.140 = as %tmp.139 Array<Number>;
+        symbol [ Array %tmp.140 214 56 61 ];
+        symbol [ Number %tmp.140 214 62 68 ];
+        lputv %prevRaw.7 %tmp.140;
         symbol [ prevRaw %prevRaw.7 214 21 28 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 215 17 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_stop" ]
+        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_stop" ]
         %prevP.8 = local;
         symbol [ prevP %prevP.8 215 21 26 ];
-        %tmp.146 = self;
-        symbol [ calculatePixel %tmp.147 215 29 43 ];
-        %tmp.147 = getv function %tmp.146 :calculatePixel;
-        %tmp.148 = lgetv %prevRaw.7;
-        symbol [ prevRaw %tmp.148 215 44 51 ];
-        %tmp.149 = 0;
-        %tmp.150 = agetv %tmp.148 %tmp.149;
-        %tmp.151 = lgetv %prevRaw.7;
-        symbol [ prevRaw %tmp.151 215 56 63 ];
-        %tmp.152 = 1;
-        %tmp.153 = agetv %tmp.151 %tmp.152;
-        %tmp.154 = invoke %tmp.146 %tmp.147(%tmp.150, %tmp.153);
-        lputv %prevP.8 %tmp.154;
+        %tmp.141 = self;
+        symbol [ calculatePixel %tmp.142 215 29 43 ];
+        %tmp.142 = getv function %tmp.141 :calculatePixel;
+        %tmp.143 = lgetv %prevRaw.7;
+        symbol [ prevRaw %tmp.143 215 44 51 ];
+        %tmp.144 = 0;
+        %tmp.145 = agetv %tmp.143 %tmp.144;
+        %tmp.146 = lgetv %prevRaw.7;
+        symbol [ prevRaw %tmp.146 215 56 63 ];
+        %tmp.147 = 1;
+        %tmp.148 = agetv %tmp.146 %tmp.147;
+        %tmp.149 = invoke %tmp.141 %tmp.142(%tmp.145, %tmp.148);
+        lputv %prevP.8 %tmp.149;
         symbol [ prevP %prevP.8 215 21 26 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 217 17 ]
         for @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_test @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_incr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_end;
@@ -1288,103 +1278,103 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_begin" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_end" ]
         %i.9 = local;
         symbol [ i %i.9 217 26 27 ];
-        %tmp.155 = 1;
-        lputv %i.9 %tmp.155;
+        %tmp.150 = 1;
+        lputv %i.9 %tmp.150;
         symbol [ i %i.9 217 26 27 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_test:
-        %tmp.156 = lgetv %i.9;
-        symbol [ i %tmp.156 217 33 34 ];
-        %tmp.157 = lgetv %rangeToCheck.5;
-        symbol [ rangeToCheck %tmp.157 217 37 49 ];
-        %tmp.158 = lt %tmp.156 %tmp.157;
-        bf %tmp.158 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_end;
+        %tmp.151 = lgetv %i.9;
+        symbol [ i %tmp.151 217 33 34 ];
+        %tmp.152 = lgetv %rangeToCheck.5;
+        symbol [ rangeToCheck %tmp.152 217 37 49 ];
+        %tmp.153 = lt %tmp.151 %tmp.152;
+        bf %tmp.153 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_begin:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 218 21 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_stop" ]
         %currIdx.10 = local;
         symbol [ currIdx %currIdx.10 218 25 32 ];
-        %tmp.159 = lgetv %lastIdx.6;
-        symbol [ lastIdx %tmp.159 218 36 43 ];
-        %tmp.160 = lgetv %i.9;
-        symbol [ i %tmp.160 218 46 47 ];
-        %tmp.161 = sub %tmp.159 %tmp.160;
-        symbol [ maxPoints %tmp.163 218 50 59 ];
-        %tmp.163 = getv ? :maxPoints;
-        %tmp.164 = add %tmp.161 %tmp.163;
-        symbol [ maxPoints %tmp.166 218 63 72 ];
-        %tmp.166 = getv ? :maxPoints;
-        %tmp.167 = mod %tmp.164 %tmp.166;
-        lputv %currIdx.10 %tmp.167;
+        %tmp.154 = lgetv %lastIdx.6;
+        symbol [ lastIdx %tmp.154 218 36 43 ];
+        %tmp.155 = lgetv %i.9;
+        symbol [ i %tmp.155 218 46 47 ];
+        %tmp.156 = sub %tmp.154 %tmp.155;
+        symbol [ maxPoints %tmp.158 218 50 59 ];
+        %tmp.158 = getv ? :maxPoints;
+        %tmp.159 = add %tmp.156 %tmp.158;
+        symbol [ maxPoints %tmp.161 218 63 72 ];
+        %tmp.161 = getv ? :maxPoints;
+        %tmp.162 = mod %tmp.159 %tmp.161;
+        lputv %currIdx.10 %tmp.162;
         symbol [ currIdx %currIdx.10 218 25 32 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 219 21 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_stop" ]
         %currRaw.11 = local;
         symbol [ currRaw %currRaw.11 219 25 32 ];
-        symbol [ pointsBuffer %tmp.169 219 35 47 ];
-        %tmp.169 = getv ? :pointsBuffer;
-        %tmp.170 = lgetv %currIdx.10;
-        symbol [ currIdx %tmp.170 219 48 55 ];
-        %tmp.171 = agetv %tmp.169 %tmp.170;
-        %tmp.172 = as %tmp.171 Array<Number>;
-        symbol [ Array %tmp.172 219 60 65 ];
-        symbol [ Number %tmp.172 219 66 72 ];
-        lputv %currRaw.11 %tmp.172;
+        symbol [ pointsBuffer %tmp.164 219 35 47 ];
+        %tmp.164 = getv ? :pointsBuffer;
+        %tmp.165 = lgetv %currIdx.10;
+        symbol [ currIdx %tmp.165 219 48 55 ];
+        %tmp.166 = agetv %tmp.164 %tmp.165;
+        %tmp.167 = as %tmp.166 Array<Number>;
+        symbol [ Array %tmp.167 219 60 65 ];
+        symbol [ Number %tmp.167 219 66 72 ];
+        lputv %currRaw.11 %tmp.167;
         symbol [ currRaw %currRaw.11 219 25 32 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 220 21 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_stop" ]
         %currP.12 = local;
         symbol [ currP %currP.12 220 25 30 ];
-        %tmp.173 = self;
-        symbol [ calculatePixel %tmp.174 220 33 47 ];
-        %tmp.174 = getv function %tmp.173 :calculatePixel;
-        %tmp.175 = lgetv %currRaw.11;
-        symbol [ currRaw %tmp.175 220 48 55 ];
-        %tmp.176 = 0;
-        %tmp.177 = agetv %tmp.175 %tmp.176;
-        %tmp.178 = lgetv %currRaw.11;
-        symbol [ currRaw %tmp.178 220 60 67 ];
-        %tmp.179 = 1;
-        %tmp.180 = agetv %tmp.178 %tmp.179;
-        %tmp.181 = invoke %tmp.173 %tmp.174(%tmp.177, %tmp.180);
-        lputv %currP.12 %tmp.181;
+        %tmp.168 = self;
+        symbol [ calculatePixel %tmp.169 220 33 47 ];
+        %tmp.169 = getv function %tmp.168 :calculatePixel;
+        %tmp.170 = lgetv %currRaw.11;
+        symbol [ currRaw %tmp.170 220 48 55 ];
+        %tmp.171 = 0;
+        %tmp.172 = agetv %tmp.170 %tmp.171;
+        %tmp.173 = lgetv %currRaw.11;
+        symbol [ currRaw %tmp.173 220 60 67 ];
+        %tmp.174 = 1;
+        %tmp.175 = agetv %tmp.173 %tmp.174;
+        %tmp.176 = invoke %tmp.168 %tmp.169(%tmp.172, %tmp.175);
+        lputv %currP.12 %tmp.176;
         symbol [ currP %currP.12 220 25 30 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 232 21 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_stop" ]
         %alpha.13 = local;
         symbol [ alpha %alpha.13 232 25 30 ];
-        %tmp.182 = 255;
-        %tmp.183 = lgetv %i.9;
-        symbol [ i %tmp.183 232 41 42 ];
-        symbol [ toFloat %tmp.184 232 43 50 ];
-        %tmp.184 = getv function %tmp.183 :toFloat;
-        %tmp.185 = invoke %tmp.183 %tmp.184();
-        %tmp.186 = lgetv %rangeToCheck.5;
-        symbol [ rangeToCheck %tmp.186 232 55 67 ];
-        symbol [ toFloat %tmp.187 232 68 75 ];
-        %tmp.187 = getv function %tmp.186 :toFloat;
+        %tmp.177 = 255;
+        %tmp.178 = lgetv %i.9;
+        symbol [ i %tmp.178 232 41 42 ];
+        symbol [ toFloat %tmp.179 232 43 50 ];
+        %tmp.179 = getv function %tmp.178 :toFloat;
+        %tmp.180 = invoke %tmp.178 %tmp.179();
+        %tmp.181 = lgetv %rangeToCheck.5;
+        symbol [ rangeToCheck %tmp.181 232 55 67 ];
+        symbol [ toFloat %tmp.182 232 68 75 ];
+        %tmp.182 = getv function %tmp.181 :toFloat;
+        %tmp.183 = invoke %tmp.181 %tmp.182();
+        %tmp.184 = div %tmp.180 %tmp.183;
+        %tmp.185 = 200;
+        %tmp.186 = mul %tmp.184 %tmp.185;
+        symbol [ toNumber %tmp.187 232 86 94 ];
+        %tmp.187 = getv function %tmp.186 :toNumber;
         %tmp.188 = invoke %tmp.186 %tmp.187();
-        %tmp.189 = div %tmp.185 %tmp.188;
-        %tmp.190 = 200;
-        %tmp.191 = mul %tmp.189 %tmp.190;
-        symbol [ toNumber %tmp.192 232 86 94 ];
-        %tmp.192 = getv function %tmp.191 :toNumber;
-        %tmp.193 = invoke %tmp.191 %tmp.192();
-        %tmp.194 = sub %tmp.182 %tmp.193;
-        lputv %alpha.13 %tmp.194;
+        %tmp.189 = sub %tmp.177 %tmp.188;
+        lputv %alpha.13 %tmp.189;
         symbol [ alpha %alpha.13 232 25 30 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 233 21 ]
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_233_21_233_51_if_stmt:
-        %tmp.195 = lgetv %alpha.13;
-        symbol [ alpha %tmp.195 233 25 30 ];
-        %tmp.196 = 50;
-        %tmp.197 = lt %tmp.195 %tmp.196;
-        bf %tmp.197 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_233_21_233_51_if_end;
+        %tmp.190 = lgetv %alpha.13;
+        symbol [ alpha %tmp.190 233 25 30 ];
+        %tmp.191 = 50;
+        %tmp.192 = lt %tmp.190 %tmp.191;
+        bf %tmp.192 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_233_21_233_51_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_233_21_233_51_if_true:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_233_37_233_51_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 233 39 ]
-        %tmp.198 = 50;
-        lputv %alpha.13 %tmp.198;
+        %tmp.193 = 50;
+        lputv %alpha.13 %tmp.193;
         symbol [ alpha %alpha.13 233 39 44 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_233_37_233_51_stop:
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_233_21_233_51_if_end;
@@ -1393,237 +1383,237 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_stop" ]
         %colorBase.14 = local;
         symbol [ colorBase %colorBase.14 238 25 34 ];
-        %tmp.199 = 0xAAAAAA;
-        lputv %colorBase.14 %tmp.199;
+        %tmp.194 = 0xAAAAAA;
+        lputv %colorBase.14 %tmp.194;
         symbol [ colorBase %colorBase.14 238 25 34 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 239 21 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_stop" ]
         %colorWithAlpha.15 = local;
         symbol [ colorWithAlpha %colorWithAlpha.15 239 25 39 ];
-        %tmp.200 = lgetv %alpha.13;
-        symbol [ alpha %tmp.200 239 43 48 ];
-        %tmp.201 = 24;
-        %tmp.202 = shl %tmp.200 %tmp.201;
-        %tmp.203 = lgetv %colorBase.14;
-        symbol [ colorBase %tmp.203 239 58 67 ];
-        %tmp.204 = bitor %tmp.202 %tmp.203;
-        lputv %colorWithAlpha.15 %tmp.204;
+        %tmp.195 = lgetv %alpha.13;
+        symbol [ alpha %tmp.195 239 43 48 ];
+        %tmp.196 = 24;
+        %tmp.197 = shl %tmp.195 %tmp.196;
+        %tmp.198 = lgetv %colorBase.14;
+        symbol [ colorBase %tmp.198 239 58 67 ];
+        %tmp.199 = bitor %tmp.197 %tmp.198;
+        lputv %colorWithAlpha.15 %tmp.199;
         symbol [ colorWithAlpha %colorWithAlpha.15 239 25 39 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 241 21 ]
-        %tmp.205 = lgetv %dc;
-        symbol [ dc %tmp.205 241 21 23 ];
-        symbol [ setColor %tmp.206 241 24 32 ];
-        %tmp.206 = getv function %tmp.205 :setColor;
-        %tmp.207 = lgetv %colorWithAlpha.15;
-        symbol [ colorWithAlpha %tmp.207 241 33 47 ];
-        symbol [ Graphics %tmp.208 241 49 57 ];
-        %tmp.208 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.209 241 58 75 ];
-        %tmp.209 = getv %tmp.208 :COLOR_TRANSPARENT;
-        invoke %tmp.205 %tmp.206(%tmp.207, %tmp.209);
+        %tmp.200 = lgetv %dc;
+        symbol [ dc %tmp.200 241 21 23 ];
+        symbol [ setColor %tmp.201 241 24 32 ];
+        %tmp.201 = getv function %tmp.200 :setColor;
+        %tmp.202 = lgetv %colorWithAlpha.15;
+        symbol [ colorWithAlpha %tmp.202 241 33 47 ];
+        symbol [ Graphics %tmp.203 241 49 57 ];
+        %tmp.203 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.204 241 58 75 ];
+        %tmp.204 = getv %tmp.203 :COLOR_TRANSPARENT;
+        invoke %tmp.200 %tmp.201(%tmp.202, %tmp.204);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 243 21 ]
-        %tmp.210 = lgetv %dc;
-        symbol [ dc %tmp.210 243 21 23 ];
-        symbol [ drawLine %tmp.211 243 24 32 ];
-        %tmp.211 = getv function %tmp.210 :drawLine;
-        %tmp.212 = lgetv %prevP.8;
-        symbol [ prevP %tmp.212 243 33 38 ];
-        %tmp.213 = 0;
-        %tmp.214 = agetv %tmp.212 %tmp.213;
-        %tmp.215 = lgetv %prevP.8;
-        symbol [ prevP %tmp.215 243 43 48 ];
-        %tmp.216 = 1;
-        %tmp.217 = agetv %tmp.215 %tmp.216;
-        %tmp.218 = lgetv %currP.12;
-        symbol [ currP %tmp.218 243 53 58 ];
-        %tmp.219 = 0;
-        %tmp.220 = agetv %tmp.218 %tmp.219;
-        %tmp.221 = lgetv %currP.12;
-        symbol [ currP %tmp.221 243 63 68 ];
-        %tmp.222 = 1;
-        %tmp.223 = agetv %tmp.221 %tmp.222;
-        invoke %tmp.210 %tmp.211(%tmp.214, %tmp.217, %tmp.220, %tmp.223);
+        %tmp.205 = lgetv %dc;
+        symbol [ dc %tmp.205 243 21 23 ];
+        symbol [ drawLine %tmp.206 243 24 32 ];
+        %tmp.206 = getv function %tmp.205 :drawLine;
+        %tmp.207 = lgetv %prevP.8;
+        symbol [ prevP %tmp.207 243 33 38 ];
+        %tmp.208 = 0;
+        %tmp.209 = agetv %tmp.207 %tmp.208;
+        %tmp.210 = lgetv %prevP.8;
+        symbol [ prevP %tmp.210 243 43 48 ];
+        %tmp.211 = 1;
+        %tmp.212 = agetv %tmp.210 %tmp.211;
+        %tmp.213 = lgetv %currP.12;
+        symbol [ currP %tmp.213 243 53 58 ];
+        %tmp.214 = 0;
+        %tmp.215 = agetv %tmp.213 %tmp.214;
+        %tmp.216 = lgetv %currP.12;
+        symbol [ currP %tmp.216 243 63 68 ];
+        %tmp.217 = 1;
+        %tmp.218 = agetv %tmp.216 %tmp.217;
+        invoke %tmp.205 %tmp.206(%tmp.209, %tmp.212, %tmp.215, %tmp.218);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 245 21 ]
-        %tmp.224 = lgetv %currP.12;
-        symbol [ currP %tmp.224 245 29 34 ];
-        lputv %prevP.8 %tmp.224;
+        %tmp.219 = lgetv %currP.12;
+        symbol [ currP %tmp.219 245 29 34 ];
+        lputv %prevP.8 %tmp.219;
         symbol [ prevP %prevP.8 245 21 26 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_56_246_17_stop:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_incr:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 217 ]
-        %tmp.227 = lgetv %i.9;
-        symbol [ i %tmp.227 217 51 52 ];
-        %tmp.228 = add %tmp.227 1;
-        lputv %i.9 %tmp.228;
+        %tmp.222 = lgetv %i.9;
+        symbol [ i %tmp.222 217 51 52 ];
+        %tmp.223 = add %tmp.222 1;
+        lputv %i.9 %tmp.223;
         symbol [ i %i.9 217 51 52 ];
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_test;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_217_17_246_17_for_end:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_53_247_12_stop:
+C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_33_247_12_stop:
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_12_247_12_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_204_12_247_12_if_end:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 250 12 ]
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_12_278_12_if_stmt:
-        symbol [ pointsCount %tmp.230 250 16 27 ];
-        %tmp.230 = getv ? :pointsCount;
-        %tmp.231 = 30;
-        %tmp.232 = gte %tmp.230 %tmp.231;
-        bf %tmp.232 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_12_278_12_if_end;
+        symbol [ pointsCount %tmp.225 250 16 27 ];
+        %tmp.225 = getv ? :pointsCount;
+        %tmp.226 = 30;
+        %tmp.227 = gte %tmp.225 %tmp.226;
+        bf %tmp.227 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_12_278_12_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_12_278_12_if_true:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 252 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %sd1Str.16 = local;
         symbol [ sd1Str %sd1Str.16 252 20 26 ];
-        %tmp.233 = "SD1: ";
-        symbol [ cachedSD1 %tmp.235 252 39 48 ];
-        %tmp.235 = getv ? :cachedSD1;
-        symbol [ format %tmp.236 252 49 55 ];
-        %tmp.236 = getv function %tmp.235 :format;
-        %tmp.237 = "%.1f";
-        %tmp.238 = invoke %tmp.235 %tmp.236(%tmp.237);
-        %tmp.239 = add %tmp.233 %tmp.238;
-        lputv %sd1Str.16 %tmp.239;
+        %tmp.228 = "SD1: ";
+        symbol [ cachedSD1 %tmp.230 252 39 48 ];
+        %tmp.230 = getv ? :cachedSD1;
+        symbol [ format %tmp.231 252 49 55 ];
+        %tmp.231 = getv function %tmp.230 :format;
+        %tmp.232 = "%.1f";
+        %tmp.233 = invoke %tmp.230 %tmp.231(%tmp.232);
+        %tmp.234 = add %tmp.228 %tmp.233;
+        lputv %sd1Str.16 %tmp.234;
         symbol [ sd1Str %sd1Str.16 252 20 26 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 253 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %sd2Str.17 = local;
         symbol [ sd2Str %sd2Str.17 253 20 26 ];
-        %tmp.240 = "SD2: ";
-        symbol [ cachedSD2 %tmp.242 253 39 48 ];
-        %tmp.242 = getv ? :cachedSD2;
-        symbol [ format %tmp.243 253 49 55 ];
-        %tmp.243 = getv function %tmp.242 :format;
-        %tmp.244 = "%.1f";
-        %tmp.245 = invoke %tmp.242 %tmp.243(%tmp.244);
-        %tmp.246 = add %tmp.240 %tmp.245;
-        lputv %sd2Str.17 %tmp.246;
+        %tmp.235 = "SD2: ";
+        symbol [ cachedSD2 %tmp.237 253 39 48 ];
+        %tmp.237 = getv ? :cachedSD2;
+        symbol [ format %tmp.238 253 49 55 ];
+        %tmp.238 = getv function %tmp.237 :format;
+        %tmp.239 = "%.1f";
+        %tmp.240 = invoke %tmp.237 %tmp.238(%tmp.239);
+        %tmp.241 = add %tmp.235 %tmp.240;
+        lputv %sd2Str.17 %tmp.241;
         symbol [ sd2Str %sd2Str.17 253 20 26 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 254 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %ratioStr.18 = local;
         symbol [ ratioStr %ratioStr.18 254 20 28 ];
-        %tmp.247 = "R: ";
-        symbol [ cachedRatio %tmp.249 254 39 50 ];
-        %tmp.249 = getv ? :cachedRatio;
-        symbol [ format %tmp.250 254 51 57 ];
-        %tmp.250 = getv function %tmp.249 :format;
-        %tmp.251 = "%.1f";
-        %tmp.252 = invoke %tmp.249 %tmp.250(%tmp.251);
-        %tmp.253 = add %tmp.247 %tmp.252;
-        lputv %ratioStr.18 %tmp.253;
+        %tmp.242 = "R: ";
+        symbol [ cachedRatio %tmp.244 254 39 50 ];
+        %tmp.244 = getv ? :cachedRatio;
+        symbol [ format %tmp.245 254 51 57 ];
+        %tmp.245 = getv function %tmp.244 :format;
+        %tmp.246 = "%.1f";
+        %tmp.247 = invoke %tmp.244 %tmp.245(%tmp.246);
+        %tmp.248 = add %tmp.242 %tmp.247;
+        lputv %ratioStr.18 %tmp.248;
         symbol [ ratioStr %ratioStr.18 254 20 28 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 256 16 ]
-        %tmp.254 = lgetv %dc;
-        symbol [ dc %tmp.254 256 16 18 ];
-        symbol [ setColor %tmp.255 256 19 27 ];
-        %tmp.255 = getv function %tmp.254 :setColor;
-        symbol [ Graphics %tmp.256 256 28 36 ];
-        %tmp.256 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.257 256 37 48 ];
-        %tmp.257 = getv %tmp.256 :COLOR_WHITE;
-        symbol [ Graphics %tmp.258 256 50 58 ];
-        %tmp.258 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.259 256 59 76 ];
-        %tmp.259 = getv %tmp.258 :COLOR_TRANSPARENT;
-        invoke %tmp.254 %tmp.255(%tmp.257, %tmp.259);
+        %tmp.249 = lgetv %dc;
+        symbol [ dc %tmp.249 256 16 18 ];
+        symbol [ setColor %tmp.250 256 19 27 ];
+        %tmp.250 = getv function %tmp.249 :setColor;
+        symbol [ Graphics %tmp.251 256 28 36 ];
+        %tmp.251 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.252 256 37 48 ];
+        %tmp.252 = getv %tmp.251 :COLOR_WHITE;
+        symbol [ Graphics %tmp.253 256 50 58 ];
+        %tmp.253 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.254 256 59 76 ];
+        %tmp.254 = getv %tmp.253 :COLOR_TRANSPARENT;
+        invoke %tmp.249 %tmp.250(%tmp.252, %tmp.254);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 257 16 ]
-        %tmp.260 = lgetv %dc;
-        symbol [ dc %tmp.260 257 16 18 ];
-        symbol [ drawText %tmp.261 257 19 27 ];
-        %tmp.261 = getv function %tmp.260 :drawText;
-        symbol [ offsetX %tmp.263 257 28 35 ];
-        %tmp.263 = getv ? :offsetX;
-        %tmp.264 = 5;
-        %tmp.265 = add %tmp.263 %tmp.264;
-        symbol [ offsetY %tmp.267 257 41 48 ];
-        %tmp.267 = getv ? :offsetY;
-        %tmp.268 = 5;
-        %tmp.269 = add %tmp.267 %tmp.268;
-        symbol [ Graphics %tmp.270 257 54 62 ];
-        %tmp.270 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.271 257 63 73 ];
-        %tmp.271 = getv %tmp.270 :FONT_XTINY;
-        %tmp.272 = lgetv %sd1Str.16;
-        symbol [ sd1Str %tmp.272 257 75 81 ];
-        symbol [ Graphics %tmp.273 257 83 91 ];
-        %tmp.273 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.274 257 92 109 ];
-        %tmp.274 = getv %tmp.273 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.260 %tmp.261(%tmp.265, %tmp.269, %tmp.271, %tmp.272, %tmp.274);
+        %tmp.255 = lgetv %dc;
+        symbol [ dc %tmp.255 257 16 18 ];
+        symbol [ drawText %tmp.256 257 19 27 ];
+        %tmp.256 = getv function %tmp.255 :drawText;
+        symbol [ offsetX %tmp.258 257 28 35 ];
+        %tmp.258 = getv ? :offsetX;
+        %tmp.259 = 5;
+        %tmp.260 = add %tmp.258 %tmp.259;
+        symbol [ offsetY %tmp.262 257 41 48 ];
+        %tmp.262 = getv ? :offsetY;
+        %tmp.263 = 5;
+        %tmp.264 = add %tmp.262 %tmp.263;
+        symbol [ Graphics %tmp.265 257 54 62 ];
+        %tmp.265 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.266 257 63 73 ];
+        %tmp.266 = getv %tmp.265 :FONT_XTINY;
+        %tmp.267 = lgetv %sd1Str.16;
+        symbol [ sd1Str %tmp.267 257 75 81 ];
+        symbol [ Graphics %tmp.268 257 83 91 ];
+        %tmp.268 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.269 257 92 109 ];
+        %tmp.269 = getv %tmp.268 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.255 %tmp.256(%tmp.260, %tmp.264, %tmp.266, %tmp.267, %tmp.269);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 258 16 ]
-        %tmp.275 = lgetv %dc;
-        symbol [ dc %tmp.275 258 16 18 ];
-        symbol [ drawText %tmp.276 258 19 27 ];
-        %tmp.276 = getv function %tmp.275 :drawText;
-        symbol [ offsetX %tmp.278 258 28 35 ];
-        %tmp.278 = getv ? :offsetX;
-        %tmp.279 = 5;
-        %tmp.280 = add %tmp.278 %tmp.279;
-        symbol [ offsetY %tmp.282 258 41 48 ];
-        %tmp.282 = getv ? :offsetY;
-        %tmp.283 = 22;
-        %tmp.284 = add %tmp.282 %tmp.283;
-        symbol [ Graphics %tmp.285 258 55 63 ];
-        %tmp.285 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.286 258 64 74 ];
-        %tmp.286 = getv %tmp.285 :FONT_XTINY;
-        %tmp.287 = lgetv %sd2Str.17;
-        symbol [ sd2Str %tmp.287 258 76 82 ];
-        symbol [ Graphics %tmp.288 258 84 92 ];
-        %tmp.288 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.289 258 93 110 ];
-        %tmp.289 = getv %tmp.288 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.275 %tmp.276(%tmp.280, %tmp.284, %tmp.286, %tmp.287, %tmp.289);
+        %tmp.270 = lgetv %dc;
+        symbol [ dc %tmp.270 258 16 18 ];
+        symbol [ drawText %tmp.271 258 19 27 ];
+        %tmp.271 = getv function %tmp.270 :drawText;
+        symbol [ offsetX %tmp.273 258 28 35 ];
+        %tmp.273 = getv ? :offsetX;
+        %tmp.274 = 5;
+        %tmp.275 = add %tmp.273 %tmp.274;
+        symbol [ offsetY %tmp.277 258 41 48 ];
+        %tmp.277 = getv ? :offsetY;
+        %tmp.278 = 22;
+        %tmp.279 = add %tmp.277 %tmp.278;
+        symbol [ Graphics %tmp.280 258 55 63 ];
+        %tmp.280 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.281 258 64 74 ];
+        %tmp.281 = getv %tmp.280 :FONT_XTINY;
+        %tmp.282 = lgetv %sd2Str.17;
+        symbol [ sd2Str %tmp.282 258 76 82 ];
+        symbol [ Graphics %tmp.283 258 84 92 ];
+        %tmp.283 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.284 258 93 110 ];
+        %tmp.284 = getv %tmp.283 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.270 %tmp.271(%tmp.275, %tmp.279, %tmp.281, %tmp.282, %tmp.284);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 259 16 ]
-        %tmp.290 = lgetv %dc;
-        symbol [ dc %tmp.290 259 16 18 ];
-        symbol [ drawText %tmp.291 259 19 27 ];
-        %tmp.291 = getv function %tmp.290 :drawText;
-        symbol [ offsetX %tmp.293 259 28 35 ];
-        %tmp.293 = getv ? :offsetX;
-        %tmp.294 = 5;
-        %tmp.295 = add %tmp.293 %tmp.294;
-        symbol [ offsetY %tmp.297 259 41 48 ];
-        %tmp.297 = getv ? :offsetY;
-        %tmp.298 = 39;
-        %tmp.299 = add %tmp.297 %tmp.298;
-        symbol [ Graphics %tmp.300 259 55 63 ];
-        %tmp.300 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.301 259 64 74 ];
-        %tmp.301 = getv %tmp.300 :FONT_XTINY;
-        %tmp.302 = lgetv %ratioStr.18;
-        symbol [ ratioStr %tmp.302 259 76 84 ];
-        symbol [ Graphics %tmp.303 259 86 94 ];
-        %tmp.303 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.304 259 95 112 ];
-        %tmp.304 = getv %tmp.303 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.290 %tmp.291(%tmp.295, %tmp.299, %tmp.301, %tmp.302, %tmp.304);
+        %tmp.285 = lgetv %dc;
+        symbol [ dc %tmp.285 259 16 18 ];
+        symbol [ drawText %tmp.286 259 19 27 ];
+        %tmp.286 = getv function %tmp.285 :drawText;
+        symbol [ offsetX %tmp.288 259 28 35 ];
+        %tmp.288 = getv ? :offsetX;
+        %tmp.289 = 5;
+        %tmp.290 = add %tmp.288 %tmp.289;
+        symbol [ offsetY %tmp.292 259 41 48 ];
+        %tmp.292 = getv ? :offsetY;
+        %tmp.293 = 39;
+        %tmp.294 = add %tmp.292 %tmp.293;
+        symbol [ Graphics %tmp.295 259 55 63 ];
+        %tmp.295 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.296 259 64 74 ];
+        %tmp.296 = getv %tmp.295 :FONT_XTINY;
+        %tmp.297 = lgetv %ratioStr.18;
+        symbol [ ratioStr %tmp.297 259 76 84 ];
+        symbol [ Graphics %tmp.298 259 86 94 ];
+        %tmp.298 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.299 259 95 112 ];
+        %tmp.299 = getv %tmp.298 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.285 %tmp.286(%tmp.290, %tmp.294, %tmp.296, %tmp.297, %tmp.299);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 265 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %rangeF.19 = local;
         symbol [ rangeF %rangeF.19 265 20 26 ];
-        symbol [ maxRR %tmp.306 265 30 35 ];
-        %tmp.306 = getv ? :maxRR;
-        symbol [ minRR %tmp.308 265 38 43 ];
-        %tmp.308 = getv ? :minRR;
-        %tmp.309 = sub %tmp.306 %tmp.308;
-        symbol [ toFloat %tmp.310 265 45 52 ];
-        %tmp.310 = getv function %tmp.309 :toFloat;
-        %tmp.311 = invoke %tmp.309 %tmp.310();
-        lputv %rangeF.19 %tmp.311;
+        symbol [ maxRR %tmp.301 265 30 35 ];
+        %tmp.301 = getv ? :maxRR;
+        symbol [ minRR %tmp.303 265 38 43 ];
+        %tmp.303 = getv ? :minRR;
+        %tmp.304 = sub %tmp.301 %tmp.303;
+        symbol [ toFloat %tmp.305 265 45 52 ];
+        %tmp.305 = getv function %tmp.304 :toFloat;
+        %tmp.306 = invoke %tmp.304 %tmp.305();
+        lputv %rangeF.19 %tmp.306;
         symbol [ rangeF %rangeF.19 265 20 26 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 266 16 ]
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_266_16_266_49_if_stmt:
-        %tmp.312 = lgetv %rangeF.19;
-        symbol [ rangeF %tmp.312 266 20 26 ];
-        %tmp.313 = 0;
-        %tmp.314 = lte %tmp.312 %tmp.313;
-        bf %tmp.314 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_266_16_266_49_if_end;
+        %tmp.307 = lgetv %rangeF.19;
+        symbol [ rangeF %tmp.307 266 20 26 ];
+        %tmp.308 = 0;
+        %tmp.309 = lte %tmp.307 %tmp.308;
+        bf %tmp.309 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_266_16_266_49_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_266_16_266_49_if_true:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_266_33_266_49_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 266 35 ]
-        %tmp.315 = 1.0;
-        lputv %rangeF.19 %tmp.315;
+        %tmp.310 = 1.0;
+        lputv %rangeF.19 %tmp.310;
         symbol [ rangeF %rangeF.19 266 35 41 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_266_33_266_49_stop:
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_266_16_266_49_if_end;
@@ -1632,95 +1622,95 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %scale.20 = local;
         symbol [ scale %scale.20 267 20 25 ];
-        symbol [ canvasSize %tmp.317 267 28 38 ];
-        %tmp.317 = getv ? :canvasSize;
-        symbol [ toFloat %tmp.318 267 39 46 ];
-        %tmp.318 = getv function %tmp.317 :toFloat;
-        %tmp.319 = invoke %tmp.317 %tmp.318();
-        %tmp.320 = lgetv %rangeF.19;
-        symbol [ rangeF %tmp.320 267 51 57 ];
-        %tmp.321 = div %tmp.319 %tmp.320;
-        lputv %scale.20 %tmp.321;
+        symbol [ canvasSize %tmp.312 267 28 38 ];
+        %tmp.312 = getv ? :canvasSize;
+        symbol [ toFloat %tmp.313 267 39 46 ];
+        %tmp.313 = getv function %tmp.312 :toFloat;
+        %tmp.314 = invoke %tmp.312 %tmp.313();
+        %tmp.315 = lgetv %rangeF.19;
+        symbol [ rangeF %tmp.315 267 51 57 ];
+        %tmp.316 = div %tmp.314 %tmp.315;
+        lputv %scale.20 %tmp.316;
         symbol [ scale %scale.20 267 20 25 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 270 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %sd1Pixels.21 = local;
         symbol [ sd1Pixels %sd1Pixels.21 270 20 29 ];
-        symbol [ cachedSD1 %tmp.323 270 32 41 ];
-        %tmp.323 = getv ? :cachedSD1;
-        %tmp.324 = lgetv %scale.20;
-        symbol [ scale %tmp.324 270 44 49 ];
-        %tmp.325 = mul %tmp.323 %tmp.324;
-        %tmp.326 = 2;
-        %tmp.327 = mul %tmp.325 %tmp.326;
-        lputv %sd1Pixels.21 %tmp.327;
+        symbol [ cachedSD1 %tmp.318 270 32 41 ];
+        %tmp.318 = getv ? :cachedSD1;
+        %tmp.319 = lgetv %scale.20;
+        symbol [ scale %tmp.319 270 44 49 ];
+        %tmp.320 = mul %tmp.318 %tmp.319;
+        %tmp.321 = 2;
+        %tmp.322 = mul %tmp.320 %tmp.321;
+        lputv %sd1Pixels.21 %tmp.322;
         symbol [ sd1Pixels %sd1Pixels.21 270 20 29 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 271 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %sd2Pixels.22 = local;
         symbol [ sd2Pixels %sd2Pixels.22 271 20 29 ];
-        symbol [ cachedSD2 %tmp.329 271 32 41 ];
-        %tmp.329 = getv ? :cachedSD2;
-        %tmp.330 = lgetv %scale.20;
-        symbol [ scale %tmp.330 271 44 49 ];
-        %tmp.331 = mul %tmp.329 %tmp.330;
-        %tmp.332 = 2;
-        %tmp.333 = mul %tmp.331 %tmp.332;
-        lputv %sd2Pixels.22 %tmp.333;
+        symbol [ cachedSD2 %tmp.324 271 32 41 ];
+        %tmp.324 = getv ? :cachedSD2;
+        %tmp.325 = lgetv %scale.20;
+        symbol [ scale %tmp.325 271 44 49 ];
+        %tmp.326 = mul %tmp.324 %tmp.325;
+        %tmp.327 = 2;
+        %tmp.328 = mul %tmp.326 %tmp.327;
+        lputv %sd2Pixels.22 %tmp.328;
         symbol [ sd2Pixels %sd2Pixels.22 271 20 29 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 274 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop" ]
         %centerP.23 = local;
         symbol [ centerP %centerP.23 274 20 27 ];
-        %tmp.334 = self;
-        symbol [ calculatePixel %tmp.335 274 30 44 ];
-        %tmp.335 = getv function %tmp.334 :calculatePixel;
-        symbol [ cachedMeanX %tmp.337 274 45 56 ];
-        %tmp.337 = getv ? :cachedMeanX;
-        symbol [ toNumber %tmp.338 274 57 65 ];
-        %tmp.338 = getv function %tmp.337 :toNumber;
-        %tmp.339 = invoke %tmp.337 %tmp.338();
-        symbol [ cachedMeanY %tmp.341 274 69 80 ];
-        %tmp.341 = getv ? :cachedMeanY;
-        symbol [ toNumber %tmp.342 274 81 89 ];
-        %tmp.342 = getv function %tmp.341 :toNumber;
-        %tmp.343 = invoke %tmp.341 %tmp.342();
-        %tmp.344 = invoke %tmp.334 %tmp.335(%tmp.339, %tmp.343);
-        lputv %centerP.23 %tmp.344;
+        %tmp.329 = self;
+        symbol [ calculatePixel %tmp.330 274 30 44 ];
+        %tmp.330 = getv function %tmp.329 :calculatePixel;
+        symbol [ cachedMeanX %tmp.332 274 45 56 ];
+        %tmp.332 = getv ? :cachedMeanX;
+        symbol [ toNumber %tmp.333 274 57 65 ];
+        %tmp.333 = getv function %tmp.332 :toNumber;
+        %tmp.334 = invoke %tmp.332 %tmp.333();
+        symbol [ cachedMeanY %tmp.336 274 69 80 ];
+        %tmp.336 = getv ? :cachedMeanY;
+        symbol [ toNumber %tmp.337 274 81 89 ];
+        %tmp.337 = getv function %tmp.336 :toNumber;
+        %tmp.338 = invoke %tmp.336 %tmp.337();
+        %tmp.339 = invoke %tmp.329 %tmp.330(%tmp.334, %tmp.338);
+        lputv %centerP.23 %tmp.339;
         symbol [ centerP %centerP.23 274 20 27 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 276 16 ]
-        %tmp.345 = lgetv %dc;
-        symbol [ dc %tmp.345 276 16 18 ];
-        symbol [ setColor %tmp.346 276 19 27 ];
-        %tmp.346 = getv function %tmp.345 :setColor;
-        symbol [ Graphics %tmp.347 276 28 36 ];
-        %tmp.347 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.348 276 37 47 ];
-        %tmp.348 = getv %tmp.347 :COLOR_BLUE;
-        symbol [ Graphics %tmp.349 276 49 57 ];
-        %tmp.349 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.350 276 58 75 ];
-        %tmp.350 = getv %tmp.349 :COLOR_TRANSPARENT;
-        invoke %tmp.345 %tmp.346(%tmp.348, %tmp.350);
+        %tmp.340 = lgetv %dc;
+        symbol [ dc %tmp.340 276 16 18 ];
+        symbol [ setColor %tmp.341 276 19 27 ];
+        %tmp.341 = getv function %tmp.340 :setColor;
+        symbol [ Graphics %tmp.342 276 28 36 ];
+        %tmp.342 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.343 276 37 47 ];
+        %tmp.343 = getv %tmp.342 :COLOR_BLUE;
+        symbol [ Graphics %tmp.344 276 49 57 ];
+        %tmp.344 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.345 276 58 75 ];
+        %tmp.345 = getv %tmp.344 :COLOR_TRANSPARENT;
+        invoke %tmp.340 %tmp.341(%tmp.343, %tmp.345);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 277 16 ]
-        %tmp.351 = self;
-        symbol [ drawRotatedEllipse %tmp.352 277 16 34 ];
-        %tmp.352 = getv function %tmp.351 :drawRotatedEllipse;
-        %tmp.353 = lgetv %dc;
-        symbol [ dc %tmp.353 277 35 37 ];
-        %tmp.354 = lgetv %centerP.23;
-        symbol [ centerP %tmp.354 277 39 46 ];
-        %tmp.355 = 0;
-        %tmp.356 = agetv %tmp.354 %tmp.355;
-        %tmp.357 = lgetv %centerP.23;
-        symbol [ centerP %tmp.357 277 51 58 ];
-        %tmp.358 = 1;
-        %tmp.359 = agetv %tmp.357 %tmp.358;
-        %tmp.360 = lgetv %sd1Pixels.21;
-        symbol [ sd1Pixels %tmp.360 277 63 72 ];
-        %tmp.361 = lgetv %sd2Pixels.22;
-        symbol [ sd2Pixels %tmp.361 277 74 83 ];
-        invoke %tmp.351 %tmp.352(%tmp.353, %tmp.356, %tmp.359, %tmp.360, %tmp.361);
+        %tmp.346 = self;
+        symbol [ drawRotatedEllipse %tmp.347 277 16 34 ];
+        %tmp.347 = getv function %tmp.346 :drawRotatedEllipse;
+        %tmp.348 = lgetv %dc;
+        symbol [ dc %tmp.348 277 35 37 ];
+        %tmp.349 = lgetv %centerP.23;
+        symbol [ centerP %tmp.349 277 39 46 ];
+        %tmp.350 = 0;
+        %tmp.351 = agetv %tmp.349 %tmp.350;
+        %tmp.352 = lgetv %centerP.23;
+        symbol [ centerP %tmp.352 277 51 58 ];
+        %tmp.353 = 1;
+        %tmp.354 = agetv %tmp.352 %tmp.353;
+        %tmp.355 = lgetv %sd1Pixels.21;
+        symbol [ sd1Pixels %tmp.355 277 63 72 ];
+        %tmp.356 = lgetv %sd2Pixels.22;
+        symbol [ sd2Pixels %tmp.356 277 74 83 ];
+        invoke %tmp.346 %tmp.347(%tmp.348, %tmp.351, %tmp.354, %tmp.355, %tmp.356);
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_35_278_12_stop:
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_12_278_12_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_250_12_278_12_if_end:
@@ -1730,111 +1720,111 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_begin" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_end" ]
         %i.24 = local;
         symbol [ i %i.24 281 21 22 ];
-        %tmp.362 = 0;
-        lputv %i.24 %tmp.362;
+        %tmp.357 = 0;
+        lputv %i.24 %tmp.357;
         symbol [ i %i.24 281 21 22 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_test:
-        %tmp.363 = lgetv %i.24;
-        symbol [ i %tmp.363 281 28 29 ];
-        symbol [ pointsCount %tmp.365 281 32 43 ];
-        %tmp.365 = getv ? :pointsCount;
-        %tmp.366 = lt %tmp.363 %tmp.365;
-        bf %tmp.366 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_end;
+        %tmp.358 = lgetv %i.24;
+        symbol [ i %tmp.358 281 28 29 ];
+        symbol [ pointsCount %tmp.360 281 32 43 ];
+        %tmp.360 = getv ? :pointsCount;
+        %tmp.361 = lt %tmp.358 %tmp.360;
+        bf %tmp.361 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_begin:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 292 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_stop" ]
         %idx.25 = local;
         symbol [ idx %idx.25 292 20 23 ];
-        symbol [ writeIndex %tmp.368 292 27 37 ];
-        %tmp.368 = getv ? :writeIndex;
-        symbol [ pointsCount %tmp.370 292 40 51 ];
-        %tmp.370 = getv ? :pointsCount;
-        %tmp.371 = sub %tmp.368 %tmp.370;
-        %tmp.372 = lgetv %i.24;
-        symbol [ i %tmp.372 292 54 55 ];
-        %tmp.373 = add %tmp.371 %tmp.372;
-        symbol [ maxPoints %tmp.375 292 58 67 ];
-        %tmp.375 = getv ? :maxPoints;
-        %tmp.376 = add %tmp.373 %tmp.375;
-        symbol [ maxPoints %tmp.378 292 71 80 ];
-        %tmp.378 = getv ? :maxPoints;
-        %tmp.379 = mod %tmp.376 %tmp.378;
-        lputv %idx.25 %tmp.379;
+        symbol [ writeIndex %tmp.363 292 27 37 ];
+        %tmp.363 = getv ? :writeIndex;
+        symbol [ pointsCount %tmp.365 292 40 51 ];
+        %tmp.365 = getv ? :pointsCount;
+        %tmp.366 = sub %tmp.363 %tmp.365;
+        %tmp.367 = lgetv %i.24;
+        symbol [ i %tmp.367 292 54 55 ];
+        %tmp.368 = add %tmp.366 %tmp.367;
+        symbol [ maxPoints %tmp.370 292 58 67 ];
+        %tmp.370 = getv ? :maxPoints;
+        %tmp.371 = add %tmp.368 %tmp.370;
+        symbol [ maxPoints %tmp.373 292 71 80 ];
+        %tmp.373 = getv ? :maxPoints;
+        %tmp.374 = mod %tmp.371 %tmp.373;
+        lputv %idx.25 %tmp.374;
         symbol [ idx %idx.25 292 20 23 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 293 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_stop" ]
         %rawP.26 = local;
         symbol [ rawP %rawP.26 293 20 24 ];
-        symbol [ pointsBuffer %tmp.381 293 27 39 ];
-        %tmp.381 = getv ? :pointsBuffer;
-        %tmp.382 = lgetv %idx.25;
-        symbol [ idx %tmp.382 293 40 43 ];
-        %tmp.383 = agetv %tmp.381 %tmp.382;
-        %tmp.384 = as %tmp.383 Array<Number>;
-        symbol [ Array %tmp.384 293 48 53 ];
-        symbol [ Number %tmp.384 293 54 60 ];
-        lputv %rawP.26 %tmp.384;
+        symbol [ pointsBuffer %tmp.376 293 27 39 ];
+        %tmp.376 = getv ? :pointsBuffer;
+        %tmp.377 = lgetv %idx.25;
+        symbol [ idx %tmp.377 293 40 43 ];
+        %tmp.378 = agetv %tmp.376 %tmp.377;
+        %tmp.379 = as %tmp.378 Array<Number>;
+        symbol [ Array %tmp.379 293 48 53 ];
+        symbol [ Number %tmp.379 293 54 60 ];
+        lputv %rawP.26 %tmp.379;
         symbol [ rawP %rawP.26 293 20 24 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 294 16 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_stop" ]
         %p.27 = local;
         symbol [ p %p.27 294 20 21 ];
-        %tmp.385 = self;
-        symbol [ calculatePixel %tmp.386 294 24 38 ];
-        %tmp.386 = getv function %tmp.385 :calculatePixel;
-        %tmp.387 = lgetv %rawP.26;
-        symbol [ rawP %tmp.387 294 39 43 ];
-        %tmp.388 = 0;
-        %tmp.389 = agetv %tmp.387 %tmp.388;
-        %tmp.390 = lgetv %rawP.26;
-        symbol [ rawP %tmp.390 294 48 52 ];
-        %tmp.391 = 1;
-        %tmp.392 = agetv %tmp.390 %tmp.391;
-        %tmp.393 = invoke %tmp.385 %tmp.386(%tmp.389, %tmp.392);
-        lputv %p.27 %tmp.393;
+        %tmp.380 = self;
+        symbol [ calculatePixel %tmp.381 294 24 38 ];
+        %tmp.381 = getv function %tmp.380 :calculatePixel;
+        %tmp.382 = lgetv %rawP.26;
+        symbol [ rawP %tmp.382 294 39 43 ];
+        %tmp.383 = 0;
+        %tmp.384 = agetv %tmp.382 %tmp.383;
+        %tmp.385 = lgetv %rawP.26;
+        symbol [ rawP %tmp.385 294 48 52 ];
+        %tmp.386 = 1;
+        %tmp.387 = agetv %tmp.385 %tmp.386;
+        %tmp.388 = invoke %tmp.380 %tmp.381(%tmp.384, %tmp.387);
+        lputv %p.27 %tmp.388;
         symbol [ p %p.27 294 20 21 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 296 16 ]
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_16_305_16_if_stmt:
-        %tmp.394 = lgetv %i.24;
-        symbol [ i %tmp.394 296 20 21 ];
-        symbol [ pointsCount %tmp.396 296 25 36 ];
-        %tmp.396 = getv ? :pointsCount;
-        %tmp.397 = 1;
-        %tmp.398 = sub %tmp.396 %tmp.397;
-        %tmp.399 = eq %tmp.394 %tmp.398;
-        bf %tmp.399 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_16_305_16_if_else_false;
+        %tmp.389 = lgetv %i.24;
+        symbol [ i %tmp.389 296 20 21 ];
+        symbol [ pointsCount %tmp.391 296 25 36 ];
+        %tmp.391 = getv ? :pointsCount;
+        %tmp.392 = 1;
+        %tmp.393 = sub %tmp.391 %tmp.392;
+        %tmp.394 = eq %tmp.389 %tmp.393;
+        bf %tmp.394 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_16_305_16_if_else_false;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_16_305_16_if_true:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_42_300_16_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 298 20 ]
-        %tmp.400 = lgetv %dc;
-        symbol [ dc %tmp.400 298 20 22 ];
-        symbol [ setColor %tmp.401 298 23 31 ];
-        %tmp.401 = getv function %tmp.400 :setColor;
-        symbol [ Graphics %tmp.402 298 32 40 ];
-        %tmp.402 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.403 298 41 52 ];
-        %tmp.403 = getv %tmp.402 :COLOR_GREEN;
-        symbol [ Graphics %tmp.404 298 54 62 ];
-        %tmp.404 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.405 298 63 80 ];
-        %tmp.405 = getv %tmp.404 :COLOR_TRANSPARENT;
-        invoke %tmp.400 %tmp.401(%tmp.403, %tmp.405);
+        %tmp.395 = lgetv %dc;
+        symbol [ dc %tmp.395 298 20 22 ];
+        symbol [ setColor %tmp.396 298 23 31 ];
+        %tmp.396 = getv function %tmp.395 :setColor;
+        symbol [ Graphics %tmp.397 298 32 40 ];
+        %tmp.397 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.398 298 41 52 ];
+        %tmp.398 = getv %tmp.397 :COLOR_GREEN;
+        symbol [ Graphics %tmp.399 298 54 62 ];
+        %tmp.399 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.400 298 63 80 ];
+        %tmp.400 = getv %tmp.399 :COLOR_TRANSPARENT;
+        invoke %tmp.395 %tmp.396(%tmp.398, %tmp.400);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 299 20 ]
-        %tmp.406 = lgetv %dc;
-        symbol [ dc %tmp.406 299 20 22 ];
-        symbol [ fillCircle %tmp.407 299 23 33 ];
-        %tmp.407 = getv function %tmp.406 :fillCircle;
-        %tmp.408 = lgetv %p.27;
-        symbol [ p %tmp.408 299 34 35 ];
-        %tmp.409 = 0;
-        %tmp.410 = agetv %tmp.408 %tmp.409;
-        %tmp.411 = lgetv %p.27;
-        symbol [ p %tmp.411 299 40 41 ];
-        %tmp.412 = 1;
-        %tmp.413 = agetv %tmp.411 %tmp.412;
-        %tmp.414 = 4;
-        invoke %tmp.406 %tmp.407(%tmp.410, %tmp.413, %tmp.414);
+        %tmp.401 = lgetv %dc;
+        symbol [ dc %tmp.401 299 20 22 ];
+        symbol [ fillCircle %tmp.402 299 23 33 ];
+        %tmp.402 = getv function %tmp.401 :fillCircle;
+        %tmp.403 = lgetv %p.27;
+        symbol [ p %tmp.403 299 34 35 ];
+        %tmp.404 = 0;
+        %tmp.405 = agetv %tmp.403 %tmp.404;
+        %tmp.406 = lgetv %p.27;
+        symbol [ p %tmp.406 299 40 41 ];
+        %tmp.407 = 1;
+        %tmp.408 = agetv %tmp.406 %tmp.407;
+        %tmp.409 = 4;
+        invoke %tmp.401 %tmp.402(%tmp.405, %tmp.408, %tmp.409);
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_42_300_16_stop:
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_16_305_16_if_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_16_305_16_if_else_false:
@@ -1844,67 +1834,67 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         %color.28 = local;
         symbol [ color %color.28 302 24 29 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_begin:
-        %tmp.415 = lgetv %i.24;
-        symbol [ i %tmp.415 302 33 34 ];
-        symbol [ pointsCount %tmp.417 302 37 48 ];
-        %tmp.417 = getv ? :pointsCount;
-        %tmp.418 = 2;
-        %tmp.419 = div %tmp.417 %tmp.418;
-        %tmp.420 = lt %tmp.415 %tmp.419;
-        bf %tmp.420 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_else_false;
+        %tmp.410 = lgetv %i.24;
+        symbol [ i %tmp.410 302 33 34 ];
+        symbol [ pointsCount %tmp.412 302 37 48 ];
+        %tmp.412 = getv ? :pointsCount;
+        %tmp.413 = 2;
+        %tmp.414 = div %tmp.412 %tmp.413;
+        %tmp.415 = lt %tmp.410 %tmp.414;
+        bf %tmp.415 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_else_false;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_true:
-        symbol [ Graphics %tmp.421 302 56 64 ];
-        %tmp.421 = getm $.Toybox.Graphics;
-        symbol [ COLOR_DK_GRAY %tmp.422 302 65 78 ];
-        %tmp.422 = getv %tmp.421 :COLOR_DK_GRAY;
-        push %tmp.422;
+        symbol [ Graphics %tmp.416 302 56 64 ];
+        %tmp.416 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.417 302 65 78 ];
+        %tmp.417 = getv %tmp.416 :COLOR_DK_GRAY;
+        push %tmp.417;
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_else_false:
-        symbol [ Graphics %tmp.423 302 81 89 ];
-        %tmp.423 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.424 302 90 103 ];
-        %tmp.424 = getv %tmp.423 :COLOR_LT_GRAY;
-        push %tmp.424;
+        symbol [ Graphics %tmp.418 302 81 89 ];
+        %tmp.418 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.419 302 90 103 ];
+        %tmp.419 = getv %tmp.418 :COLOR_LT_GRAY;
+        push %tmp.419;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_end:
-        %tmp.425 = phi [%tmp.420 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_begin] [%tmp.422 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_true] [%tmp.424 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_else_false] [%tmp.425 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_end];
-        lputv %color.28 %tmp.425;
+        %tmp.420 = phi [%tmp.415 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_begin] [%tmp.417 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_true] [%tmp.419 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_else_false] [%tmp.420 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_302_32_302_90_end];
+        lputv %color.28 %tmp.420;
         symbol [ color %color.28 302 24 29 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 303 20 ]
-        %tmp.426 = lgetv %dc;
-        symbol [ dc %tmp.426 303 20 22 ];
-        symbol [ setColor %tmp.427 303 23 31 ];
-        %tmp.427 = getv function %tmp.426 :setColor;
-        %tmp.428 = lgetv %color.28;
-        symbol [ color %tmp.428 303 32 37 ];
-        symbol [ Graphics %tmp.429 303 39 47 ];
-        %tmp.429 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.430 303 48 65 ];
-        %tmp.430 = getv %tmp.429 :COLOR_TRANSPARENT;
-        invoke %tmp.426 %tmp.427(%tmp.428, %tmp.430);
+        %tmp.421 = lgetv %dc;
+        symbol [ dc %tmp.421 303 20 22 ];
+        symbol [ setColor %tmp.422 303 23 31 ];
+        %tmp.422 = getv function %tmp.421 :setColor;
+        %tmp.423 = lgetv %color.28;
+        symbol [ color %tmp.423 303 32 37 ];
+        symbol [ Graphics %tmp.424 303 39 47 ];
+        %tmp.424 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.425 303 48 65 ];
+        %tmp.425 = getv %tmp.424 :COLOR_TRANSPARENT;
+        invoke %tmp.421 %tmp.422(%tmp.423, %tmp.425);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 304 20 ]
-        %tmp.431 = lgetv %dc;
-        symbol [ dc %tmp.431 304 20 22 ];
-        symbol [ fillCircle %tmp.432 304 23 33 ];
-        %tmp.432 = getv function %tmp.431 :fillCircle;
-        %tmp.433 = lgetv %p.27;
-        symbol [ p %tmp.433 304 34 35 ];
-        %tmp.434 = 0;
-        %tmp.435 = agetv %tmp.433 %tmp.434;
-        %tmp.436 = lgetv %p.27;
-        symbol [ p %tmp.436 304 40 41 ];
-        %tmp.437 = 1;
-        %tmp.438 = agetv %tmp.436 %tmp.437;
-        %tmp.439 = 2;
-        invoke %tmp.431 %tmp.432(%tmp.435, %tmp.438, %tmp.439);
+        %tmp.426 = lgetv %dc;
+        symbol [ dc %tmp.426 304 20 22 ];
+        symbol [ fillCircle %tmp.427 304 23 33 ];
+        %tmp.427 = getv function %tmp.426 :fillCircle;
+        %tmp.428 = lgetv %p.27;
+        symbol [ p %tmp.428 304 34 35 ];
+        %tmp.429 = 0;
+        %tmp.430 = agetv %tmp.428 %tmp.429;
+        %tmp.431 = lgetv %p.27;
+        symbol [ p %tmp.431 304 40 41 ];
+        %tmp.432 = 1;
+        %tmp.433 = agetv %tmp.431 %tmp.432;
+        %tmp.434 = 2;
+        invoke %tmp.426 %tmp.427(%tmp.430, %tmp.433, %tmp.434);
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_300_23_305_16_stop:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_296_16_305_16_if_end:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_50_306_12_stop:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_incr:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 281 ]
-        %tmp.442 = lgetv %i.24;
-        symbol [ i %tmp.442 281 45 46 ];
-        %tmp.443 = add %tmp.442 1;
-        lputv %i.24 %tmp.443;
+        %tmp.437 = lgetv %i.24;
+        symbol [ i %tmp.437 281 45 46 ];
+        %tmp.438 = add %tmp.437 1;
+        lputv %i.24 %tmp.438;
         symbol [ i %i.24 281 45 46 ];
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_test;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_281_12_306_12_for_end:
@@ -1912,12 +1902,12 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_12_318_8_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_12_318_8_stop" ]
         %info.29 = local;
         symbol [ info %info.29 309 16 20 ];
-        symbol [ Activity %tmp.444 309 23 31 ];
-        %tmp.444 = getm $.Toybox.Activity;
-        symbol [ getActivityInfo %tmp.445 309 32 47 ];
-        %tmp.445 = getv function %tmp.444 :getActivityInfo;
-        %tmp.446 = invoke %tmp.444 %tmp.445();
-        lputv %info.29 %tmp.446;
+        symbol [ Activity %tmp.439 309 23 31 ];
+        %tmp.439 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.440 309 32 47 ];
+        %tmp.440 = getv function %tmp.439 :getActivityInfo;
+        %tmp.441 = invoke %tmp.439 %tmp.440();
+        lputv %info.29 %tmp.441;
         symbol [ info %info.29 309 16 20 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 310 12 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_12_318_8_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_12_318_8_stop" ]
@@ -1925,236 +1915,236 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         symbol [ hr %hr.30 310 16 18 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_begin:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_22_310_63_begin:
-        %tmp.447 = lgetv %info.29;
-        symbol [ info %tmp.447 310 22 26 ];
+        %tmp.442 = lgetv %info.29;
+        symbol [ info %tmp.442 310 22 26 ];
+        %tmp.443 = null;
+        %tmp.444 = ne %tmp.442 %tmp.443;
+        bf %tmp.444 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_else_false;
+C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_38_310_63_true:
+        %tmp.445 = lgetv %info.29;
+        symbol [ info %tmp.445 310 38 42 ];
+        %tmp.446 = as %tmp.445 { (!Null) };
+        symbol [ currentHeartRate %tmp.447 310 43 59 ];
+        %tmp.447 = getv %tmp.446 :currentHeartRate;
         %tmp.448 = null;
         %tmp.449 = ne %tmp.447 %tmp.448;
-        bf %tmp.449 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_else_false;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_38_310_63_true:
-        %tmp.450 = lgetv %info.29;
-        symbol [ info %tmp.450 310 38 42 ];
-        %tmp.451 = as %tmp.450 { (!Null) };
-        symbol [ currentHeartRate %tmp.452 310 43 59 ];
-        %tmp.452 = getv %tmp.451 :currentHeartRate;
-        %tmp.453 = null;
-        %tmp.454 = ne %tmp.452 %tmp.453;
-        push %tmp.454;
+        push %tmp.449;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_38_310_63_end:
-        %tmp.455 = phi [%tmp.449 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_22_310_63_begin] [%tmp.454 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_38_310_63_true] [%tmp.455 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_38_310_63_end];
-        bf %tmp.455 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_else_false;
+        %tmp.450 = phi [%tmp.444 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_22_310_63_begin] [%tmp.449 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_38_310_63_true] [%tmp.450 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_38_310_63_end];
+        bf %tmp.450 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_else_false;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_true:
-        %tmp.456 = lgetv %info.29;
-        symbol [ info %tmp.456 310 71 75 ];
-        %tmp.457 = as %tmp.456 { (!Null) };
-        symbol [ currentHeartRate %tmp.458 310 76 92 ];
-        %tmp.458 = getv %tmp.457 :currentHeartRate;
-        symbol [ toString %tmp.459 310 93 101 ];
-        %tmp.459 = getv function %tmp.458 :toString;
-        %tmp.460 = invoke %tmp.458 %tmp.459();
-        push %tmp.460;
+        %tmp.451 = lgetv %info.29;
+        symbol [ info %tmp.451 310 71 75 ];
+        %tmp.452 = as %tmp.451 { (!Null) };
+        symbol [ currentHeartRate %tmp.453 310 76 92 ];
+        %tmp.453 = getv %tmp.452 :currentHeartRate;
+        symbol [ toString %tmp.454 310 93 101 ];
+        %tmp.454 = getv function %tmp.453 :toString;
+        %tmp.455 = invoke %tmp.453 %tmp.454();
+        push %tmp.455;
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_else_false:
-        %tmp.461 = "--";
-        push %tmp.461;
+        %tmp.456 = "--";
+        push %tmp.456;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_end:
-        %tmp.462 = phi [%tmp.455 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_begin] [%tmp.460 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_true] [%tmp.461 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_else_false] [%tmp.462 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_end];
-        lputv %hr.30 %tmp.462;
+        %tmp.457 = phi [%tmp.450 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_begin] [%tmp.455 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_true] [%tmp.456 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_else_false] [%tmp.457 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_310_21_310_106_end];
+        lputv %hr.30 %tmp.457;
         symbol [ hr %hr.30 310 16 18 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 311 12 ]
-        %tmp.463 = lgetv %dc;
-        symbol [ dc %tmp.463 311 12 14 ];
-        symbol [ setColor %tmp.464 311 15 23 ];
-        %tmp.464 = getv function %tmp.463 :setColor;
-        symbol [ Graphics %tmp.465 311 24 32 ];
-        %tmp.465 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.466 311 33 44 ];
-        %tmp.466 = getv %tmp.465 :COLOR_WHITE;
-        symbol [ Graphics %tmp.467 311 46 54 ];
-        %tmp.467 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.468 311 55 72 ];
-        %tmp.468 = getv %tmp.467 :COLOR_TRANSPARENT;
-        invoke %tmp.463 %tmp.464(%tmp.466, %tmp.468);
+        %tmp.458 = lgetv %dc;
+        symbol [ dc %tmp.458 311 12 14 ];
+        symbol [ setColor %tmp.459 311 15 23 ];
+        %tmp.459 = getv function %tmp.458 :setColor;
+        symbol [ Graphics %tmp.460 311 24 32 ];
+        %tmp.460 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.461 311 33 44 ];
+        %tmp.461 = getv %tmp.460 :COLOR_WHITE;
+        symbol [ Graphics %tmp.462 311 46 54 ];
+        %tmp.462 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.463 311 55 72 ];
+        %tmp.463 = getv %tmp.462 :COLOR_TRANSPARENT;
+        invoke %tmp.458 %tmp.459(%tmp.461, %tmp.463);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 312 12 ]
-        %tmp.469 = lgetv %dc;
-        symbol [ dc %tmp.469 312 12 14 ];
-        symbol [ drawText %tmp.470 312 15 23 ];
-        %tmp.470 = getv function %tmp.469 :drawText;
-        symbol [ screenW %tmp.472 312 24 31 ];
-        %tmp.472 = getv ? :screenW;
-        %tmp.473 = 2;
-        %tmp.474 = div %tmp.472 %tmp.473;
-        symbol [ offsetY %tmp.476 312 35 42 ];
-        %tmp.476 = getv ? :offsetY;
-        symbol [ canvasSize %tmp.478 312 45 55 ];
-        %tmp.478 = getv ? :canvasSize;
-        %tmp.479 = add %tmp.476 %tmp.478;
-        %tmp.480 = 5;
+        %tmp.464 = lgetv %dc;
+        symbol [ dc %tmp.464 312 12 14 ];
+        symbol [ drawText %tmp.465 312 15 23 ];
+        %tmp.465 = getv function %tmp.464 :drawText;
+        symbol [ screenW %tmp.467 312 24 31 ];
+        %tmp.467 = getv ? :screenW;
+        %tmp.468 = 2;
+        %tmp.469 = div %tmp.467 %tmp.468;
+        symbol [ offsetY %tmp.471 312 35 42 ];
+        %tmp.471 = getv ? :offsetY;
+        symbol [ canvasSize %tmp.473 312 45 55 ];
+        %tmp.473 = getv ? :canvasSize;
+        %tmp.474 = add %tmp.471 %tmp.473;
+        %tmp.475 = 5;
+        %tmp.476 = add %tmp.474 %tmp.475;
+        symbol [ Graphics %tmp.477 312 61 69 ];
+        %tmp.477 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.478 312 70 79 ];
+        %tmp.478 = getv %tmp.477 :FONT_TINY;
+        %tmp.479 = "HR: ";
+        %tmp.480 = lgetv %hr.30;
+        symbol [ hr %tmp.480 312 90 92 ];
         %tmp.481 = add %tmp.479 %tmp.480;
-        symbol [ Graphics %tmp.482 312 61 69 ];
+        symbol [ Graphics %tmp.482 312 94 102 ];
         %tmp.482 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.483 312 70 79 ];
-        %tmp.483 = getv %tmp.482 :FONT_TINY;
-        %tmp.484 = "HR: ";
-        %tmp.485 = lgetv %hr.30;
-        symbol [ hr %tmp.485 312 90 92 ];
-        %tmp.486 = add %tmp.484 %tmp.485;
-        symbol [ Graphics %tmp.487 312 94 102 ];
-        %tmp.487 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.488 312 103 122 ];
-        %tmp.488 = getv %tmp.487 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.469 %tmp.470(%tmp.474, %tmp.481, %tmp.483, %tmp.486, %tmp.488);
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.483 312 103 122 ];
+        %tmp.483 = getv %tmp.482 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.464 %tmp.465(%tmp.469, %tmp.476, %tmp.478, %tmp.481, %tmp.483);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 315 12 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_12_318_8_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_12_318_8_stop" ]
         %debugStr.31 = local;
         symbol [ debugStr %debugStr.31 315 16 24 ];
-        %tmp.489 = " Last:";
+        %tmp.484 = " Last:";
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_begin:
-        symbol [ lastRR %tmp.491 315 39 45 ];
-        %tmp.491 = getv ? :lastRR;
-        %tmp.492 = null;
-        %tmp.493 = ne %tmp.491 %tmp.492;
-        bf %tmp.493 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_else_false;
+        symbol [ lastRR %tmp.486 315 39 45 ];
+        %tmp.486 = getv ? :lastRR;
+        %tmp.487 = null;
+        %tmp.488 = ne %tmp.486 %tmp.487;
+        bf %tmp.488 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_else_false;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_true:
-        symbol [ lastRR %tmp.495 315 56 62 ];
-        %tmp.495 = getv ? :lastRR;
-        %tmp.496 = as %tmp.495 { (!Null) };
-        push %tmp.496;
+        symbol [ lastRR %tmp.490 315 56 62 ];
+        %tmp.490 = getv ? :lastRR;
+        %tmp.491 = as %tmp.490 { (!Null) };
+        push %tmp.491;
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_else_false:
-        %tmp.497 = "null";
-        push %tmp.497;
+        %tmp.492 = "null";
+        push %tmp.492;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_end:
-        %tmp.498 = phi [%tmp.493 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_begin] [%tmp.496 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_true] [%tmp.497 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_else_false] [%tmp.498 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_end];
-        %tmp.499 = add %tmp.489 %tmp.498;
-        lputv %debugStr.31 %tmp.499;
+        %tmp.493 = phi [%tmp.488 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_begin] [%tmp.491 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_true] [%tmp.492 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_else_false] [%tmp.493 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_315_39_315_65_end];
+        %tmp.494 = add %tmp.484 %tmp.493;
+        lputv %debugStr.31 %tmp.494;
         symbol [ debugStr %debugStr.31 315 16 24 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 316 12 ]
-        %tmp.500 = lgetv %dc;
-        symbol [ dc %tmp.500 316 12 14 ];
-        symbol [ setColor %tmp.501 316 15 23 ];
-        %tmp.501 = getv function %tmp.500 :setColor;
-        symbol [ Graphics %tmp.502 316 24 32 ];
-        %tmp.502 = getm $.Toybox.Graphics;
-        symbol [ COLOR_YELLOW %tmp.503 316 33 45 ];
-        %tmp.503 = getv %tmp.502 :COLOR_YELLOW;
-        symbol [ Graphics %tmp.504 316 47 55 ];
-        %tmp.504 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.505 316 56 73 ];
-        %tmp.505 = getv %tmp.504 :COLOR_TRANSPARENT;
-        invoke %tmp.500 %tmp.501(%tmp.503, %tmp.505);
+        %tmp.495 = lgetv %dc;
+        symbol [ dc %tmp.495 316 12 14 ];
+        symbol [ setColor %tmp.496 316 15 23 ];
+        %tmp.496 = getv function %tmp.495 :setColor;
+        symbol [ Graphics %tmp.497 316 24 32 ];
+        %tmp.497 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.498 316 33 45 ];
+        %tmp.498 = getv %tmp.497 :COLOR_YELLOW;
+        symbol [ Graphics %tmp.499 316 47 55 ];
+        %tmp.499 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.500 316 56 73 ];
+        %tmp.500 = getv %tmp.499 :COLOR_TRANSPARENT;
+        invoke %tmp.495 %tmp.496(%tmp.498, %tmp.500);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 317 12 ]
-        %tmp.506 = lgetv %dc;
-        symbol [ dc %tmp.506 317 12 14 ];
-        symbol [ drawText %tmp.507 317 15 23 ];
-        %tmp.507 = getv function %tmp.506 :drawText;
-        symbol [ screenW %tmp.509 317 24 31 ];
-        %tmp.509 = getv ? :screenW;
-        %tmp.510 = 2;
-        %tmp.511 = div %tmp.509 %tmp.510;
-        symbol [ screenH %tmp.513 317 35 42 ];
-        %tmp.513 = getv ? :screenH;
-        %tmp.514 = 30;
-        %tmp.515 = sub %tmp.513 %tmp.514;
-        symbol [ Graphics %tmp.516 317 49 57 ];
-        %tmp.516 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.517 317 58 68 ];
-        %tmp.517 = getv %tmp.516 :FONT_XTINY;
-        %tmp.518 = lgetv %debugStr.31;
-        symbol [ debugStr %tmp.518 317 70 78 ];
-        symbol [ Graphics %tmp.519 317 80 88 ];
-        %tmp.519 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.520 317 89 108 ];
-        %tmp.520 = getv %tmp.519 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.506 %tmp.507(%tmp.511, %tmp.515, %tmp.517, %tmp.518, %tmp.520);
+        %tmp.501 = lgetv %dc;
+        symbol [ dc %tmp.501 317 12 14 ];
+        symbol [ drawText %tmp.502 317 15 23 ];
+        %tmp.502 = getv function %tmp.501 :drawText;
+        symbol [ screenW %tmp.504 317 24 31 ];
+        %tmp.504 = getv ? :screenW;
+        %tmp.505 = 2;
+        %tmp.506 = div %tmp.504 %tmp.505;
+        symbol [ screenH %tmp.508 317 35 42 ];
+        %tmp.508 = getv ? :screenH;
+        %tmp.509 = 30;
+        %tmp.510 = sub %tmp.508 %tmp.509;
+        symbol [ Graphics %tmp.511 317 49 57 ];
+        %tmp.511 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.512 317 58 68 ];
+        %tmp.512 = getv %tmp.511 :FONT_XTINY;
+        %tmp.513 = lgetv %debugStr.31;
+        symbol [ debugStr %tmp.513 317 70 78 ];
+        symbol [ Graphics %tmp.514 317 80 88 ];
+        %tmp.514 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.515 317 89 108 ];
+        %tmp.515 = getv %tmp.514 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.501 %tmp.502(%tmp.506, %tmp.510, %tmp.512, %tmp.513, %tmp.515);
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_12_318_8_stop:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_endTry:
         jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_finally;
         goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_end;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_catch:
-        %tmp.521 = exception;
-        push %tmp.521;
+        %tmp.516 = exception;
+        push %tmp.516;
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 318 10 ]
         [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_catch" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_318_10_325_8_end" ]
         %e.32 = local;
         symbol [ e %e.32 318 17 18 ];
-        %tmp.522 = dup %tmp.521;
-        lputv %e.32 %tmp.522;
+        %tmp.517 = dup %tmp.516;
+        lputv %e.32 %tmp.517;
         symbol [ e %e.32 318 17 18 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_318_20_325_8_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 319 12 ]
-        symbol [ System %tmp.523 319 12 18 ];
-        %tmp.523 = getm $.Toybox.System;
-        symbol [ println %tmp.524 319 19 26 ];
-        %tmp.524 = getv function %tmp.523 :println;
-        %tmp.525 = "Error in onUpdate: ";
-        %tmp.526 = lgetv %e.32;
-        symbol [ e %tmp.526 319 51 52 ];
-        symbol [ getErrorMessage %tmp.527 319 53 68 ];
-        %tmp.527 = getv function %tmp.526 :getErrorMessage;
-        %tmp.528 = invoke %tmp.526 %tmp.527();
-        %tmp.529 = add %tmp.525 %tmp.528;
-        invoke %tmp.523 %tmp.524(%tmp.529);
+        symbol [ System %tmp.518 319 12 18 ];
+        %tmp.518 = getm $.Toybox.System;
+        symbol [ println %tmp.519 319 19 26 ];
+        %tmp.519 = getv function %tmp.518 :println;
+        %tmp.520 = "Error in onUpdate: ";
+        %tmp.521 = lgetv %e.32;
+        symbol [ e %tmp.521 319 51 52 ];
+        symbol [ getErrorMessage %tmp.522 319 53 68 ];
+        %tmp.522 = getv function %tmp.521 :getErrorMessage;
+        %tmp.523 = invoke %tmp.521 %tmp.522();
+        %tmp.524 = add %tmp.520 %tmp.523;
+        invoke %tmp.518 %tmp.519(%tmp.524);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 320 12 ]
-        %tmp.530 = lgetv %e.32;
-        symbol [ e %tmp.530 320 12 13 ];
-        symbol [ printStackTrace %tmp.531 320 14 29 ];
-        %tmp.531 = getv function %tmp.530 :printStackTrace;
-        invoke %tmp.530 %tmp.531();
+        %tmp.525 = lgetv %e.32;
+        symbol [ e %tmp.525 320 12 13 ];
+        symbol [ printStackTrace %tmp.526 320 14 29 ];
+        %tmp.526 = getv function %tmp.525 :printStackTrace;
+        invoke %tmp.525 %tmp.526();
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 322 12 ]
-        %tmp.532 = lgetv %dc;
-        symbol [ dc %tmp.532 322 12 14 ];
-        symbol [ setColor %tmp.533 322 15 23 ];
-        %tmp.533 = getv function %tmp.532 :setColor;
-        symbol [ Graphics %tmp.534 322 24 32 ];
-        %tmp.534 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.535 322 33 44 ];
-        %tmp.535 = getv %tmp.534 :COLOR_WHITE;
-        symbol [ Graphics %tmp.536 322 46 54 ];
-        %tmp.536 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.537 322 55 64 ];
-        %tmp.537 = getv %tmp.536 :COLOR_RED;
-        invoke %tmp.532 %tmp.533(%tmp.535, %tmp.537);
+        %tmp.527 = lgetv %dc;
+        symbol [ dc %tmp.527 322 12 14 ];
+        symbol [ setColor %tmp.528 322 15 23 ];
+        %tmp.528 = getv function %tmp.527 :setColor;
+        symbol [ Graphics %tmp.529 322 24 32 ];
+        %tmp.529 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.530 322 33 44 ];
+        %tmp.530 = getv %tmp.529 :COLOR_WHITE;
+        symbol [ Graphics %tmp.531 322 46 54 ];
+        %tmp.531 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.532 322 55 64 ];
+        %tmp.532 = getv %tmp.531 :COLOR_RED;
+        invoke %tmp.527 %tmp.528(%tmp.530, %tmp.532);
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 323 12 ]
-        %tmp.538 = lgetv %dc;
-        symbol [ dc %tmp.538 323 12 14 ];
-        symbol [ clear %tmp.539 323 15 20 ];
-        %tmp.539 = getv function %tmp.538 :clear;
-        invoke %tmp.538 %tmp.539();
+        %tmp.533 = lgetv %dc;
+        symbol [ dc %tmp.533 323 12 14 ];
+        symbol [ clear %tmp.534 323 15 20 ];
+        %tmp.534 = getv function %tmp.533 :clear;
+        invoke %tmp.533 %tmp.534();
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 324 12 ]
-        %tmp.540 = lgetv %dc;
-        symbol [ dc %tmp.540 324 12 14 ];
-        symbol [ drawText %tmp.541 324 15 23 ];
-        %tmp.541 = getv function %tmp.540 :drawText;
+        %tmp.535 = lgetv %dc;
+        symbol [ dc %tmp.535 324 12 14 ];
+        symbol [ drawText %tmp.536 324 15 23 ];
+        %tmp.536 = getv function %tmp.535 :drawText;
+        %tmp.537 = lgetv %dc;
+        symbol [ dc %tmp.537 324 24 26 ];
+        symbol [ getWidth %tmp.538 324 27 35 ];
+        %tmp.538 = getv function %tmp.537 :getWidth;
+        %tmp.539 = invoke %tmp.537 %tmp.538();
+        %tmp.540 = 2;
+        %tmp.541 = div %tmp.539 %tmp.540;
         %tmp.542 = lgetv %dc;
-        symbol [ dc %tmp.542 324 24 26 ];
-        symbol [ getWidth %tmp.543 324 27 35 ];
-        %tmp.543 = getv function %tmp.542 :getWidth;
+        symbol [ dc %tmp.542 324 41 43 ];
+        symbol [ getHeight %tmp.543 324 44 53 ];
+        %tmp.543 = getv function %tmp.542 :getHeight;
         %tmp.544 = invoke %tmp.542 %tmp.543();
         %tmp.545 = 2;
         %tmp.546 = div %tmp.544 %tmp.545;
-        %tmp.547 = lgetv %dc;
-        symbol [ dc %tmp.547 324 41 43 ];
-        symbol [ getHeight %tmp.548 324 44 53 ];
-        %tmp.548 = getv function %tmp.547 :getHeight;
-        %tmp.549 = invoke %tmp.547 %tmp.548();
-        %tmp.550 = 2;
-        %tmp.551 = div %tmp.549 %tmp.550;
-        symbol [ Graphics %tmp.552 324 59 67 ];
-        %tmp.552 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.553 324 68 77 ];
-        %tmp.553 = getv %tmp.552 :FONT_TINY;
-        %tmp.554 = "Err: ";
-        %tmp.555 = lgetv %e.32;
-        symbol [ e %tmp.555 324 89 90 ];
-        symbol [ getErrorMessage %tmp.556 324 91 106 ];
-        %tmp.556 = getv function %tmp.555 :getErrorMessage;
-        %tmp.557 = invoke %tmp.555 %tmp.556();
-        %tmp.558 = add %tmp.554 %tmp.557;
-        symbol [ Graphics %tmp.559 324 110 118 ];
-        %tmp.559 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.560 324 119 138 ];
-        %tmp.560 = getv %tmp.559 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.540 %tmp.541(%tmp.546, %tmp.551, %tmp.553, %tmp.558, %tmp.560);
+        symbol [ Graphics %tmp.547 324 59 67 ];
+        %tmp.547 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.548 324 68 77 ];
+        %tmp.548 = getv %tmp.547 :FONT_TINY;
+        %tmp.549 = "Err: ";
+        %tmp.550 = lgetv %e.32;
+        symbol [ e %tmp.550 324 89 90 ];
+        symbol [ getErrorMessage %tmp.551 324 91 106 ];
+        %tmp.551 = getv function %tmp.550 :getErrorMessage;
+        %tmp.552 = invoke %tmp.550 %tmp.551();
+        %tmp.553 = add %tmp.549 %tmp.552;
+        symbol [ Graphics %tmp.554 324 110 118 ];
+        %tmp.554 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.555 324 119 138 ];
+        %tmp.555 = getv %tmp.554 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.535 %tmp.536(%tmp.541, %tmp.546, %tmp.548, %tmp.553, %tmp.555);
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_318_20_325_8_stop:
         jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_finally;
         pop;
@@ -2162,7 +2152,7 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_318_10_325_8_end:
         try @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_catch @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_318_10_325_8_end @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_318_10_325_8_end @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_finally;
         jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_finally;
-        throw %tmp.521;
+        throw %tmp.516;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_finally:
         jsrret;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_171_8_325_8_end:
@@ -2219,7 +2209,7 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
         lputv %minBpm.1 %tmp.16;
         symbol [ minBpm %minBpm.1 339 16 22 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 340 16 ]
-        %tmp.17 = 120;
+        %tmp.17 = 130;
         lputv %maxBpm.2 %tmp.17;
         symbol [ maxBpm %maxBpm.2 340 16 22 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_337_34_341_12_stop:
@@ -2235,11 +2225,11 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_m
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_341_19_345_12_if_true:
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_341_41_345_12_start:
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 343 16 ]
-        %tmp.22 = 50;
+        %tmp.22 = 60;
         lputv %minBpm.1 %tmp.22;
         symbol [ minBpm %minBpm.1 343 16 22 ];
 [ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareView.mc" 344 16 ]
-        %tmp.23 = 80;
+        %tmp.23 = 90;
         lputv %maxBpm.2 %tmp.23;
         symbol [ maxBpm %maxBpm.2 344 16 22 ];
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareView_mc_341_41_345_12_stop:
