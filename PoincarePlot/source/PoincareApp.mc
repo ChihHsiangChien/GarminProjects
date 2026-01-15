@@ -38,6 +38,11 @@ class PoincareApp extends Application.AppBase {
         if (Sensor has :unregisterSensorDataListener) {
             Sensor.unregisterSensorDataListener();
         }
+        
+        // Stop FIT recording
+        if (view != null) {
+            view.stopRecording();
+        }
     }
 
     function onSensorData(sensorData as Sensor.SensorData) as Void {
@@ -65,6 +70,10 @@ class PoincareApp extends Application.AppBase {
             var delegate = new PoincareDelegate(view);
             // Initialize with current settings
             view.updateModeFromSettings();
+            
+            // Start FIT recording automatically
+            view.startRecording();
+            
             System.println("App: getInitialView returning");
             return [ view, delegate ];
         } catch (e) {

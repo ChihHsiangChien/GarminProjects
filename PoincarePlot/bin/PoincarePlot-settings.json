@@ -27,11 +27,14 @@
   "supportsLiveValidation" : false,
   "languages" : {
     "valyrian" : {
-      "ModeZoom" : "Zoom",
       "ModeAuto" : "Auto",
       "ModeTitle" : "Visual Mode",
+      "ms" : "ms",
+      "ModeZoom" : "Zoom",
       "ModeWide" : "Wide",
-      "AppName" : "Poincare Plot"
+      "FitStrSD1" : "HRV SD1",
+      "AppName" : "Poincare Plot",
+      "FitStrSD2" : "HRV SD2"
     }
   }
 }

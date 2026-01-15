@@ -4,4 +4,7 @@
     <string id="ModeWide">Wide</string>
     <string id="ModeZoom">Zoom</string>
     <string id="ModeAuto">Auto</string>
+    <string id="FitStrSD1">HRV SD1</string>
+    <string id="FitStrSD2">HRV SD2</string>
+    <string id="ms">ms</string>
 </strings>

@@ -12,9 +12,12 @@ module Rez {
     module Strings {
         (:initialized) var ModeAuto as ResourceId;
         (:initialized) var ModeTitle as ResourceId;
+        (:initialized) var ms as ResourceId;
         (:initialized) var ModeZoom as ResourceId;
         (:initialized) var ModeWide as ResourceId;
+        (:initialized) var FitStrSD1 as ResourceId;
         (:initialized) var AppName as ResourceId;
+        (:initialized) var FitStrSD2 as ResourceId;
     } // Strings
 
     module Styles {

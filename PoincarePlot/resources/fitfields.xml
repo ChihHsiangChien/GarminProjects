@@ -1,0 +1,19 @@
+<fitContributions>
+    <fitField id="0" 
+              displayInChart="true" 
+              displayInActivitySummary="true" 
+              sortOrder="1" 
+              precision="1"
+              dataLabel="@Strings.FitStrSD1"
+              unitLabel="@Strings.ms"
+              fillColor="#00FF00" />
+
+    <fitField id="1" 
+              displayInChart="true" 
+              displayInActivitySummary="true" 
+              sortOrder="2" 
+              precision="1"
+              dataLabel="@Strings.FitStrSD2"
+              unitLabel="@Strings.ms"
+              fillColor="#0000FF" />
+</fitContributions>
