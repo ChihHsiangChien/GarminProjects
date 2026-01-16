@@ -22,10 +22,19 @@ class PoincareView extends WatchUi.View {
     private var session as ActivityRecording.Session? = null;
     private var sd1Field as FitContributor.Field? = null;
     private var sd2Field as FitContributor.Field? = null;
+    
+    // --- ASM History ---
+    private var asmHistoryCount as Number = 0;
+    private var asmHistorySD1 as Array<Float?> = new [30];
+    private var asmHistorySD2 as Array<Float?> = new [30];
+    private var asmWriteIdx as Number = 0;
 
+    // --- 統計快取 ---
     // --- 統計快取 ---
     private var cachedSD1 as Float = 0.0;
     private var cachedSD2 as Float = 0.0;
+    private var shortSD1 as Float = 0.0;
+    private var shortSD2 as Float = 0.0;
     private var cachedRatio as Float = 0.0;
     private var cachedMeanX as Float = 0.0;
     private var cachedMeanY as Float = 0.0;
@@ -49,6 +58,55 @@ class PoincareView extends WatchUi.View {
     private var canvasSize as Number = 300;
     private var offsetX as Number = 45;
     private var offsetY as Number = 45;
+
+    private function computeSD(count as Number) as Array<Float> {
+        // Compute SD1, SD2, MeanX, MeanY for the last 'count' points
+        if (pointsCount < 2) { return [0.0, 0.0, 0.0, 0.0]; }
+        
+        var effectiveCount = (pointsCount < count) ? pointsCount : count;
+        
+        var sumX = 0.0;
+        var sumY = 0.0;
+        var sumSd1 = 0.0;
+        var sumSqSd1 = 0.0;
+        var sumSd2 = 0.0;
+        var sumSqSd2 = 0.0;
+        
+        // Loop backwards from newest
+        // Newest is at writeIndex - 1
+        for (var i = 0; i < effectiveCount; i++) {
+             var idx = (writeIndex - 1 - i + maxPoints) % maxPoints;
+             var p = pointsBuffer[idx] as Array<Number>;
+             var rr_n = p[0].toFloat();
+             var rr_n1 = p[1].toFloat();
+             
+             sumX += rr_n;
+             sumY += rr_n1;
+             
+             var val1 = (rr_n - rr_n1) / SQRT2;
+             sumSd1 += val1;
+             sumSqSd1 += (val1 * val1);
+             
+             var val2 = (rr_n + rr_n1) / SQRT2;
+             sumSd2 += val2;
+             sumSqSd2 += (val2 * val2);
+        }
+        
+        var meanX = sumX / effectiveCount;
+        var meanY = sumY / effectiveCount;
+        
+        var meanSd1 = sumSd1 / effectiveCount;
+        var varSd1 = (sumSqSd1 / effectiveCount) - (meanSd1 * meanSd1);
+        if (varSd1 < 0) { varSd1 = 0.0; }
+        var sd1 = Math.sqrt(varSd1).toFloat();
+        
+        var meanSd2 = sumSd2 / effectiveCount;
+        var varSd2 = (sumSqSd2 / effectiveCount) - (meanSd2 * meanSd2);
+        if (varSd2 < 0) { varSd2 = 0.0; }
+        var sd2 = Math.sqrt(varSd2).toFloat();
+        
+        return [sd1, sd2, meanX, meanY];
+    }
 
     function initialize() {
         try {
@@ -179,6 +237,11 @@ class PoincareView extends WatchUi.View {
             if (displayMode == 2) { // AUTO Mode
                  updateDynamicRange();
             }
+            
+            if (displayMode == 3) {
+                 drawASM(dc);
+                 return;
+            }
 
             // 背景與畫布
             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
@@ -200,8 +263,8 @@ class PoincareView extends WatchUi.View {
 
             var modeName = "";
             if (displayMode == 2) { modeName = "AUTO "; }
-            else if (displayMode == 3) { modeName = "SET MIN "; }
-            else if (displayMode == 4) { modeName = "SET MAX "; }
+            else if (displayMode == 4) { modeName = "SET MIN "; }
+            else if (displayMode == 5) { modeName = "SET MAX "; }
 
             var infoStr = modeName + "[" + lowBpm + "-" + highBpm + " BPM]";
             
@@ -324,9 +387,9 @@ class PoincareView extends WatchUi.View {
 
             // [DEBUG] 顯示除錯資訊
             var now = System.getTimer();
-            var debugStr = "no signal";
+            var debugStr = "signal:no";
             if (lastSignalTime > 0 && (now - lastSignalTime) < 2000) {
-                debugStr = "normal";
+                debugStr = "signal:yes";
             }
             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
             dc.drawText(screenW/2, screenH - 30, Graphics.FONT_XTINY, debugStr, Graphics.TEXT_JUSTIFY_CENTER);
@@ -344,8 +407,8 @@ class PoincareView extends WatchUi.View {
     function updateModeFromSettings() as Void {
         try {
             System.println("View: updateModeFromSettings start");
-            // Mode 0: Wide, 1: Zoom, 2: Auto, 3: Set Min, 4: Set Max
-            displayMode = (displayMode + 1) % 5;
+            // Mode 0: Wide, 1: Zoom, 2: Auto, 3: ASM, 4: Set Min, 5: Set Max
+            displayMode = (displayMode + 1) % 6;
             
             var minBpm = 0;
             var maxBpm = 0;
@@ -358,13 +421,13 @@ class PoincareView extends WatchUi.View {
                 // Zoom Mode: 60 - 90 BPM
                 minBpm = 60; 
                 maxBpm = 90;
-            } else if (displayMode == 3 || displayMode == 4) {
+            } else if (displayMode == 4 || displayMode == 5) {
                 // Custom Modes use stored custom values
                 minBpm = customMinBpm;
                 maxBpm = customMaxBpm;
             }
 
-            if (displayMode == 0 || displayMode == 1 || displayMode == 3 || displayMode == 4) {
+            if (displayMode == 0 || displayMode == 1 || displayMode == 4 || displayMode == 5) {
                 // RR = 60000 / BPM
                 // minRR 對應 maxBpm
                 minRR = 60000 / maxBpm;
@@ -379,13 +442,13 @@ class PoincareView extends WatchUi.View {
     }
     
     public function adjustCustomRange(delta as Number) as Void {
-        if (displayMode == 3) {
+        if (displayMode == 4) {
             // Adjust Min BPM
             customMinBpm += delta;
             // Limit checks
             if (customMinBpm < 30) { customMinBpm = 30; }
             if (customMinBpm >= customMaxBpm) { customMinBpm = customMaxBpm - 5; }
-        } else if (displayMode == 4) {
+        } else if (displayMode == 5) {
              // Adjust Max BPM
              customMaxBpm += delta;
              // Limit checks
@@ -394,7 +457,7 @@ class PoincareView extends WatchUi.View {
         }
         
         // Apply new values immediately
-        if (displayMode == 3 || displayMode == 4) {
+        if (displayMode == 4 || displayMode == 5) {
              minRR = 60000 / customMaxBpm;
              maxRR = 60000 / customMinBpm;
              WatchUi.requestUpdate();
@@ -408,60 +471,39 @@ class PoincareView extends WatchUi.View {
 
 
     private function calculateStats() as Void {
-        // 優化：直接計算平方和 (One-pass, No array allocation)
-        // 使用常數 SQRT2 避免重複計算開根號
-        
-        var sumX = 0.0;
-        var sumY = 0.0;
-        
-        var sumSd1 = 0.0;
-        var sumSqSd1 = 0.0;
-        
-        var sumSd2 = 0.0;
-        var sumSqSd2 = 0.0;
-        
-        for (var i = 0; i < pointsCount; i++) {
-            var p = pointsBuffer[i] as Array<Number>;
-            var rr_n = p[0].toFloat();
-            var rr_n1 = p[1].toFloat();
+        if (pointsCount >= 2) {
+             // 1. Long Term Stats (Up to 60 points) -> Center Point
+            var longStats = computeSD(60);
+            cachedSD1 = longStats[0];
+            cachedSD2 = longStats[1];
+            cachedMeanX = longStats[2];
+            cachedMeanY = longStats[3];
             
-            sumX += rr_n;
-            sumY += rr_n1;
+            // 2. Short Term Stats (Last 15 points) -> Current Dot (Moving Average)
+            // Only calculate if we have enough points, otherwise same as long term
+            if (pointsCount > 15) {
+                var shortStats = computeSD(15);
+                shortSD1 = shortStats[0];
+                shortSD2 = shortStats[1];
+            } else {
+                shortSD1 = cachedSD1;
+                shortSD2 = cachedSD2;
+            }
             
-            // SD1: (RRn - RRn+1) / sqrt(2)
-            var val1 = (rr_n - rr_n1) / SQRT2;
-            sumSd1 += val1;
-            sumSqSd1 += (val1 * val1);
-            
-            // SD2: (RRn + RRn+1) / sqrt(2)
-            var val2 = (rr_n + rr_n1) / SQRT2;
-            sumSd2 += val2;
-            sumSqSd2 += (val2 * val2);
-        }
-        
-        //計算平均值
-        if (pointsCount > 0) {
-            cachedMeanX = sumX / pointsCount;
-            cachedMeanY = sumY / pointsCount;
-            
-            // 標準差計算: sqrt(Var)
-            // Var = E[X^2] - (E[X])^2
-            
-            var meanSd1 = sumSd1 / pointsCount;
-            var varSd1 = (sumSqSd1 / pointsCount) - (meanSd1 * meanSd1);
-            if (varSd1 < 0) { varSd1 = 0.0; } // Floating point safety
-            cachedSD1 = Math.sqrt(varSd1).toFloat();
-            
-            var meanSd2 = sumSd2 / pointsCount;
-            var varSd2 = (sumSqSd2 / pointsCount) - (meanSd2 * meanSd2);
-             if (varSd2 < 0) { varSd2 = 0.0; }
-            cachedSD2 = Math.sqrt(varSd2).toFloat();
+            // Save to ASM History (Save Short Term or Long Term? User said "Current Dot" is 15 beats)
+            // Let's save Short Term for the trace to show immediate path
+            asmHistorySD1[asmWriteIdx] = shortSD1;
+            asmHistorySD2[asmWriteIdx] = shortSD2;
+            asmWriteIdx = (asmWriteIdx + 1) % 30;
+            if (asmHistoryCount < 30) { asmHistoryCount++; }
             
         } else {
             cachedMeanX = 0.0;
             cachedMeanY = 0.0;
             cachedSD1 = 0.0;
             cachedSD2 = 0.0;
+            shortSD1 = 0.0;
+            shortSD2 = 0.0;
         }
 
         if (cachedSD2 > 0) {
@@ -513,6 +555,146 @@ class PoincareView extends WatchUi.View {
         } catch (e) {
              System.println("Failed to start recording: " + e.getErrorMessage());
         }
+    }
+        // --- Autonomic State Map ---
+    private function drawASM(dc as Dc) as Void {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.clear();
+        
+        // Axis Ranges: X (SD1): 0-100, Y (SD2): 0-200 (Adjusted for better view)
+        var maxX = 100.0;
+        var maxY = 150.0;
+        
+        // Layout: Use 65% screen width/height to fit square in circle (70% is max)
+        var graphSize = (screenW * 0.65).toNumber();
+        var gLeft = (screenW - graphSize) / 2;
+        var gTop = (screenH - graphSize) / 2;
+        var gRight = gLeft + graphSize;
+        var gBottom = gTop + graphSize;
+        
+        // Draw Quadrants
+        // Split at: X=25 (Low/High boundary? maybe 25-30), Y=50?
+        // User spec: 
+        // SD1 Low < ?? (Say 30), High > 30?
+        // SD2 Low < 50, High > 50?
+        // Center of graph: Based on Long Term Stats (cachedSD1, cachedSD2)
+        // If no stats yet (cachedSD2 == 0), use default 50/75
+        var cX = gLeft + (graphSize * (50.0/maxX)); // Default X=50
+        var cY = gBottom - (graphSize * (75.0/maxY)); // Default Y=75
+        
+        if (cachedSD2 > 0) {
+            cX = gLeft + (cachedSD1 / maxX * graphSize);
+            cY = gBottom - (cachedSD2 / maxY * graphSize);
+        }
+        
+        // Clamp center to be within graph
+        if (cX < gLeft) { cX = gLeft; }
+        if (cX > gRight) { cX = gRight; }
+        if (cY < gTop) { cY = gTop; }
+        if (cY > gBottom) { cY = gBottom; }
+        
+        // Colors from requirement (approximate with standard colors)
+        // Left-Bottom (Low/Low) -> Burnt out -> Red
+        /*
+        dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(gLeft, cY, cX - gLeft, gBottom - cY);
+        
+        // Left-Top (Low/High) -> Stress -> Orange
+        dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(gLeft, gTop, cX - gLeft, cY - gTop);
+        
+        // Right-Top (High/High) -> Flow -> Green
+        dc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(cX, gTop, gRight - cX, cY - gTop);
+        
+        // Right-Bottom (High/Low) -> Recovery -> Blue
+        dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(cX, cY, gRight - cX, gBottom - cY);
+        */
+
+        // 增加外框格線
+        dc.setPenWidth(1);
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawRectangle(gLeft, gTop, graphSize, graphSize);
+        
+        // Labels
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(screenW/2, gBottom + 8, Graphics.FONT_XTINY, "SD1", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(gLeft - 18, screenH/2, Graphics.FONT_XTINY, "SD2", Graphics.TEXT_JUSTIFY_CENTER);
+
+        // Draw Y=X Line (SD2 = SD1)
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        // Pt1: (0,0) -> (gLeft, gBottom)
+        // Pt2: (100, 100). X=100 -> gRight. Y=100 -> gBottom - (100/150)*size
+        var y100 = gBottom - (graphSize * (100.0/maxY));
+        dc.drawLine(gLeft, gBottom, gRight, y100.toNumber());
+        
+        // Draw Trace
+        if (asmHistoryCount > 1) {
+            dc.setPenWidth(1);
+            
+            var lastIdx = (asmWriteIdx - 1 + 30) % 30;
+            var prevSD1 = asmHistorySD1[lastIdx];
+            var prevSD2 = asmHistorySD2[lastIdx];
+            
+            var px = gLeft + (prevSD1 / maxX * graphSize);
+            var py = gBottom - (prevSD2 / maxY * graphSize);
+            
+            // Loop backwards
+            for (var i = 1; i < asmHistoryCount; i++) {
+                var currIdx = (lastIdx - i + 30) % 30;
+                var currSD1 = asmHistorySD1[currIdx];
+                var currSD2 = asmHistorySD2[currIdx];
+                
+                var cx = gLeft + (currSD1 / maxX * graphSize);
+                var cy = gBottom - (currSD2 / maxY * graphSize);
+                
+                // Color fade
+                var alpha = 255 - ((i.toFloat() / asmHistoryCount.toFloat()) * 200).toNumber();
+                if (alpha < 50) { alpha = 50; }
+                var color = (alpha << 24) | 0xAAAAAA; // LT_GRAY
+                
+                dc.setColor(color, Graphics.COLOR_TRANSPARENT);
+                dc.drawLine(px, py, cx, cy);
+                
+                px = cx;
+                py = cy;
+            }
+        }
+        
+        // Draw Current Point (Short Term) and Reference (Long Term)
+        if (asmHistoryCount > 0) {
+             // 1. Draw Reference (Long Term) - cachedSD1/cachedSD2
+             // Use a Hollow Circle + Cross or similar
+             var refX = gLeft + (cachedSD1 / maxX * graphSize);
+             var refY = gBottom - (cachedSD2 / maxY * graphSize);
+             
+             dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+             dc.drawCircle(refX, refY, 5);             
+             
+             // 2. Draw Current Dot (Short Term) - shortSD1/shortSD2
+             var curX = gLeft + (shortSD1 / maxX * graphSize);
+             var curY = gBottom - (shortSD2 / maxY * graphSize);
+             
+             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+             dc.fillCircle(curX, curY, 2);
+             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+             dc.drawCircle(curX, curY, 2);
+             
+             // Optional: Draw line connecting properties?
+             // dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+             // dc.drawLine(refX, refY, curX, curY);
+        }
+
+        // [DEBUG] 顯示除錯資訊
+        var now = System.getTimer();
+        var debugStr = "signal:no";
+        if (lastSignalTime > 0 && (now - lastSignalTime) < 2000) {
+            debugStr = "signal:yes";
+        }
+        dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(screenW/2, screenH - 30, Graphics.FONT_XTINY, debugStr, Graphics.TEXT_JUSTIFY_CENTER);
+
     }
     
     public function stopRecording() as Void {
