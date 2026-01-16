@@ -152,7 +152,9 @@ class PoincareView extends WatchUi.View {
     }
 
     private function processIntervals(intervals as Array<Number>) as Void {
-        lastSignalTime = System.getTimer();
+        if (intervals.size() > 0) {
+            lastSignalTime = System.getTimer();
+        }
         for (var i = 0; i < intervals.size(); i++) {
             var currentRR = intervals[i];
 
