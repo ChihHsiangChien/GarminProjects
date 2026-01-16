@@ -68,6 +68,36 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelega
         ret %tmp.6;
 C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_19_24_24_4_stop:
     }
+    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 26; @symbol_functiondef = [onPreviousPage,26,13,27]; ]
+    function onPreviousPage() {
+C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_26_30_30_4_start:
+[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 28 8 ]
+        symbol [ _view %tmp.2 28 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ adjustCustomRange %tmp.3 28 14 31 ];
+        %tmp.3 = getv function %tmp.2 :adjustCustomRange;
+        %tmp.4 = 5;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 29 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_26_30_30_4_stop:
+    }
+    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 32; @symbol_functiondef = [onNextPage,32,13,23]; ]
+    function onNextPage() {
+C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_32_26_36_4_start:
+[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 34 8 ]
+        symbol [ _view %tmp.2 34 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ adjustCustomRange %tmp.3 34 14 31 ];
+        %tmp.3 = getv function %tmp.2 :adjustCustomRange;
+        %tmp.4 = -5;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 35 8 ]
+        %tmp.5 = true;
+        ret %tmp.5;
+C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_32_26_36_4_stop:
+    }
 }
 [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 1; ]
 <init> {

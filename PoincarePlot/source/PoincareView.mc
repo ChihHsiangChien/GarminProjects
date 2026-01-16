@@ -16,6 +16,7 @@ class PoincareView extends WatchUi.View {
     private var writeIndex as Number = 0;
     private var pointsCount as Number = 0;
     private var lastRR as Number? = null;
+    private var lastSignalTime as Number = 0;
 
     // --- FIT Recording ---
     private var session as ActivityRecording.Session? = null;
@@ -34,6 +35,10 @@ class PoincareView extends WatchUi.View {
     // Default Mode 0 (Wide): 40-120 BPM -> 500ms - 1500ms
     private var minRR as Number = 500;
     private var maxRR as Number = 1500;
+    
+    // Custom Mode Variables
+    private var customMinBpm as Number = 40;
+    private var customMaxBpm as Number = 160;
 
     // --- 常數 ---
     private const SQRT2 = 1.41421356;
@@ -83,6 +88,7 @@ class PoincareView extends WatchUi.View {
     }
 
     private function processIntervals(intervals as Array<Number>) as Void {
+        lastSignalTime = System.getTimer();
         for (var i = 0; i < intervals.size(); i++) {
             var currentRR = intervals[i];
 
@@ -194,6 +200,8 @@ class PoincareView extends WatchUi.View {
 
             var modeName = "";
             if (displayMode == 2) { modeName = "AUTO "; }
+            else if (displayMode == 3) { modeName = "SET MIN "; }
+            else if (displayMode == 4) { modeName = "SET MAX "; }
 
             var infoStr = modeName + "[" + lowBpm + "-" + highBpm + " BPM]";
             
@@ -252,11 +260,14 @@ class PoincareView extends WatchUi.View {
                 var sd1Str = "SD1: " + cachedSD1.format("%.1f");
                 var sd2Str = "SD2: " + cachedSD2.format("%.1f");
                 var ratioStr = "R: " + cachedRatio.format("%.1f");
+                var area = 3.1415926 * cachedSD1 * cachedSD2;
+                var areaStr = "A: " + area.format("%.0f");
                 
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
                 dc.drawText(offsetX + 5, offsetY + 5, Graphics.FONT_XTINY, sd1Str, Graphics.TEXT_JUSTIFY_LEFT);
                 dc.drawText(offsetX + 5, offsetY + 22, Graphics.FONT_XTINY, sd2Str, Graphics.TEXT_JUSTIFY_LEFT);
                 dc.drawText(offsetX + 5, offsetY + 39, Graphics.FONT_XTINY, ratioStr, Graphics.TEXT_JUSTIFY_LEFT);
+                dc.drawText(offsetX + 5, offsetY + 56, Graphics.FONT_XTINY, areaStr, Graphics.TEXT_JUSTIFY_LEFT);
                 
                 // 2. 繪製橢圓
                 // 需要將 SD 值轉換為像素長度
@@ -312,7 +323,11 @@ class PoincareView extends WatchUi.View {
             dc.drawText(screenW/2, offsetY + canvasSize + 5, Graphics.FONT_TINY, "HR: " + hr, Graphics.TEXT_JUSTIFY_CENTER);
 
             // [DEBUG] 顯示除錯資訊
-            var debugStr = " Last:" + (lastRR != null ? lastRR : "null");
+            var now = System.getTimer();
+            var debugStr = "no signal";
+            if (lastSignalTime > 0 && (now - lastSignalTime) < 2000) {
+                debugStr = "normal";
+            }
             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
             dc.drawText(screenW/2, screenH - 30, Graphics.FONT_XTINY, debugStr, Graphics.TEXT_JUSTIFY_CENTER);
         } catch (e) {
@@ -329,7 +344,8 @@ class PoincareView extends WatchUi.View {
     function updateModeFromSettings() as Void {
         try {
             System.println("View: updateModeFromSettings start");
-            displayMode = (displayMode + 1) % 3;
+            // Mode 0: Wide, 1: Zoom, 2: Auto, 3: Set Min, 4: Set Max
+            displayMode = (displayMode + 1) % 5;
             
             var minBpm = 0;
             var maxBpm = 0;
@@ -342,9 +358,13 @@ class PoincareView extends WatchUi.View {
                 // Zoom Mode: 60 - 90 BPM
                 minBpm = 60; 
                 maxBpm = 90;
+            } else if (displayMode == 3 || displayMode == 4) {
+                // Custom Modes use stored custom values
+                minBpm = customMinBpm;
+                maxBpm = customMaxBpm;
             }
 
-            if (displayMode == 0 || displayMode == 1) {
+            if (displayMode == 0 || displayMode == 1 || displayMode == 3 || displayMode == 4) {
                 // RR = 60000 / BPM
                 // minRR 對應 maxBpm
                 minRR = 60000 / maxBpm;
@@ -355,6 +375,29 @@ class PoincareView extends WatchUi.View {
             System.println("View: updateModeFromSettings end. Mode=" + displayMode);
         } catch (e) {
             System.println("Crash in View.updateModeFromSettings: " + e.getErrorMessage());
+        }
+    }
+    
+    public function adjustCustomRange(delta as Number) as Void {
+        if (displayMode == 3) {
+            // Adjust Min BPM
+            customMinBpm += delta;
+            // Limit checks
+            if (customMinBpm < 30) { customMinBpm = 30; }
+            if (customMinBpm >= customMaxBpm) { customMinBpm = customMaxBpm - 5; }
+        } else if (displayMode == 4) {
+             // Adjust Max BPM
+             customMaxBpm += delta;
+             // Limit checks
+             if (customMaxBpm <= customMinBpm) { customMaxBpm = customMinBpm + 5; }
+             if (customMaxBpm > 220) { customMaxBpm = 220; }
+        }
+        
+        // Apply new values immediately
+        if (displayMode == 3 || displayMode == 4) {
+             minRR = 60000 / customMaxBpm;
+             maxRR = 60000 / customMinBpm;
+             WatchUi.requestUpdate();
         }
     }
 
