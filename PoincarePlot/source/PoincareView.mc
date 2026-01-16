@@ -396,13 +396,13 @@ class PoincareView extends WatchUi.View {
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawText(screenW/2, offsetY + canvasSize + 5, Graphics.FONT_TINY, "HR: " + hr, Graphics.TEXT_JUSTIFY_CENTER);
 
-            // [DEBUG] 顯示除錯資訊
+            // [DEBUG] 顯示是否有新資料
             var now = System.getTimer();
             var debugStr = "signal:no";
             if (lastSignalTime > 0 && (now - lastSignalTime) < 2000) {
                 debugStr = "signal:yes";
             }
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
+            dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
             dc.drawText(screenW/2, screenH - 30, Graphics.FONT_XTINY, debugStr, Graphics.TEXT_JUSTIFY_CENTER);
         } catch (e) {
             System.println("Error in onUpdate: " + e.getErrorMessage());
@@ -425,8 +425,8 @@ class PoincareView extends WatchUi.View {
             var maxBpm = 0;
 
             if (displayMode == 0) {
-                // Wide Mode: 60 - 130 BPM
-                minBpm = 60; 
+                // Wide Mode: 50 - 130 BPM
+                minBpm = 50; 
                 maxBpm = 130;
             } else if (displayMode == 1) {
                 // Zoom Mode: 60 - 90 BPM
@@ -642,31 +642,21 @@ class PoincareView extends WatchUi.View {
              var refX = gLeft + (cachedSD1 / maxX * graphSize);
              var refY = gBottom - (cachedSD2 / maxY * graphSize);
              
-             dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-             dc.drawCircle(refX, refY, 5);             
+             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+             dc.fillCircle(refX, refY, 5);             
              
              // 2. Draw Current Dot (Short Term) - shortSD1/shortSD2
              var curX = gLeft + (shortSD1 / maxX * graphSize);
              var curY = gBottom - (shortSD2 / maxY * graphSize);
              
              dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-             dc.fillCircle(curX, curY, 5);
-             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-             dc.drawCircle(curX, curY, 5);
+             dc.fillCircle(curX, curY, 4);
              
              // Optional: Draw line connecting properties?
              // dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
              // dc.drawLine(refX, refY, curX, curY);
         }
 
-        // [DEBUG] 顯示除錯資訊
-        var now = System.getTimer();
-        var debugStr = "signal:no";
-        if (lastSignalTime > 0 && (now - lastSignalTime) < 2000) {
-            debugStr = "signal:yes";
-        }
-        dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(screenW/2, screenH - 30, Graphics.FONT_XTINY, debugStr, Graphics.TEXT_JUSTIFY_CENTER);
 
     }
     
@@ -679,7 +669,6 @@ class PoincareView extends WatchUi.View {
         var graphSize = (screenW * 0.70).toNumber();
         var gLeft = (screenW - graphSize) / 2;
         var gTop = (screenH - graphSize) / 2;
-        var gRight = gLeft + graphSize;
         var gBottom = gTop + graphSize;
         
         // Draw Frame
@@ -687,17 +676,32 @@ class PoincareView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         dc.drawRectangle(gLeft, gTop, graphSize, graphSize);
         
+        // Grid Lines
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        
+        // X Grid: 0.5, 1.0 (Range 0-1.2)
+        var x05 = gLeft + (0.5 / 1.2 * graphSize);
+        dc.drawLine(x05, gTop, x05, gBottom);
+        
+        var x10 = gLeft + (1.0 / 1.2 * graphSize);
+        dc.drawLine(x10, gTop, x10, gBottom);
+        
+        // Y Grid (Log Scale): 10^3, 10^4 (Range 10^2 - 10^5)
+        // y = gBottom - ( (val - min) / (max - min) * size )
+        var yLog3 = gBottom - ((3.0 - 2.0) / (5.0 - 2.0) * graphSize);
+        dc.drawLine(gLeft, yLog3, gLeft + graphSize, yLog3);
+        
+        var yLog4 = gBottom - ((4.0 - 2.0) / (5.0 - 2.0) * graphSize);
+        dc.drawLine(gLeft, yLog4, gLeft + graphSize, yLog4);
+
         // Labels
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        // X-Axis Labels: Rigid <-> Flexible
-        // Move labels slightly inward and up
-        dc.drawText(gLeft + 2, gBottom - 20, Graphics.FONT_XTINY, "Rigid", Graphics.TEXT_JUSTIFY_LEFT);
-        dc.drawText(gRight - 2, gBottom - 20, Graphics.FONT_XTINY, "Flex", Graphics.TEXT_JUSTIFY_RIGHT);
         
-        // Y-Axis Labels: Weak <-> Robust
-        // Vertical text is difficult, place near the axis but inside graph or shifted
-        dc.drawText(gLeft + 2, gBottom - 35, Graphics.FONT_XTINY, "Weak", Graphics.TEXT_JUSTIFY_LEFT);
-        dc.drawText(gLeft + 2, gTop + 5, Graphics.FONT_XTINY, "Robust", Graphics.TEXT_JUSTIFY_LEFT);
+        // X-Axis Label: SD1/SD2
+        dc.drawText(screenW/2, gBottom - 20, Graphics.FONT_XTINY, "SD1/SD2", Graphics.TEXT_JUSTIFY_CENTER);
+        
+        // Y-Axis Label: Area
+        dc.drawText(gLeft + 4, gTop + 5, Graphics.FONT_XTINY, "Area", Graphics.TEXT_JUSTIFY_LEFT);
         
         // --- Plotting ---
         // X Range: 0.0 to 1.2
@@ -755,7 +759,7 @@ class PoincareView extends WatchUi.View {
                          var alpha = 200 - ((i.toFloat() / 300.0) * 200).toNumber(); // 300 max
                          if (alpha < 20) { alpha = 20; }
                          
-                         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
                          dc.drawLine(prevX, prevY, cx, cy);
                          
                          prevX = cx;
