@@ -29,6 +29,14 @@ class PoincareView extends WatchUi.View {
     private var asmHistorySD2 as Array<Float?> = new [30];
     private var asmWriteIdx as Number = 0;
 
+    // --- Energy Balance History (5 mins ~ 300 beats) ---
+    private var ebHistoryCount as Number = 0;
+    private var ebHistoryRatio as Array<Float?> = new [300];
+    private var ebHistoryArea as Array<Float?> = new [300];
+    private var ebWriteIdx as Number = 0;
+
+
+
     // --- 統計快取 ---
     // --- 統計快取 ---
     private var cachedSD1 as Float = 0.0;
@@ -242,6 +250,10 @@ class PoincareView extends WatchUi.View {
                  drawASM(dc);
                  return;
             }
+            if (displayMode == 4) {
+                 drawEnergyBalance(dc);
+                 return;
+            }
 
             // 背景與畫布
             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
@@ -407,8 +419,8 @@ class PoincareView extends WatchUi.View {
     function updateModeFromSettings() as Void {
         try {
             System.println("View: updateModeFromSettings start");
-            // Mode 0: Wide, 1: Zoom, 2: Auto, 3: ASM, 4: Set Min, 5: Set Max
-            displayMode = (displayMode + 1) % 6;
+            // Mode 0: Wide, 1: Zoom, 2: Auto, 3: ASM, 4: Energy/Balance, 5: Set Min, 6: Set Max
+            displayMode = (displayMode + 1) % 7;
             
             var minBpm = 0;
             var maxBpm = 0;
@@ -421,13 +433,13 @@ class PoincareView extends WatchUi.View {
                 // Zoom Mode: 60 - 90 BPM
                 minBpm = 60; 
                 maxBpm = 90;
-            } else if (displayMode == 4 || displayMode == 5) {
+            } else if (displayMode == 5 || displayMode == 6) {
                 // Custom Modes use stored custom values
                 minBpm = customMinBpm;
                 maxBpm = customMaxBpm;
             }
 
-            if (displayMode == 0 || displayMode == 1 || displayMode == 4 || displayMode == 5) {
+            if (displayMode == 0 || displayMode == 1 || displayMode == 5 || displayMode == 6) {
                 // RR = 60000 / BPM
                 // minRR 對應 maxBpm
                 minRR = 60000 / maxBpm;
@@ -442,13 +454,13 @@ class PoincareView extends WatchUi.View {
     }
     
     public function adjustCustomRange(delta as Number) as Void {
-        if (displayMode == 4) {
+        if (displayMode == 5) { // Was 4
             // Adjust Min BPM
             customMinBpm += delta;
             // Limit checks
             if (customMinBpm < 30) { customMinBpm = 30; }
             if (customMinBpm >= customMaxBpm) { customMinBpm = customMaxBpm - 5; }
-        } else if (displayMode == 5) {
+        } else if (displayMode == 6) { // Was 5
              // Adjust Max BPM
              customMaxBpm += delta;
              // Limit checks
@@ -457,7 +469,7 @@ class PoincareView extends WatchUi.View {
         }
         
         // Apply new values immediately
-        if (displayMode == 4 || displayMode == 5) {
+        if (displayMode == 5 || displayMode == 6) {
              minRR = 60000 / customMaxBpm;
              maxRR = 60000 / customMinBpm;
              WatchUi.requestUpdate();
@@ -511,6 +523,13 @@ class PoincareView extends WatchUi.View {
         } else {
             cachedRatio = 0.0;
         }
+
+        // Save to Energy/Balance History (every beat)
+        var area = 3.1415926 * cachedSD1 * cachedSD2;
+        ebHistoryRatio[ebWriteIdx] = cachedRatio;
+        ebHistoryArea[ebWriteIdx] = area;
+        ebWriteIdx = (ebWriteIdx + 1) % 300;
+        if (ebHistoryCount < 300) { ebHistoryCount++; }
 
         // --- FIT Recording Write ---
         if (session != null && session.isRecording()) {
@@ -697,6 +716,112 @@ class PoincareView extends WatchUi.View {
 
     }
     
+    // --- Energy vs Balance Drawing ---
+    private function drawEnergyBalance(dc as Dc) as Void {
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.clear();
+        
+        // Layout: Use 70% screen width/height
+        var graphSize = (screenW * 0.70).toNumber();
+        var gLeft = (screenW - graphSize) / 2;
+        var gTop = (screenH - graphSize) / 2;
+        var gRight = gLeft + graphSize;
+        var gBottom = gTop + graphSize;
+        
+        // Draw Frame
+        dc.setPenWidth(1);
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawRectangle(gLeft, gTop, graphSize, graphSize);
+        
+        // Labels
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        // X-Axis Labels: Rigid <-> Flexible
+        // Move labels slightly inward and up
+        dc.drawText(gLeft + 2, gBottom - 20, Graphics.FONT_XTINY, "Rigid", Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(gRight - 2, gBottom - 20, Graphics.FONT_XTINY, "Flex", Graphics.TEXT_JUSTIFY_RIGHT);
+        
+        // Y-Axis Labels: Weak <-> Robust
+        // Vertical text is difficult, place near the axis but inside graph or shifted
+        dc.drawText(gLeft + 2, gBottom - 35, Graphics.FONT_XTINY, "Weak", Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(gLeft + 2, gTop + 5, Graphics.FONT_XTINY, "Robust", Graphics.TEXT_JUSTIFY_LEFT);
+        
+        // --- Plotting ---
+        // X Range: 0.0 to 1.2
+        // Y Range: Log Scale. Min Area ~ 100? Max Area ~ 50000? 
+        // Let's use Log10.
+        // Min Log = Log10(100) = 2.0
+        // Max Log = Log10(100000) = 5.0 (Say)
+        var minLog = 2.0;
+        var maxLog = 5.0;
+        
+        if (ebHistoryCount > 0) {
+             var lastIdx = (ebWriteIdx - 1 + 300) % 300;
+             var nowArea = ebHistoryArea[lastIdx];
+             if (nowArea == null || nowArea < 10) { nowArea = 10.0; } // avoid log(0) or very small
+             var nowRatio = ebHistoryRatio[lastIdx];
+             if (nowRatio == null) { nowRatio = 0.0; }
+             
+             // Calculate pixels
+             // X
+             var xVal = nowRatio;
+             if (xVal > 1.2) { xVal = 1.2; }
+             var px = gLeft + (xVal / 1.2 * graphSize);
+             
+             // Y (Log)
+             var logVal = Math.ln(nowArea) / Math.ln(10); // Log10
+             if (logVal < minLog) { logVal = minLog; }
+             if (logVal > maxLog) { logVal = maxLog; }
+             var yRatio = (logVal - minLog) / (maxLog - minLog);
+             var py = gBottom - (yRatio * graphSize);
+             
+             // Draw Trail
+             if (ebHistoryCount > 1) {
+                 var prevX = px;
+                 var prevY = py;
+                 
+                 for (var i = 1; i < ebHistoryCount; i++) {
+                     var currIdx = (lastIdx - i + 300) % 300;
+                     var cArea = ebHistoryArea[currIdx];
+                     var cRatio = ebHistoryRatio[currIdx];
+                     
+                     if (cArea != null && cRatio != null) {
+                         if (cArea < 10) { cArea = 10.0; }
+                         var cLog = Math.ln(cArea) / Math.ln(10);
+                         
+                         var cXVal = cRatio;
+                         if (cXVal > 1.2) { cXVal = 1.2; }
+                         var cx = gLeft + (cXVal / 1.2 * graphSize);
+                         
+                         if (cLog < minLog) { cLog = minLog; }
+                         if (cLog > maxLog) { cLog = maxLog; }
+                         var cyRatio = (cLog - minLog) / (maxLog - minLog);
+                         var cy = gBottom - (cyRatio * graphSize);
+                         
+                         // Alpha fade
+                         var alpha = 200 - ((i.toFloat() / 300.0) * 200).toNumber(); // 300 max
+                         if (alpha < 20) { alpha = 20; }
+                         var color = (alpha << 24) | 0x00FF00; // Green trail? Or Blue? Let's use Cyan 0x00FFFF
+                         
+                         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
+                         dc.drawLine(prevX, prevY, cx, cy);
+                         
+                         prevX = cx;
+                         prevY = cy;
+                     }
+                 }
+             }
+             
+             // Draw Current Point
+             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+             dc.fillCircle(px, py, 6);
+             dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+             dc.drawCircle(px, py, 6);
+        }
+        
+    }
+    
+
+
     public function stopRecording() as Void {
         if (session != null && session.isRecording()) {
             session.stop();
