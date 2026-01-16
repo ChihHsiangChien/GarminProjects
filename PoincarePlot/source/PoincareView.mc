@@ -53,9 +53,7 @@ class PoincareView extends WatchUi.View {
     private var minRR as Number = 500;
     private var maxRR as Number = 1500;
     
-    // Custom Mode Variables
-    private var customMinBpm as Number = 40;
-    private var customMaxBpm as Number = 160;
+
 
     // --- 常數 ---
     private const SQRT2 = 1.41421356;
@@ -275,8 +273,7 @@ class PoincareView extends WatchUi.View {
 
             var modeName = "";
             if (displayMode == 2) { modeName = "AUTO "; }
-            else if (displayMode == 4) { modeName = "SET MIN "; }
-            else if (displayMode == 5) { modeName = "SET MAX "; }
+
 
             var infoStr = modeName + "[" + lowBpm + "-" + highBpm + " BPM]";
             
@@ -419,8 +416,8 @@ class PoincareView extends WatchUi.View {
     function updateModeFromSettings() as Void {
         try {
             System.println("View: updateModeFromSettings start");
-            // Mode 0: Wide, 1: Zoom, 2: Auto, 3: ASM, 4: Energy/Balance, 5: Set Min, 6: Set Max
-            displayMode = (displayMode + 1) % 7;
+            // Mode 0: Wide, 1: Zoom, 2: Auto, 3: ASM, 4: Energy/Balance
+            displayMode = (displayMode + 1) % 5;
             
             var minBpm = 0;
             var maxBpm = 0;
@@ -433,13 +430,9 @@ class PoincareView extends WatchUi.View {
                 // Zoom Mode: 60 - 90 BPM
                 minBpm = 60; 
                 maxBpm = 90;
-            } else if (displayMode == 5 || displayMode == 6) {
-                // Custom Modes use stored custom values
-                minBpm = customMinBpm;
-                maxBpm = customMaxBpm;
             }
-
-            if (displayMode == 0 || displayMode == 1 || displayMode == 5 || displayMode == 6) {
+            
+            if (displayMode == 0 || displayMode == 1) {
                 // RR = 60000 / BPM
                 // minRR 對應 maxBpm
                 minRR = 60000 / maxBpm;
@@ -450,29 +443,6 @@ class PoincareView extends WatchUi.View {
             System.println("View: updateModeFromSettings end. Mode=" + displayMode);
         } catch (e) {
             System.println("Crash in View.updateModeFromSettings: " + e.getErrorMessage());
-        }
-    }
-    
-    public function adjustCustomRange(delta as Number) as Void {
-        if (displayMode == 5) { // Was 4
-            // Adjust Min BPM
-            customMinBpm += delta;
-            // Limit checks
-            if (customMinBpm < 30) { customMinBpm = 30; }
-            if (customMinBpm >= customMaxBpm) { customMinBpm = customMaxBpm - 5; }
-        } else if (displayMode == 6) { // Was 5
-             // Adjust Max BPM
-             customMaxBpm += delta;
-             // Limit checks
-             if (customMaxBpm <= customMinBpm) { customMaxBpm = customMinBpm + 5; }
-             if (customMaxBpm > 220) { customMaxBpm = 220; }
-        }
-        
-        // Apply new values immediately
-        if (displayMode == 5 || displayMode == 6) {
-             minRR = 60000 / customMaxBpm;
-             maxRR = 60000 / customMinBpm;
-             WatchUi.requestUpdate();
         }
     }
 
@@ -612,24 +582,6 @@ class PoincareView extends WatchUi.View {
         if (cY < gTop) { cY = gTop; }
         if (cY > gBottom) { cY = gBottom; }
         
-        // Colors from requirement (approximate with standard colors)
-        // Left-Bottom (Low/Low) -> Burnt out -> Red
-        /*
-        dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(gLeft, cY, cX - gLeft, gBottom - cY);
-        
-        // Left-Top (Low/High) -> Stress -> Orange
-        dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(gLeft, gTop, cX - gLeft, cY - gTop);
-        
-        // Right-Top (High/High) -> Flow -> Green
-        dc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(cX, gTop, gRight - cX, cY - gTop);
-        
-        // Right-Bottom (High/Low) -> Recovery -> Blue
-        dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(cX, cY, gRight - cX, gBottom - cY);
-        */
 
         // 增加外框格線
         dc.setPenWidth(1);
@@ -695,10 +647,10 @@ class PoincareView extends WatchUi.View {
              var curX = gLeft + (shortSD1 / maxX * graphSize);
              var curY = gBottom - (shortSD2 / maxY * graphSize);
              
-             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-             dc.fillCircle(curX, curY, 2);
+             dc.setColor(Graphics.COLOR_ORANGE, Graphics.COLOR_TRANSPARENT);
+             dc.fillCircle(curX, curY, 5);
              dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-             dc.drawCircle(curX, curY, 2);
+             dc.drawCircle(curX, curY, 5);
              
              // Optional: Draw line connecting properties?
              // dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
@@ -800,9 +752,8 @@ class PoincareView extends WatchUi.View {
                          // Alpha fade
                          var alpha = 200 - ((i.toFloat() / 300.0) * 200).toNumber(); // 300 max
                          if (alpha < 20) { alpha = 20; }
-                         var color = (alpha << 24) | 0x00FF00; // Green trail? Or Blue? Let's use Cyan 0x00FFFF
                          
-                         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
+                         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
                          dc.drawLine(prevX, prevY, cx, cy);
                          
                          prevX = cx;
@@ -812,10 +763,9 @@ class PoincareView extends WatchUi.View {
              }
              
              // Draw Current Point
-             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+             dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_TRANSPARENT);
              dc.fillCircle(px, py, 6);
-             dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-             dc.drawCircle(px, py, 6);
+
         }
         
     }

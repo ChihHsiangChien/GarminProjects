@@ -24,14 +24,12 @@ class PoincareDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onPreviousPage() {
-        // Up button -> Increase value
-        _view.adjustCustomRange(5);
+        // Up button
         return true;
     }
 
     function onNextPage() {
-        // Down button -> Decrease value
-        _view.adjustCustomRange(-5);
+        // Down button
         return true;
     }
 }
