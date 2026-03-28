@@ -1,0 +1,40 @@
+{
+  "settings" : [ {
+    "key" : "VisualMode",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "ModeTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ModeWide",
+      "value" : 0
+    }, {
+      "display" : "ModeZoom",
+      "value" : 1
+    }, {
+      "display" : "ModeAuto",
+      "value" : 2
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "ModeAuto" : "Auto",
+      "ModeTitle" : "Visual Mode",
+      "ms" : "ms",
+      "ModeZoom" : "Zoom",
+      "ModeWide" : "Wide",
+      "FitStrSD1" : "HRV SD1",
+      "AppName" : "Poincare Plot",
+      "FitStrSD2" : "HRV SD2"
+    }
+  }
+}

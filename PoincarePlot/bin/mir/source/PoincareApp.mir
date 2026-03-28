@@ -1,60 +1,60 @@
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
 import Toybox.Application;
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Sensor,4,14,20]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Sensor,4,14,20]; ]
 import Toybox.Sensor;
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 7; @symbol_classdef = [PoincareApp,7,6,17]; @symbol_extends<0> = [Application,7,26,37]; @symbol_extends<1> = [AppBase,7,38,45]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 7; @symbol_classdef = [PoincareApp,7,6,17]; @symbol_extends<0> = [Application,7,26,37]; @symbol_extends<1> = [AppBase,7,38,45]; ]
 class PoincareApp extends Application.AppBase {
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 7; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 7; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 7; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 9; @position = 15; @symbol_vardef = [view,9,15,19]; @symbol_type<0> = [PoincareView,9,23,35]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 9; @position = 15; @symbol_vardef = [view,9,15,19]; @symbol_type<0> = [PoincareView,9,23,35]; ]
     public
     var view as PoincareView or Null;
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 11; @symbol_functiondef = [initialize,11,13,23]; ]
     function initialize() as Void {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_11_26_15_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 12 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_11_26_15_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 12 8 ]
         symbol [ System %tmp.2 12 8 14 ];
         %tmp.2 = getv ? :System;
         symbol [ println %tmp.3 12 15 22 ];
         %tmp.3 = getv function %tmp.2 :println;
         %tmp.4 = "App: initialize start";
         invoke %tmp.2 %tmp.3(%tmp.4);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 13 8 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 13 8 ]
         symbol [ AppBase %tmp.6 13 8 15 ];
         %tmp.6 = getv ? :AppBase;
         symbol [ initialize %tmp.7 13 16 26 ];
         %tmp.7 = getv function %tmp.6 :initialize;
         invoke %tmp.6 %tmp.7();
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 14 8 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 14 8 ]
         symbol [ System %tmp.9 14 8 14 ];
         %tmp.9 = getv ? :System;
         symbol [ println %tmp.10 14 15 22 ];
         %tmp.10 = getv function %tmp.9 :println;
         %tmp.11 = "App: initialize end";
         invoke %tmp.9 %tmp.10(%tmp.11);
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_11_26_15_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_11_26_15_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 17; @symbol_functiondef = [onStart,17,13,20]; @symbol_param<0> = [state,17,21,26]; @symbol_param<0>_type<0> = [Dictionary,17,30,40]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 17; @symbol_functiondef = [onStart,17,13,20]; @symbol_param<0> = [state,17,21,26]; @symbol_param<0>_type<0> = [Dictionary,17,30,40]; ]
     function onStart(state as Dictionary or Null) as Void {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 18 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 18 8 ]
         symbol [ System %tmp.2 18 8 14 ];
         %tmp.2 = getv ? :System;
         symbol [ println %tmp.3 18 15 22 ];
         %tmp.3 = getv function %tmp.2 :println;
         %tmp.4 = "App: onStart";
         invoke %tmp.2 %tmp.3(%tmp.4);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 21 8 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_stop" ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 21 8 ]
+        [ "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_start" "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_stop" ]
         %options.1 = local;
         symbol [ options %options.1 21 12 19 ];
         %tmp.5 = newd 2;
@@ -75,11 +75,11 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.20 = aputv %tmp.19 %tmp.12 %tmp.18;
         lputv %options.1 %tmp.20;
         symbol [ options %options.1 21 12 19 ];
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 28 8 ]
-        try @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_beginTry @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_endTry @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_beginTry:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_12_31_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 29 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 28 8 ]
+        try @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_beginTry @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_endTry @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_beginTry:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_12_31_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 29 12 ]
         symbol [ Sensor %tmp.21 29 12 18 ];
         %tmp.21 = getm $.Toybox.Sensor;
         symbol [ registerSensorDataListener %tmp.22 29 19 45 ];
@@ -93,29 +93,29 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.28 = lgetv %options.1;
         symbol [ options %tmp.28 29 69 76 ];
         invoke %tmp.21 %tmp.22(%tmp.27, %tmp.28);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 30 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 30 12 ]
         symbol [ System %tmp.30 30 12 18 ];
         %tmp.30 = getv ? :System;
         symbol [ println %tmp.31 30 19 26 ];
         %tmp.31 = getv function %tmp.30 :println;
         %tmp.32 = "App: Sensor listener registered successfully";
         invoke %tmp.30 %tmp.31(%tmp.32);
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_12_31_8_stop:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_endTry:
-        jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_12_31_8_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_endTry:
+        jsr @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch:
         %tmp.33 = exception;
         push %tmp.33;
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 31 10 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end" ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 31 10 ]
+        [ "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch" "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end" ]
         %e.2 = local;
         symbol [ e %e.2 31 16 17 ];
         %tmp.34 = dup %tmp.33;
         lputv %e.2 %tmp.34;
         symbol [ e %e.2 31 16 17 ];
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_19_33_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 32 12 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_19_33_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 32 12 ]
         symbol [ System %tmp.36 32 12 18 ];
         %tmp.36 = getv ? :System;
         symbol [ println %tmp.37 32 19 26 ];
@@ -128,82 +128,82 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.41 = invoke %tmp.39 %tmp.40();
         %tmp.42 = add %tmp.38 %tmp.41;
         invoke %tmp.36 %tmp.37(%tmp.42);
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_19_33_8_stop:
-        jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_19_33_8_stop:
+        jsr @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
         pop;
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end:
-        try @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
-        jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end:
+        try @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_catch @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_31_10_33_8_end @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
+        jsr @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally;
         throw %tmp.33;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_finally:
         jsrret;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_end:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_28_8_33_8_end:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_17_51_34_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 36; @symbol_functiondef = [onStop,36,13,19]; @symbol_param<0> = [state,36,20,25]; @symbol_param<0>_type<0> = [Dictionary,36,29,39]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 36; @symbol_functiondef = [onStop,36,13,19]; @symbol_param<0> = [state,36,20,25]; @symbol_param<0>_type<0> = [Dictionary,36,29,39]; ]
     function onStop(state as Dictionary or Null) as Void {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_36_50_46_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 37 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_36_50_46_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 37 8 ]
         symbol [ System %tmp.2 37 8 14 ];
         %tmp.2 = getv ? :System;
         symbol [ println %tmp.3 37 15 22 ];
         %tmp.3 = getv function %tmp.2 :println;
         %tmp.4 = "App: onStop";
         invoke %tmp.2 %tmp.3(%tmp.4);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 38 8 ]
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_stmt:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 38 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_stmt:
         symbol [ Sensor %tmp.5 38 12 18 ];
         %tmp.5 = getm $.Toybox.Sensor;
         %tmp.7 = const :unregisterSensorDataListener;
         symbol [ unregisterSensorDataListener %tmp.7 38 24 52 const ];
         %tmp.8 = canhazplz %tmp.5 %tmp.7;
-        bf %tmp.8 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_true:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_54_40_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 39 12 ]
+        bf %tmp.8 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_true:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_54_40_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 39 12 ]
         symbol [ Sensor %tmp.9 39 12 18 ];
         %tmp.9 = getm $.Toybox.Sensor;
         symbol [ unregisterSensorDataListener %tmp.10 39 19 47 ];
         %tmp.10 = getv function %tmp.9 :unregisterSensorDataListener;
         invoke %tmp.9 %tmp.10();
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_54_40_8_stop:
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_end:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 43 8 ]
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_stmt:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_54_40_8_stop:
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_38_8_40_8_if_end:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 43 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_stmt:
         symbol [ view %tmp.12 43 12 16 ];
         %tmp.12 = getv ? :view;
         %tmp.13 = null;
         %tmp.14 = ne %tmp.12 %tmp.13;
-        bf %tmp.14 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_true:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_26_45_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 44 12 ]
+        bf %tmp.14 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_true:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_26_45_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 44 12 ]
         symbol [ view %tmp.16 44 12 16 ];
         %tmp.16 = getv ? :view;
         %tmp.17 = as %tmp.16 { (!Null) };
         symbol [ stopRecording %tmp.18 44 17 30 ];
         %tmp.18 = getv function %tmp.17 :stopRecording;
         invoke %tmp.17 %tmp.18();
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_26_45_8_stop:
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_end:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_36_50_46_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_26_45_8_stop:
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_43_8_45_8_if_end:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_36_50_46_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 48; @symbol_functiondef = [onSensorData,48,13,25]; @symbol_param<0> = [sensorData,48,26,36]; @symbol_param<0>_type<0> = [Sensor,48,40,46]; @symbol_param<0>_type<1> = [SensorData,48,47,57]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 48; @symbol_functiondef = [onSensorData,48,13,25]; @symbol_param<0> = [sensorData,48,26,36]; @symbol_param<0>_type<0> = [Sensor,48,40,46]; @symbol_param<0>_type<1> = [SensorData,48,47,57]; ]
     function onSensorData(sensorData as Sensor.SensorData) as Void {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_48_67_61_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 49 8 ]
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_stmt:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_12_49_73_begin:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_48_67_61_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 49 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_stmt:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_12_49_73_begin:
         %tmp.1 = lgetv %sensorData;
         symbol [ sensorData %tmp.1 49 12 22 ];
         %tmp.3 = const :heartRateData;
         symbol [ heartRateData %tmp.3 49 28 41 const ];
         %tmp.4 = canhazplz %tmp.1 %tmp.3;
-        bf %tmp.4 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_true:
+        bf %tmp.4 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_true:
         %tmp.5 = lgetv %sensorData;
         symbol [ sensorData %tmp.5 49 45 55 ];
         %tmp.6 = as %tmp.5 { (interface { var heartRateData; }) };
@@ -212,13 +212,13 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.8 = null;
         %tmp.9 = ne %tmp.7 %tmp.8;
         push %tmp.9;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_end:
-        %tmp.10 = phi [%tmp.4 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_12_49_73_begin] [%tmp.9 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_true] [%tmp.10 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_end];
-        bf %tmp.10 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_true:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 50 12 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_stop" ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_end:
+        %tmp.10 = phi [%tmp.4 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_12_49_73_begin] [%tmp.9 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_true] [%tmp.10 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_45_49_73_end];
+        bf %tmp.10 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_true:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 50 12 ]
+        [ "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_start" "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_stop" ]
         %hrData.1 = local;
         symbol [ hrData %hrData.1 50 16 22 ];
         %tmp.11 = lgetv %sensorData;
@@ -228,16 +228,16 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.13 = getv %tmp.12 :heartRateData;
         lputv %hrData.1 %tmp.13;
         symbol [ hrData %hrData.1 50 16 22 ];
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 53 12 ]
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_stmt:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_16_53_79_begin:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 53 12 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_stmt:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_16_53_79_begin:
         %tmp.14 = lgetv %hrData.1;
         symbol [ hrData %tmp.14 53 16 22 ];
         %tmp.16 = const :heartBeatIntervals;
         symbol [ heartBeatIntervals %tmp.16 53 28 46 const ];
         %tmp.17 = canhazplz %tmp.14 %tmp.16;
-        bf %tmp.17 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_true:
+        bf %tmp.17 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_true:
         %tmp.18 = lgetv %hrData.1;
         symbol [ hrData %tmp.18 53 50 56 ];
         %tmp.19 = as %tmp.18 { (interface { var heartBeatIntervals; }) };
@@ -246,13 +246,13 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.21 = null;
         %tmp.22 = ne %tmp.20 %tmp.21;
         push %tmp.22;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_end:
-        %tmp.23 = phi [%tmp.17 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_16_53_79_begin] [%tmp.22 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_true] [%tmp.23 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_end];
-        bf %tmp.23 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_true:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 54 16 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_stop" ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_end:
+        %tmp.23 = phi [%tmp.17 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_16_53_79_begin] [%tmp.22 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_true] [%tmp.23 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_50_53_79_end];
+        bf %tmp.23 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_true:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 54 16 ]
+        [ "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_start" "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_stop" ]
         %intervals.2 = local;
         symbol [ intervals %intervals.2 54 20 29 ];
         %tmp.24 = lgetv %hrData.1;
@@ -262,26 +262,26 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.26 = getv %tmp.25 :heartBeatIntervals;
         lputv %intervals.2 %tmp.26;
         symbol [ intervals %intervals.2 54 20 29 ];
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 56 16 ]
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_stmt:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_20_56_49_begin:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 56 16 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_stmt:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_20_56_49_begin:
         %tmp.27 = lgetv %intervals.2;
         symbol [ intervals %tmp.27 56 20 29 ];
         %tmp.28 = null;
         %tmp.29 = ne %tmp.27 %tmp.28;
-        bf %tmp.29 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_true:
+        bf %tmp.29 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_true:
         symbol [ view %tmp.31 56 41 45 ];
         %tmp.31 = getv ? :view;
         %tmp.32 = null;
         %tmp.33 = ne %tmp.31 %tmp.32;
         push %tmp.33;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_end:
-        %tmp.34 = phi [%tmp.29 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_20_56_49_begin] [%tmp.33 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_true] [%tmp.34 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_end];
-        bf %tmp.34 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_true:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_55_58_16_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 57 20 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_end:
+        %tmp.34 = phi [%tmp.29 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_20_56_49_begin] [%tmp.33 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_true] [%tmp.34 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_41_56_49_end];
+        bf %tmp.34 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_true:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_55_58_16_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 57 20 ]
         symbol [ view %tmp.36 57 20 24 ];
         %tmp.36 = getv ? :view;
         %tmp.37 = as %tmp.36 { (!Null) };
@@ -291,40 +291,40 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         symbol [ intervals %tmp.39 57 37 46 ];
         %tmp.40 = as %tmp.39 { (!Null) };
         invoke %tmp.37 %tmp.38(%tmp.40);
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_55_58_16_stop:
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_stop:
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_stop:
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_48_67_61_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_55_58_16_stop:
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_56_16_58_16_if_end:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_85_59_12_stop:
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_53_12_59_12_if_end:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_79_60_8_stop:
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_49_8_60_8_if_end:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_48_67_61_4_stop:
     }
     //! Return the initial view of your application here
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 66; @symbol_functiondef = [getInitialView,66,13,27]; @symbol_return<0> = [Views,66,34,39]; @symbol_return<1> = [Views,66,45,50]; @symbol_return<2> = [InputDelegates,66,52,66]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 66; @symbol_functiondef = [getInitialView,66,13,27]; @symbol_return<0> = [Views,66,34,39]; @symbol_return<1> = [Views,66,45,50]; @symbol_return<2> = [InputDelegates,66,52,66]; ]
     function getInitialView() as [Views] or [Views, InputDelegates] {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_66_68_83_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 67 8 ]
-        try @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_beginTry @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_endTry @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_beginTry:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 68 12 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_66_68_83_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 67 8 ]
+        try @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_beginTry @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_endTry @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_beginTry:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 68 12 ]
         symbol [ System %tmp.2 68 12 18 ];
         %tmp.2 = getv ? :System;
         symbol [ println %tmp.3 68 19 26 ];
         %tmp.3 = getv function %tmp.2 :println;
         %tmp.4 = "App: getInitialView start";
         invoke %tmp.2 %tmp.3(%tmp.4);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 69 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 69 12 ]
         symbol [ PoincareView %tmp.8 69 23 35 ];
         %tmp.8 = getv ? :PoincareView;
         %tmp.5 = newc %tmp.8 ();
         symbol [ view ? 69 12 16 ];
         putv self :view %tmp.5;
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 70 12 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_start" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_stop" ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 70 12 ]
+        [ "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_start" "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_stop" ]
         %delegate.1 = local;
         symbol [ delegate %delegate.1 70 16 24 ];
         symbol [ PoincareDelegate %tmp.12 70 31 47 ];
@@ -334,26 +334,26 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.9 = newc %tmp.12 (%tmp.14);
         lputv %delegate.1 %tmp.9;
         symbol [ delegate %delegate.1 70 16 24 ];
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 72 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 72 12 ]
         symbol [ view %tmp.16 72 12 16 ];
         %tmp.16 = getv ? :view;
         symbol [ updateModeFromSettings %tmp.17 72 17 39 ];
         %tmp.17 = getv function %tmp.16 :updateModeFromSettings;
         invoke %tmp.16 %tmp.17();
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 75 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 75 12 ]
         symbol [ view %tmp.19 75 12 16 ];
         %tmp.19 = getv ? :view;
         symbol [ startRecording %tmp.20 75 17 31 ];
         %tmp.20 = getv function %tmp.19 :startRecording;
         invoke %tmp.19 %tmp.20();
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 77 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 77 12 ]
         symbol [ System %tmp.22 77 12 18 ];
         %tmp.22 = getv ? :System;
         symbol [ println %tmp.23 77 19 26 ];
         %tmp.23 = getv function %tmp.22 :println;
         %tmp.24 = "App: getInitialView returning";
         invoke %tmp.22 %tmp.23(%tmp.24);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 78 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 78 12 ]
         %tmp.25 = newa 2;
         symbol [ view %tmp.27 78 21 25 ];
         %tmp.27 = getv ? :view;
@@ -363,24 +363,24 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         symbol [ delegate %tmp.30 78 27 35 ];
         %tmp.31 = dup %tmp.29;
         %tmp.32 = aputv %tmp.31 1 %tmp.30;
-        jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
+        jsr @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
         ret %tmp.32;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_stop:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_endTry:
-        jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_12_79_8_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_endTry:
+        jsr @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch:
         %tmp.33 = exception;
         push %tmp.33;
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 79 10 ]
-        [ "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch" "C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end" ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 79 10 ]
+        [ "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch" "_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end" ]
         %e.2 = local;
         symbol [ e %e.2 79 17 18 ];
         %tmp.34 = dup %tmp.33;
         lputv %e.2 %tmp.34;
         symbol [ e %e.2 79 17 18 ];
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_20_82_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 80 12 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_20_82_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 80 12 ]
         symbol [ System %tmp.36 80 12 18 ];
         %tmp.36 = getv ? :System;
         symbol [ println %tmp.37 80 19 26 ];
@@ -393,58 +393,58 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
         %tmp.41 = invoke %tmp.39 %tmp.40();
         %tmp.42 = add %tmp.38 %tmp.41;
         invoke %tmp.36 %tmp.37(%tmp.42);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 81 12 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 81 12 ]
         %tmp.43 = lgetv %e.2;
         symbol [ e %tmp.43 81 18 19 ];
         throw %tmp.43;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_20_82_8_stop:
-        jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_20_82_8_stop:
+        jsr @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
         pop;
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end:
-        try @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
-        jsr @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end:
+        try @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_catch @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_79_10_82_8_end @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
+        jsr @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally;
         throw %tmp.33;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_finally:
         jsrret;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_end:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_66_68_83_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_67_8_82_8_end:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_66_68_83_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 86; @symbol_functiondef = [onSettingsChanged,86,13,30]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 86; @symbol_functiondef = [onSettingsChanged,86,13,30]; ]
     function onSettingsChanged() {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_86_33_91_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 87 8 ]
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_stmt:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_86_33_91_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 87 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_stmt:
         symbol [ view %tmp.2 87 12 16 ];
         %tmp.2 = getv ? :view;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_true:
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_26_89_8_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 88 13 ]
+        bf %tmp.4 @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_true:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_26_89_8_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 88 13 ]
         symbol [ view %tmp.6 88 13 17 ];
         %tmp.6 = getv ? :view;
         %tmp.7 = as %tmp.6 { (!Null) };
         symbol [ updateModeFromSettings %tmp.8 88 18 40 ];
         %tmp.8 = getv function %tmp.7 :updateModeFromSettings;
         invoke %tmp.7 %tmp.8();
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_26_89_8_stop:
-        goto @C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_end;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_end:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 90 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_26_89_8_stop:
+        goto @_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_end;
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_87_8_89_8_if_end:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 90 8 ]
         symbol [ WatchUi %tmp.9 90 8 15 ];
         %tmp.9 = getm $.Toybox.WatchUi;
         symbol [ requestUpdate %tmp.10 90 16 29 ];
         %tmp.10 = getv function %tmp.9 :requestUpdate;
         invoke %tmp.9 %tmp.10();
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_86_33_91_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_86_33_91_4_stop:
     }
 }
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 95; @symbol_functiondef = [getApp,95,9,15]; @symbol_return<0> = [PoincareApp,95,21,32]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 95; @symbol_functiondef = [getApp,95,9,15]; @symbol_return<0> = [PoincareApp,95,21,32]; ]
 function getApp() as PoincareApp {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_95_33_97_0_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc" 96 4 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_95_33_97_0_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc" 96 4 ]
     symbol [ Application %tmp.1 96 11 22 ];
     %tmp.1 = getm $.Toybox.Application;
     symbol [ getApp %tmp.2 96 23 29 ];
@@ -453,8 +453,8 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc
     %tmp.4 = as %tmp.3 PoincareApp;
     symbol [ PoincareApp %tmp.4 96 35 46 ];
     ret %tmp.4;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareApp_mc_95_33_97_0_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareApp_mc_95_33_97_0_stop:
 }
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareApp.mc"; @line = 1; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareApp.mc"; @line = 1; ]
 <init> {
 }

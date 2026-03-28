@@ -1,39 +1,39 @@
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 4; @symbol_classdef = [PoincareDelegate,4,6,22]; @symbol_extends<0> = [WatchUi,4,31,38]; @symbol_extends<1> = [BehaviorDelegate,4,39,55]; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 4; @symbol_classdef = [PoincareDelegate,4,6,22]; @symbol_extends<0> = [WatchUi,4,31,38]; @symbol_extends<1> = [BehaviorDelegate,4,39,55]; ]
 class PoincareDelegate extends WatchUi.BehaviorDelegate {
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 4; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 4; ]
     <init> {
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 4; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 4; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 6; @position = 16; @symbol_vardef = [_view,6,16,21]; @symbol_type<0> = [PoincareView,6,25,37]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 6; @position = 16; @symbol_vardef = [_view,6,16,21]; @symbol_type<0> = [PoincareView,6,25,37]; ]
     private
     var _view as PoincareView;
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; @symbol_param<0> = [view,8,24,28]; @symbol_param<0>_type<0> = [PoincareView,8,32,44]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; @symbol_param<0> = [view,8,24,28]; @symbol_param<0>_type<0> = [PoincareView,8,32,44]; ]
     function initialize(view as PoincareView) as Void {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_8_46_11_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 9 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_8_46_11_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 9 8 ]
         symbol [ BehaviorDelegate %tmp.2 9 8 24 ];
         %tmp.2 = getv ? :BehaviorDelegate;
         symbol [ initialize %tmp.3 9 25 35 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 10 8 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 10 8 ]
         %tmp.4 = lgetv %view;
         symbol [ view %tmp.4 10 16 20 ];
         symbol [ _view ? 10 8 13 ];
         putv self :_view %tmp.4;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_8_46_11_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_8_46_11_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 13; @symbol_functiondef = [onBack,13,13,19]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 13; @symbol_functiondef = [onBack,13,13,19]; ]
     function onBack() {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_13_22_17_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 15 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_13_22_17_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 15 8 ]
         symbol [ WatchUi %tmp.1 15 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
         symbol [ popView %tmp.2 15 16 23 ];
@@ -43,48 +43,48 @@ C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelega
         symbol [ SLIDE_IMMEDIATE %tmp.4 15 32 47 ];
         %tmp.4 = getv %tmp.3 :SLIDE_IMMEDIATE;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 16 8 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 16 8 ]
         %tmp.5 = true;
         ret %tmp.5;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_13_22_17_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_13_22_17_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 19; @symbol_functiondef = [onSelect,19,13,21]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 19; @symbol_functiondef = [onSelect,19,13,21]; ]
     function onSelect() {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_19_24_24_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 21 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_19_24_24_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 21 8 ]
         symbol [ _view %tmp.2 21 8 13 ];
         %tmp.2 = getv ? :_view;
         symbol [ updateModeFromSettings %tmp.3 21 14 36 ];
         %tmp.3 = getv function %tmp.2 :updateModeFromSettings;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 22 8 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 22 8 ]
         symbol [ WatchUi %tmp.4 22 8 15 ];
         %tmp.4 = getm $.Toybox.WatchUi;
         symbol [ requestUpdate %tmp.5 22 16 29 ];
         %tmp.5 = getv function %tmp.4 :requestUpdate;
         invoke %tmp.4 %tmp.5();
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 23 8 ]
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 23 8 ]
         %tmp.6 = true;
         ret %tmp.6;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_19_24_24_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_19_24_24_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 26; @symbol_functiondef = [onPreviousPage,26,13,27]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 26; @symbol_functiondef = [onPreviousPage,26,13,27]; ]
     function onPreviousPage() {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_26_30_29_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 28 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_26_30_29_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 28 8 ]
         %tmp.1 = true;
         ret %tmp.1;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_26_30_29_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_26_30_29_4_stop:
     }
-    [ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 31; @symbol_functiondef = [onNextPage,31,13,23]; ]
+    [ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 31; @symbol_functiondef = [onNextPage,31,13,23]; ]
     function onNextPage() {
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_31_26_34_4_start:
-[ "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc" 33 8 ]
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_31_26_34_4_start:
+[ "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc" 33 8 ]
         %tmp.1 = true;
         ret %tmp.1;
-C__Users_User_Documents_GitHub_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_31_26_34_4_stop:
+_home_pancala_GarminProjects_PoincarePlot_source_PoincareDelegate_mc_31_26_34_4_stop:
     }
 }
-[ @file = "C:\Users\User\Documents\GitHub\GarminProjects\PoincarePlot\source\PoincareDelegate.mc"; @line = 1; ]
+[ @file = "/home/pancala/GarminProjects/PoincarePlot/source/PoincareDelegate.mc"; @line = 1; ]
 <init> {
 }

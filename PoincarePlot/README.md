@@ -37,6 +37,8 @@ Use the **Select / Menu** button to cycle through the following 5 display modes:
 ### Activity Recording
 *   **FIT File Support**: The app records an activity session when running.
 *   **Custom Fields**: **SD1** and **SD2** values are computed in real-time and written to the activity FIT file for post-analysis.
+*   **60s Rolling History**: All displayed metrics (Poincaré points, ASM trace, Energy-Balance trail) keep only the last 60 seconds of recorded data for responsive real-time tracking.
+*   **Signal Indicator**: A status dot is now shown in each display mode (green/yellow/red) for HR signal quality in real-time.
 
 ## Usage
 *   **Start**: Launch the app. It will automatically search for a Heart Rate monitor.
