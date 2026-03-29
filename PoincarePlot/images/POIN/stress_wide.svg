@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="200"
+   height="200"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg818"
+   sodipodi:docname="stress_wide.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs822" />
+  <sodipodi:namedview
+     id="namedview820"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.005"
+     inkscape:cx="99.875156"
+     inkscape:cy="99.875156"
+     inkscape:window-width="1854"
+     inkscape:window-height="1003"
+     inkscape:window-x="66"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg818" />
+  <rect
+     width="200"
+     height="200"
+     fill="#fef2f2"
+     rx="10"
+     id="rect800" />
+  <line
+     x1="30"
+     y1="170"
+     x2="170"
+     y2="30"
+     stroke="#fca5a5"
+     stroke-dasharray="4"
+     id="line802" />
+  <ellipse
+     fill="#ef4444"
+     opacity="0.3"
+     transform="matrix(0.72095972,-0.69297697,0.72095972,0.69297697,0,0)"
+     id="ellipse804"
+     style="stroke-width:0.512896"
+     ry="9.6808701"
+     rx="9.0123682"
+     cy="141.85797"
+     cx="-12.377034" />
+  <circle
+     cx="98.510574"
+     cy="105.98009"
+     r="1.5"
+     fill="#b91c1c"
+     id="circle806" />
+  <circle
+     cx="98"
+     cy="102"
+     r="1.5"
+     fill="#b91c1c"
+     id="circle808" />
+  <circle
+     cx="88.402321"
+     cy="107.18424"
+     r="1.5"
+     fill="#b91c1c"
+     id="circle810" />
+  <circle
+     cx="92.089928"
+     cy="103.34044"
+     r="1.5"
+     fill="#b91c1c"
+     id="circle812" />
+  <text
+     x="20"
+     y="25"
+     font-size="10px"
+     font-weight="bold"
+     fill="#b91c1c"
+     id="text814">壓力/專注</text>
+  <text
+     x="140"
+     y="185"
+     font-size="8"
+     fill="#7f1d1d"
+     id="text816">SD1 ↓ (極扁)</text>
+</svg>
